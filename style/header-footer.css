@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.logo img:first-child {
+    margin-left: 15px;
+}
+
+.logo img:last-child {
+    margin-right: 10px;
+    top: 50px;
+    left: 105px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    line-height: 76px;
+    margin-left: 12px;
+}
+
+.line {
+    border-bottom: 2px solid #efefef;
+}
+
+footer .positioner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #8f8f8f;
+}
