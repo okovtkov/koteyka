@@ -1,0 +1,567 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+.positioner {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.positioner.narrow {
+    width: 1070px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.logo img:first-child {
+    margin-left: 15px;
+}
+
+.logo img:last-child {
+    margin-right: 10px;
+    top: 50px;
+    left: 105px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    line-height: 76px;
+    margin-left: 12px;
+}
+.banner {
+    background-size: cover;
+    background-image: url(/source/components/banner/cat.jpg);
+    background-repeat: no-repeat;
+}
+
+.banner .info {
+    display: block;
+    padding-top: 153px;
+    padding-bottom: 153px;
+    /* outline: 2px solid blue; */
+}
+
+.city {
+    font-size: 14px;
+}
+
+h1 {
+    margin: 15px 0 25px;
+    padding: 0;
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner button {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 63px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.banner button::after {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #ff7236;
+    background-image: url(/source/components/banner/lapa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    content: "";
+}
+.advantages {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.advantages .positioner {
+    position: relative;
+}
+
+.advantages .positioner::before {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 410px;
+    height: 385px;
+    background-image: url("/img/icons/background-lapa.svg");
+    background-repeat: no-repeat;
+    content: "";    
+}
+
+.advantages h2 {
+    margin: 140px 0 50px 0;
+    padding: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.advantages ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.advantages li {
+    position: relative;
+    width: 370px;
+    margin-top: 20px;
+    padding: 153px 30px 30px;
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+}
+
+.advantages h3 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.advantages ul li p {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.temperature {
+    background-image: url(/source/components/advantages/icons/temperature.svg);
+}
+
+.video {
+    background-image: url(/source/components/advantages/icons/video.svg);
+}
+
+.taxi {
+    background-image: url(/source/components/advantages/icons/taxi.svg);
+}
+
+.food {
+    background-image: url(/source/components/advantages/icons/food.svg);
+}
+
+.walk {
+    background-image: url(/source/components/advantages/icons/walk.svg);
+}
+
+.veterinarian {
+    background-image: url(/source/components/advantages/icons/veterinarian.svg);
+}
+.rooms {
+    margin-top: 140px;
+}
+
+.rooms .positioner {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.rooms .positioner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/source/components/rooms/icons/fish.svg);
+    background-repeat: no-repeat;
+    width: 484px;
+    height: 151px;
+    opacity: 0.1;
+    content: "";
+}
+
+.rooms .positioner input {
+    display: none;
+}
+
+.positioner .left,
+.positioner .right { 
+    position: absolute;
+    bottom: 20px;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    color: #ff7236;
+    font-weight: bold;
+    box-shadow: 0px 0px 25px rgba(161, 161, 161, 0.25);
+    cursor: pointer;
+}
+
+.positioner .right {
+    left: 1100px;
+}
+
+.positioner .left {
+    left: 1049px;
+}
+
+.rooms .positioner h2 {
+    margin: 0 0 70px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.rooms .positioner .slide {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease;
+}
+
+.rooms .positioner .room {
+    display: flex;
+    align-items: center;
+}
+
+.rooms .positioner .room img {
+    width: 600px;
+    height: 404px;
+    border-radius: 10px;
+    margin-left: 168px;
+}
+
+.room .info {
+    margin-left: -70px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+.room .info h3 {
+    padding-left: 100px;
+    padding-top: 40px; 
+    margin: 0;
+}
+
+.room .info ul {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.room .info ul li {
+    position: relative;
+    padding-right: 80px;
+    padding-left: 121px;
+    padding-bottom: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.room .info ul li::before {
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fac663;
+    content: "";
+}
+
+.room .info button {
+    position: relative;
+    margin: 10px 0 40px 100px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 63px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #ff7236;
+    cursor: pointer;
+}
+
+.room .info button::after {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 36px;
+    height: 36px;
+    background-image: url(/source/components/rooms/icons/paw.svg);
+    content: "";
+}
+
+.rooms .positioner .radio-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.rooms .positioner label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slide {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slide {
+    transform: translate(-1170px);
+}
+
+#btn-3:checked ~ .slide {
+    transform: translate(-2340px);
+}
+
+#btn-1:checked ~ .radio-button label[for="btn-1"],
+#btn-2:checked ~ .radio-button label[for="btn-2"],
+#btn-3:checked ~ .radio-button label[for="btn-3"] {
+    background-color: #ff7236;
+} 
+.reviews {
+    position: relative;
+    padding-top: 120px;
+    overflow-x: hidden;  
+}
+
+.reviews .right {
+    left: 1100px;
+    bottom: 20px;
+}
+
+.reviews .left {
+    left: 1049px;
+    bottom: 20px;
+}
+
+.reviews .positioner {
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.reviews .positioner::before {
+    position: absolute;
+    top: -185px;
+    right: -130px;
+    background-image: url(/source/components/reviews/icons/background-lapa-2.svg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    content: "";
+}
+
+.reviews .positioner input {
+    display: none;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.reviews .positioner .review {
+    display: flex;
+    /* 
+    100% - ширина позиционера
+    100вв - ширина окна
+    16пкс - ширина вертикальной прокртуки
+    */
+    width: calc(100% + (100vw - 100%) / 2);
+    transition: transform 1s ease;
+}
+
+.reviews .positioner .review .info {
+    flex-shrink: 0;
+    padding-left: 70px;
+    padding-top: 35px;
+    margin-right: 30px;
+    margin-bottom: 55px;
+    padding-right: 38px;
+    width: 470px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    background-image: url(/source/components/reviews/icons/“.svg);
+    background-repeat: no-repeat;
+    background-position: 35px 35px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    font-size: 14px;
+    color: #848484;
+}
+
+.reviews .positioner .radio-button {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews .positioner .radio-button label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#btn-4:checked ~ .review {
+    transform: translate(0);
+}
+
+#btn-5:checked ~ .review {
+    transform: translate(-147px);
+}
+
+#btn-6:checked ~ .review {
+    transform: translate(-294px);
+}
+
+#btn-4:checked ~ .radio-button label[for="btn-4"],
+#btn-5:checked ~ .radio-button label[for="btn-5"],
+#btn-6:checked ~ .radio-button label[for="btn-6"] {
+    background-color: #ff7236;
+} 
+footer .positioner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.contacts .background {
+    background-color: #fac663;
+    padding: 60px 112px 60px 199px;
+}
+
+.background h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.background h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.background p {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.map {
+    position: relative;
+}
+
+.map::after {
+    position: absolute;
+    top: 255px;
+    left: 245px;
+    width: 64px;
+    height: 116px;
+    background-image: url(/source/components/footer/icons/position.svg);
+    background-repeat: no-repeat;
+    z-index: 1;
+    content: "";
+}
+
+.map img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.social-networks {
+    position: relative;
+    width: 132px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    background-image: url(/source/components/footer/icons/fb.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.social-networks::before {
+    position: absolute;
+    top: 0;
+    left: 42px;
+    width: 22px;
+    height: 22px;
+    background-image: url(/source/components/footer/icons/inst.svg);
+    content: "";
+}
+
+.social-networks::after {
+    position: absolute;
+    top: 0;
+    left: 84px;
+    width: 22px;
+    height: 22px;
+    background-image: url(/source/components/footer/icons/vk.svg);
+    content: "";
+}
+
+.privacy-policy {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #8f8f8f;
+    border-top: 2px solid #efefef;
+}
+
+.privacy-policy .positioner {
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,61 @@
+.banner {
+    background-size: cover;
+    background-image: url("./cat.jpg");
+    background-repeat: no-repeat;
+}
+
+.banner .info {
+    display: block;
+    padding-top: 153px;
+    padding-bottom: 153px;
+    /* outline: 2px solid blue; */
+}
+
+.city {
+    font-size: 14px;
+}
+
+h1 {
+    margin: 15px 0 25px;
+    padding: 0;
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner button {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 63px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.banner button::after {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #ff7236;
+    background-image: url("./lapa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    content: "";
+}
