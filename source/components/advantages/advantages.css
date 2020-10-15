@@ -14,7 +14,7 @@
     right: -150px;
     width: 410px;
     height: 385px;
-    background-image: url("/img/icons/background-lapa.svg");
+    background-image: url("./icons/background-lapa.svg");
     background-repeat: no-repeat;
     content: "";    
 }

@@ -43,7 +43,7 @@ nav a {
 }
 .banner {
     background-size: cover;
-    background-image: url(/source/components/banner/cat.jpg);
+    background-image: url(../static/images/source/components/banner/cat.jpg);
     background-repeat: no-repeat;
 }
 
@@ -96,7 +96,7 @@ h1 {
     width: 36px;
     height: 36px;
     background-color: #ff7236;
-    background-image: url(/source/components/banner/lapa.svg);
+    background-image: url(../static/images/source/components/banner/lapa.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -118,7 +118,7 @@ h1 {
     right: -150px;
     width: 410px;
     height: 385px;
-    background-image: url("/img/icons/background-lapa.svg");
+    background-image: url(../static/images/source/components/advantages/icons/background-lapa.svg);
     background-repeat: no-repeat;
     content: "";    
 }
@@ -162,27 +162,27 @@ h1 {
 }
 
 .temperature {
-    background-image: url(/source/components/advantages/icons/temperature.svg);
+    background-image: url(../static/images/source/components/advantages/icons/temperature.svg);
 }
 
 .video {
-    background-image: url(/source/components/advantages/icons/video.svg);
+    background-image: url(../static/images/source/components/advantages/icons/video.svg);
 }
 
 .taxi {
-    background-image: url(/source/components/advantages/icons/taxi.svg);
+    background-image: url(../static/images/source/components/advantages/icons/taxi.svg);
 }
 
 .food {
-    background-image: url(/source/components/advantages/icons/food.svg);
+    background-image: url(../static/images/source/components/advantages/icons/food.svg);
 }
 
 .walk {
-    background-image: url(/source/components/advantages/icons/walk.svg);
+    background-image: url(../static/images/source/components/advantages/icons/walk.svg);
 }
 
 .veterinarian {
-    background-image: url(/source/components/advantages/icons/veterinarian.svg);
+    background-image: url(../static/images/source/components/advantages/icons/veterinarian.svg);
 }
 .rooms {
     margin-top: 140px;
@@ -198,7 +198,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/source/components/rooms/icons/fish.svg);
+    background-image: url(../static/images/source/components/rooms/icons/fish.svg);
     background-repeat: no-repeat;
     width: 484px;
     height: 151px;
@@ -317,7 +317,7 @@ h1 {
     right: 7px;
     width: 36px;
     height: 36px;
-    background-image: url(/source/components/rooms/icons/paw.svg);
+    background-image: url(../static/images/source/components/rooms/icons/paw.svg);
     content: "";
 }
 
@@ -378,7 +378,7 @@ h1 {
     position: absolute;
     top: -185px;
     right: -130px;
-    background-image: url(/source/components/reviews/icons/background-lapa-2.svg);
+    background-image: url(../static/images/source/components/reviews/icons/background-lapa-2.svg);
     background-repeat: no-repeat;
     width: 350px;
     height: 350px;
@@ -416,7 +416,7 @@ h1 {
     background-color: white;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
-    background-image: url(/source/components/reviews/icons/“.svg);
+    background-image: url(../static/images/source/components/reviews/icons/“.svg);
     background-repeat: no-repeat;
     background-position: 35px 35px;
 }
@@ -510,7 +510,7 @@ footer .positioner {
     left: 245px;
     width: 64px;
     height: 116px;
-    background-image: url(/source/components/footer/icons/position.svg);
+    background-image: url(../static/images/source/components/footer/icons/position.svg);
     background-repeat: no-repeat;
     z-index: 1;
     content: "";
@@ -527,7 +527,7 @@ footer .positioner {
     height: 22px;
     margin: 0;
     padding: 0;
-    background-image: url(/source/components/footer/icons/fb.svg);
+    background-image: url(../static/images/source/components/footer/icons/fb.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -538,7 +538,7 @@ footer .positioner {
     left: 42px;
     width: 22px;
     height: 22px;
-    background-image: url(/source/components/footer/icons/inst.svg);
+    background-image: url(../static/images/source/components/footer/icons/inst.svg);
     content: "";
 }
 
@@ -548,7 +548,7 @@ footer .positioner {
     left: 84px;
     width: 22px;
     height: 22px;
-    background-image: url(/source/components/footer/icons/vk.svg);
+    background-image: url(../static/images/source/components/footer/icons/vk.svg);
     content: "";
 }
 
