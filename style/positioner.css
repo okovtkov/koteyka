@@ -1,9 +1,0 @@
-.positioner {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.positioner.narrow {
-    width: 1070px;
-}
