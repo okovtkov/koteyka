@@ -1,0 +1,31 @@
+include ../header/header.pug
+
+mixin footer
+    <footer>
+        <div class="contacts" id="contacts">
+            <div class="background">
+                <h2>Как нас найти</h2>
+                <h3>Адрес</h3>
+                <p>Санкт-Петербург,<br>
+                | ул Большая Конюшенная, д 19</p>
+                <h3>Режим работы</h3>
+                <p>Ежедневно, с 9:00 до 20:00</p>
+                <h3>Телефон</h3>
+                <p>8 (800) 333-55-99</p>
+                <h3>E-mail</h3>
+                <p>info@cat-hotel.ru</p>
+                <h3>Социальные сети</h3>
+                <div class="social-networks"></div>
+            </div>
+            <div class="map">
+                <img src="/img/map.jpg" alt="карта">
+            </div>
+        </div>
+        +header("div")
+        <div class="privacy-policy">
+            <div class="positioner">
+                | © 2019 Все права защищены
+                <span>Политика конфиденциальности</span>
+            </div>
+        </div>
+    </footer>

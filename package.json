@@ -1,0 +1,11 @@
+{
+    "name": "koteyka",
+    "private": true,
+    "scripts": {
+        "build": "weboops --mode build",
+        "dev": "weboops --mode development"
+    },
+    "dependencies": {
+        "@weboops/core": "0.0.7"
+    }
+}
