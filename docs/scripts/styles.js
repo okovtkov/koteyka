@@ -10,16 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./source/stylesheets/style.css":
-/*!**************************************!*\
-  !*** ./source/stylesheets/style.css ***!
-  \**************************************/
+/***/ "./stylesheets/style.css":
+/*!*******************************!*\
+  !*** ./stylesheets/style.css ***!
+  \*******************************/
 /*! namespace exports */
 /*! exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://koteyka/./source/stylesheets/style.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./stylesheets/style.css?");
 
 /***/ })
 
@@ -63,7 +63,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /************************************************************************/
 /******/ 	// startup
 /******/ 	// Load entry module
-/******/ 	__webpack_require__("./source/stylesheets/style.css");
+/******/ 	__webpack_require__("./stylesheets/style.css");
 /******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;

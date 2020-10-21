@@ -1,0 +1,23 @@
+.reservation {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 63px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #ff7236;
+    cursor: pointer;
+}
+
+.reservation::after {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 36px;
+    height: 36px;
+    background-image: url("./icons/paw.svg");
+    content: "";
+}

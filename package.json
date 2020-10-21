@@ -2,10 +2,10 @@
     "name": "koteyka",
     "private": true,
     "scripts": {
-        "build": "weboops --mode build --publicPath ./static/",
-        "dev": "weboops --mode development"
+        "build": "weboops --mode build --publicPath /koteyka/ -o ./docs/",
+        "dev": "weboops --mode development -o ./docs/"
     },
     "dependencies": {
-        "@weboops/core": "^0.1.1"
+        "@weboops/core": "^0.1.3"
     }
 }

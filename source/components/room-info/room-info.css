@@ -1,0 +1,101 @@
+.room-info {
+    position: relative;
+    max-width: 100%;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.room-info .positioner {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.room-info .positioner::after {
+    position: absolute;
+    top: -50px;
+    right: -130px;
+    width: 251px;
+    height: 285px;
+    background-image: url("./icons/background-lapa-3.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.about {
+    margin-left: 70px;
+}
+
+.about h2 {
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 22px 0;
+}
+
+.about p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 17px;
+    padding: 0;
+}
+
+.about p:last-of-type {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.about p span {
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+.about .features {
+    margin: 0;
+    margin-top: 13px;
+    padding: 0;
+    list-style: none;
+    font-size: 16px; 
+}
+
+.about .features li {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 9px;
+    color: #1a212f;
+}
+
+.about h2,
+.about p,
+.about li {
+    color: #1a212f;
+}
+
+.lounger::before,
+.house::before,
+.game-complex::before,
+.scratching-post::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.lounger::before {
+    background-image: url("./icons/lounger.svg");
+}
+
+.house::before {
+    background-image: url("./icons/house.svg");
+}
+
+.game-complex::before {
+    background-image: url("./icons/game\ complex.svg");
+}
+
+.scratching-post::before {
+    background-image: url("./icons/scratching\ post.svg");
+}
+

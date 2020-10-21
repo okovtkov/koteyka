@@ -2,20 +2,17 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         include ../components/header/header.pug
-        include ../components/banner/banner.pug
-        include ../components/advantages/advantages.pug
-        include ../components/rooms/rooms.pug
-        include ../components/reviews/reviews.pug
         include ../components/footer/footer.pug
+        include ../components/rooms/rooms.pug
+        include ../components/room-info/room-info.pug
     </head>
     <body>
         +header
         <main>
-            +banner
-            +advantages
-            +rooms("Номера")
-            +reviews
+            +room-info
+            +rooms("Другие номера")
         </main>
         +footer
     </body>

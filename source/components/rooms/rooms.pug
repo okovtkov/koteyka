@@ -1,4 +1,4 @@
-mixin rooms
+mixin rooms(title)
     <div class="rooms" id="rooms">
         <div class="positioner">
             <button class="left">&lt;</button>
@@ -6,7 +6,7 @@ mixin rooms
             <input type="radio" name="slider-rooms" id="btn-1" checked>
             <input type="radio" name="slider-rooms" id="btn-2">
             <input type="radio" name="slider-rooms" id="btn-3">
-            <h2>Номера</h2>
+            <h2>#{title}</h2>
             <div class="slide">
                 <div class="room">
                     <img src="/img/room-1.jpg" alt="Эконом плюс">

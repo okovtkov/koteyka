@@ -1,0 +1,23 @@
+include ../gallery/gallery.pug
+include ../button/button.pug
+
+mixin room-info
+    <div class="room-info">
+        <div class="positioner">
+            +gallery
+            <div class="about">
+                <h2>Супер-Люкс</h2>
+                <p>Размеры (ШхГхВ) - 180х160х180 см</p>
+                <p>Площадь - 2,88 м2</p>
+                <p>Оснащение номера</p>
+                <ul class="features">
+                    <li class="lounger" id="btn-7">Лежак</li>
+                    <li class="house">Домик</li>
+                    <li class="game-complex">Игровой комплекс - 3 яруса</li>
+                    <li class="scratching-post">Когтеточка</li>
+                </ul>
+                <p>Цена за сутки: <span>600р.</span></p>
+                +button
+            </div>
+        </div>
+    </div>
