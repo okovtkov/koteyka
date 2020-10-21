@@ -6,6 +6,6 @@
         "dev": "weboops --mode development -o ./docs/"
     },
     "dependencies": {
-        "@weboops/core": "^0.1.3"
+        "@weboops/core": "^0.1.4"
     }
 }

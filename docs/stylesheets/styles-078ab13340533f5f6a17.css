@@ -48,7 +48,7 @@ nav a {
 }
 .banner {
     background-size: cover;
-    background-image: url(/koteyka/images/components/banner/cat.jpg);
+    background-image: url(/koteyka/images/components/banner//cat-8b7234a99271c8d7384b2878f922cfd0.jpg);
     background-repeat: no-repeat;
 }
 
@@ -101,7 +101,7 @@ h1 {
     width: 36px;
     height: 36px;
     background-color: #ff7236;
-    background-image: url(/koteyka/images/components/banner/lapa.svg);
+    background-image: url(/koteyka/images/components/banner//lapa-91edaa9306e5910ab5702b8c22577135.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -123,7 +123,7 @@ h1 {
     right: -150px;
     width: 410px;
     height: 385px;
-    background-image: url(/koteyka/images/components/advantages/icons/background-lapa.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//background-lapa-7975a34cd7760464b6839e522b8639fb.svg);
     background-repeat: no-repeat;
     content: "";    
 }
@@ -167,27 +167,27 @@ h1 {
 }
 
 .temperature {
-    background-image: url(/koteyka/images/components/advantages/icons/temperature.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//temperature-92130f216e3e0fd200b14c9e8b2666ba.svg);
 }
 
 .video {
-    background-image: url(/koteyka/images/components/advantages/icons/video.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//video-6f0105f397a7074150b51612d8fdd9ba.svg);
 }
 
 .taxi {
-    background-image: url(/koteyka/images/components/advantages/icons/taxi.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//taxi-d408477b94815d0f63d55f03a8bd8df1.svg);
 }
 
 .food {
-    background-image: url(/koteyka/images/components/advantages/icons/food.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//food-6a4d57d89ad93bf1982138745e138790.svg);
 }
 
 .walk {
-    background-image: url(/koteyka/images/components/advantages/icons/walk.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//walk-397e6bec88be2343e1dacec725aa671b.svg);
 }
 
 .veterinarian {
-    background-image: url(/koteyka/images/components/advantages/icons/veterinarian.svg);
+    background-image: url(/koteyka/images/components/advantages/icons//veterinarian-e205549374bdd52179a3d290ca44ea59.svg);
 }
 .rooms {
     margin-top: 140px;
@@ -203,7 +203,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/koteyka/images/components/rooms/icons/fish.svg);
+    background-image: url(/koteyka/images/components/rooms/icons//fish-d94c6ca25a8c694fa88c0db671ad4b37.svg);
     background-repeat: no-repeat;
     width: 484px;
     height: 151px;
@@ -322,7 +322,7 @@ h1 {
     right: 7px;
     width: 36px;
     height: 36px;
-    background-image: url(/koteyka/images/components/rooms/icons/paw.svg);
+    background-image: url(/koteyka/images/components/rooms/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
     content: "";
 }
 
@@ -383,7 +383,7 @@ h1 {
     position: absolute;
     top: -185px;
     right: -130px;
-    background-image: url(/koteyka/images/components/reviews/icons/background-lapa-2.svg);
+    background-image: url(/koteyka/images/components/reviews/icons//background-lapa-2-4349a3cddd67db3b4b384501b4645182.svg);
     background-repeat: no-repeat;
     width: 350px;
     height: 350px;
@@ -421,7 +421,7 @@ h1 {
     background-color: white;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
-    background-image: url(/koteyka/images/components/reviews/icons/“.svg);
+    background-image: url(/koteyka/images/components/reviews/icons//“-cfa37e05106380344672afbe366a690c.svg);
     background-repeat: no-repeat;
     background-position: 35px 35px;
 }
@@ -515,7 +515,7 @@ footer .positioner {
     left: 245px;
     width: 64px;
     height: 116px;
-    background-image: url(/koteyka/images/components/footer/icons/position.svg);
+    background-image: url(/koteyka/images/components/footer/icons//position-2dc3afe967c4e64647c410aa9cf96658.svg);
     background-repeat: no-repeat;
     z-index: 1;
     content: "";
@@ -532,7 +532,7 @@ footer .positioner {
     height: 22px;
     margin: 0;
     padding: 0;
-    background-image: url(/koteyka/images/components/footer/icons/fb.svg);
+    background-image: url(/koteyka/images/components/footer/icons//fb-d03af432f01751af5e593225f405e764.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -543,7 +543,7 @@ footer .positioner {
     left: 42px;
     width: 22px;
     height: 22px;
-    background-image: url(/koteyka/images/components/footer/icons/inst.svg);
+    background-image: url(/koteyka/images/components/footer/icons//inst-632a297014c16ca6b8583db40a4460b2.svg);
     content: "";
 }
 
@@ -553,7 +553,7 @@ footer .positioner {
     left: 84px;
     width: 22px;
     height: 22px;
-    background-image: url(/koteyka/images/components/footer/icons/vk.svg);
+    background-image: url(/koteyka/images/components/footer/icons//vk-970356f06449cf3520961d1ddd2ef8ad.svg);
     content: "";
 }
 
@@ -588,7 +588,7 @@ footer .positioner {
     right: -130px;
     width: 251px;
     height: 285px;
-    background-image: url(/koteyka/images/components/room-info/icons/background-lapa-3.svg);
+    background-image: url(/koteyka/images/components/room-info/icons//background-lapa-3-6f21b922021a66fe4c283ad2b10e5df3.svg);
     background-repeat: no-repeat;
     content: "";
 }
@@ -655,19 +655,19 @@ footer .positioner {
 }
 
 .lounger::before {
-    background-image: url(/koteyka/images/components/room-info/icons/lounger.svg);
+    background-image: url(/koteyka/images/components/room-info/icons//lounger-a294493d99ec9701cccd18aecfe1c6d0.svg);
 }
 
 .house::before {
-    background-image: url(/koteyka/images/components/room-info/icons/house.svg);
+    background-image: url(/koteyka/images/components/room-info/icons//house-3101f017a574ede0b1621039a97875fe.svg);
 }
 
 .game-complex::before {
-    background-image: url("/koteyka/images/components/room-info/icons/game complex.svg");
+    background-image: url("/koteyka/images/components/room-info/icons//game complex-e3ef668b988fb74c9a31a855feef9a0c.svg");
 }
 
 .scratching-post::before {
-    background-image: url("/koteyka/images/components/room-info/icons/scratching post.svg");
+    background-image: url("/koteyka/images/components/room-info/icons//scratching post-8b73f8a81605ad3d025aab1e666d1e42.svg");
 }
 
 
@@ -691,7 +691,7 @@ footer .positioner {
     right: 7px;
     width: 36px;
     height: 36px;
-    background-image: url(/koteyka/images/components/button/icons/paw.svg);
+    background-image: url(/koteyka/images/components/button/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
     content: "";
 }
 .gallery {
