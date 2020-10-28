@@ -480,11 +480,11 @@ footer .positioner {
     display: flex;
     justify-content: center;
     margin-top: 120px;
+    background-color: #fac663; 
 }
 
 .contacts .background {
-    background-color: #fac663;
-    padding: 60px 112px 60px 199px;
+    padding: 60px 93px 60px 199px; 
 }
 
 .background h2 {
@@ -751,5 +751,177 @@ footer .positioner {
     cursor: auto;
 }
 
+
+.select {
+    position: relative;
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
+}
+
+.select::after {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 15px;
+    height: 10px;
+    background-image: url(/koteyka/images/components/catalog-select/icons//select-inactive-bac7c2595918fc2c2c56998a3b7c8fb6.svg);
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.select,
+.select:focus .options .option {
+    transition: all 0.2s ease;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.select:focus .options .option {
+    display: block;
+}
+
+.select .option {
+    box-shadow: none;
+}
+
+.select:focus {
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
+    z-index: 10;
+}
+
+.option {
+    position: relative;
+    display: block;
+    padding: 12px 55px 13px 30px;
+    width: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.desc, .asc {
+    background-position: 20px 17px;
+    background-repeat: no-repeat;
+}
+
+.desc {
+    background-image: url(/koteyka/images/components/catalog-select/icons//arrow-down-b8ce08c9d3585fbc908f7e33983510c9.svg);
+}
+
+.asc {
+    background-image: url(/koteyka/images/components/catalog-select/icons//arrow-up-a403b2d20b0eed9f1be6d0d874acde77.svg);
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: inherit; 
+    z-index: 10;
+}
+
+.option:hover {
+    background-color: lightgray;
+}
+
+.option-toggler {
+    display: none;
+}
+
+.option-toggler:checked + .option {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    display: block !important; 
+}
+
+.options .option {
+    display: none;
+}
+.catalog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 70px;
+}
+
+.catalog-header h1 {
+    font-size: 36px;
+    margin: auto 0;
+}
+
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 215px;
+}
+
+legend {
+    font-size: 16px;
+}
+
+fieldset:first-of-type input {
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+fieldset:first-of-type input:last-of-type {
+    margin: 0;
+}
+
+.reset-filter {
+    width: 205px;
+    margin-top: 37px;
+    padding: 15px 36px 17px 36px;
+    border: 2px solid #FAC663;
+    font-style: 14px;
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.reset-filter:hover {
+    background-color: #ffcd70;
+    color: white;
+}
+
+
+.checkbox {
+    display: inline-block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.checkbox input:checked + span::before {
+    background-image: url(/koteyka/images/components/checkbox/icons//check-968fb6e5ea7fc7668476f1adab730255.svg);
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    content: "";
+}
+
+.checkbox:first-of-type {
+    margin-top: 20px;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox span::before {
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: top;
+    border: 1px solid #e1e1e1;
+    content: "";
+}
 
 

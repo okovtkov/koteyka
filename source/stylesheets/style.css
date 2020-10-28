@@ -9,3 +9,7 @@
 @import "../components/room-info/room-info.css";
 @import "../components/button/button.css";
 @import "../components/gallery/gallery.css";
+@import "../components/catalog-select/catalog-select.css";
+@import "../components/catalog-header/catalog-header.css";
+@import "../components/catalog-filter/catalog-filter.css";
+@import "../components/checkbox/checkbox.css";

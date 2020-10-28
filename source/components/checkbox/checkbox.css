@@ -1,0 +1,30 @@
+.checkbox {
+    display: inline-block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.checkbox input:checked + span::before {
+    background-image: url("./icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    content: "";
+}
+
+.checkbox:first-of-type {
+    margin-top: 20px;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox span::before {
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: top;
+    border: 1px solid #e1e1e1;
+    content: "";
+}
