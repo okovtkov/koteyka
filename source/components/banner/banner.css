@@ -8,7 +8,6 @@
     display: block;
     padding-top: 153px;
     padding-bottom: 153px;
-    /* outline: 2px solid blue; */
 }
 
 .city {
@@ -30,32 +29,6 @@ h1 {
     font-weight: 500;
 }
 
-.banner button {
-    position: relative;
+.banner .booking-button {
     margin-top: 40px;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 63px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.banner button::after {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    background-color: #ff7236;
-    background-image: url("./lapa.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    content: "";
 }

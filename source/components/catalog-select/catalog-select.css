@@ -1,3 +1,16 @@
+.no-chosen,
+.select,
+.option {
+    border-radius: 25px;
+}
+
+.select:focus .no-chosen,
+.select:focus .option,
+.select:focus {
+    border-radius: 0;
+    box-shadow: none; 
+}
+
 .select {
     position: relative;
     box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
@@ -11,16 +24,23 @@
     height: 10px;
     background-image: url("./icons/select-inactive.svg");
     background-repeat: no-repeat;
+    transition: transform 0.2s linear;
+    transform-origin: center;
+    z-index: 3;
     content: "";
 }
 
 .select,
 .select:focus .options .option {
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
 .select:focus {
     outline: none;
+}
+
+.select:focus::after {
+    transform: rotate(180deg) translateY(2px);
 }
 
 .select:focus .options .option {
@@ -65,7 +85,7 @@
     left: 0;
     width: 100%;
     box-shadow: inherit; 
-    z-index: 10;
+    z-index: 2;
 }
 
 .option:hover {

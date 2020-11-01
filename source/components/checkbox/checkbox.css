@@ -1,5 +1,5 @@
 .checkbox {
-    display: inline-block;
+    display: table;
     margin-bottom: 15px;
     cursor: pointer;
 }

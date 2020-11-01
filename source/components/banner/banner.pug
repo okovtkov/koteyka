@@ -1,9 +1,11 @@
+include ../booking-button/booking-button.pug
+
 mixin banner
     <div class="banner">
         <div class="info positioner narrow">
             <span class="city">Санкт-Петербург</span>
             <h1>Котейка</h1>
             <p>Уютная гостиница для котов и кошек</p>
-            <button>Забронировать</button>
+            +booking-button
         </div>
     </div>

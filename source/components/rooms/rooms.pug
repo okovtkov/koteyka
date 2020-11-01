@@ -1,3 +1,5 @@
+include ../booking-button/booking-button.pug
+
 mixin rooms(title)
     <div class="rooms" id="rooms">
         <div class="positioner">
@@ -23,9 +25,7 @@ mixin rooms(title)
                                    | Цена за сутки: 200р.
                                 </li>
                             </ul>
-                            <button>
-                               | Забронировать
-                            </button>
+                            +booking-button("primary")
                     </div>
                 </div>
                 <div class="room">
@@ -43,9 +43,7 @@ mixin rooms(title)
                                | Цена за сутки: 100р.
                             </li>
                         </ul>
-                        <button>
-                           | Забронировать
-                        </button>
+                        +booking-button("primary")
                     </div>
                 </div>
                 <div class="room">
@@ -62,9 +60,7 @@ mixin rooms(title)
                             <li>
                                | Цена за сутки: 200$.
                             </li>
-                            <button>
-                               | Забронировать
-                            </button>
+                            +booking-button("primary")
                         </ul>
                     </div>
                 </div>

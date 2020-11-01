@@ -8,10 +8,13 @@
         include ../components/rooms/rooms.pug
         include ../components/reviews/reviews.pug
         include ../components/footer/footer.pug
+        include ../components/booking/booking.pug
+
     </head>
     <body>
         +header
         <main>
+            +booking
             +banner
             +advantages
             +rooms("Номера")

@@ -1,8 +1,13 @@
+.filter {
+    margin-right: 90px;
+}
+
 fieldset {
     border: none;
     margin: 0;
     padding: 0;
     width: 215px;
+    margin-bottom: 30px;
 }
 
 legend {
@@ -11,24 +16,37 @@ legend {
 
 fieldset:first-of-type input {
     width: 100px;
+    height: 24px;
     margin-right: 10px;
     margin-top: 20px;
-    margin-bottom: 35px;
+    outline: none;
 }
 
 fieldset:first-of-type input:last-of-type {
     margin: 0;
 }
 
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply,
 .reset-filter {
-    width: 205px;
-    margin-top: 37px;
+    width: 185px;
+    margin-top: 15px;
     padding: 15px 36px 17px 36px;
     border: 2px solid #FAC663;
+    outline: none;
     font-style: 14px;
     border-radius: 25px;
+    background-color: transparent;
     transition: background-color 0.2s ease;
     cursor: pointer;
+}
+
+.apply {
+    background-color: #FAC663;
 }
 
 .reset-filter:hover {

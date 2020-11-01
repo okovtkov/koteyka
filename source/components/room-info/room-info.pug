@@ -1,5 +1,5 @@
 include ../gallery/gallery.pug
-include ../button/button.pug
+include ../booking-button/booking-button.pug
 
 mixin room-info
     <div class="room-info">
@@ -17,7 +17,7 @@ mixin room-info
                     <li class="scratching-post">Когтеточка</li>
                 </ul>
                 <p>Цена за сутки: <span>600р.</span></p>
-                +button
+                +booking-button("primary")
             </div>
         </div>
     </div>

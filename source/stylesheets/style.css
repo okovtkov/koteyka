@@ -7,9 +7,14 @@
 @import "../components/reviews/reviews.css";
 @import "../components/footer/footer.css";
 @import "../components/room-info/room-info.css";
-@import "../components/button/button.css";
 @import "../components/gallery/gallery.css";
 @import "../components/catalog-select/catalog-select.css";
 @import "../components/catalog-header/catalog-header.css";
 @import "../components/catalog-filter/catalog-filter.css";
 @import "../components/checkbox/checkbox.css";
+@import "../components/room-card/room-card.css";
+@import "../components/catalog-rooms/catalog-rooms.css";
+@import "../components/catalog-container/catalog-container.css";
+@import "../components/banner-2/banner-2.css";
+@import "../components/booking/booking.css";
+@import "../components/booking-button/booking-button.css";

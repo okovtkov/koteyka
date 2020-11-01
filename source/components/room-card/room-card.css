@@ -1,0 +1,75 @@
+.room-option {
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+.room-option .cat {
+    display: block;
+    margin: -1px;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.card-info .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.card-info dt,
+.card-info dd {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.card-info dt,
+.card-info dd {
+    font-size: 14px;
+}
+
+.card-info .size,
+.card-info .area,
+.card-info .equipment {
+    margin-bottom: 11px;
+    margin-top: 0;
+}
+
+.card-info .equipment dt,
+.card-info .price dt {
+    display: inline-block;
+    margin-top: 0;
+    padding-right: 11px;
+}
+
+.card-info .equipment dd img {
+    padding-right: 6px;
+}
+
+.card-info img:last-of-type {
+    padding: 0;
+}
+
+.card-info .price {
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.card-info .price dd {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-option .booking-button {
+    width: calc(100% - 20px);
+}

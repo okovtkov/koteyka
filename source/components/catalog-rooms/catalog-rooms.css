@@ -1,0 +1,3 @@
+.catalog-rooms .room-option:not(:nth-of-type(3n)) {
+    margin-right: 24px;
+}

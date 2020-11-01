@@ -7,10 +7,13 @@
         include ../components/footer/footer.pug
         include ../components/rooms/rooms.pug
         include ../components/room-info/room-info.pug
+        include ../components/booking/booking.pug
+
     </head>
     <body>
         +header
         <main>
+            +booking
             +room-info
             +rooms("Другие номера")
         </main>

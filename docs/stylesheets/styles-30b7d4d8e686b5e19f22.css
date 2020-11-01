@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
+    color: black;
 }
 
 h1, h2, h3,
@@ -56,7 +57,6 @@ nav a {
     display: block;
     padding-top: 153px;
     padding-bottom: 153px;
-    /* outline: 2px solid blue; */
 }
 
 .city {
@@ -78,34 +78,8 @@ h1 {
     font-weight: 500;
 }
 
-.banner button {
-    position: relative;
+.banner .booking-button {
     margin-top: 40px;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 63px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.banner button::after {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    background-color: #ff7236;
-    background-image: url(/koteyka/images/components/banner//lapa-91edaa9306e5910ab5702b8c22577135.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    content: "";
 }
 .advantages {
     position: relative;
@@ -301,29 +275,8 @@ h1 {
     content: "";
 }
 
-.room .info button {
-    position: relative;
+.rooms .booking-button {
     margin: 10px 0 40px 100px;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 63px;
-    border-radius: 25px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    background-color: #ff7236;
-    cursor: pointer;
-}
-
-.room .info button::after {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 36px;
-    height: 36px;
-    background-image: url(/koteyka/images/components/rooms/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
-    content: "";
 }
 
 .rooms .positioner .radio-button {
@@ -671,29 +624,6 @@ footer .positioner {
 }
 
 
-.reservation {
-    position: relative;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 63px;
-    border-radius: 25px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    background-color: #ff7236;
-    cursor: pointer;
-}
-
-.reservation::after {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 36px;
-    height: 36px;
-    background-image: url(/koteyka/images/components/button/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
-    content: "";
-}
 .gallery {
     position: relative;
     width: 600px;
@@ -752,6 +682,19 @@ footer .positioner {
 }
 
 
+.no-chosen,
+.select,
+.option {
+    border-radius: 25px;
+}
+
+.select:focus .no-chosen,
+.select:focus .option,
+.select:focus {
+    border-radius: 0;
+    box-shadow: none; 
+}
+
 .select {
     position: relative;
     box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
@@ -765,16 +708,23 @@ footer .positioner {
     height: 10px;
     background-image: url(/koteyka/images/components/catalog-select/icons//select-inactive-bac7c2595918fc2c2c56998a3b7c8fb6.svg);
     background-repeat: no-repeat;
+    transition: transform 0.2s linear;
+    transform-origin: center;
+    z-index: 3;
     content: "";
 }
 
 .select,
 .select:focus .options .option {
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
 .select:focus {
     outline: none;
+}
+
+.select:focus::after {
+    transform: rotate(180deg) translateY(2px);
 }
 
 .select:focus .options .option {
@@ -819,7 +769,7 @@ footer .positioner {
     left: 0;
     width: 100%;
     box-shadow: inherit; 
-    z-index: 10;
+    z-index: 2;
 }
 
 .option:hover {
@@ -845,7 +795,7 @@ footer .positioner {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 35px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .catalog-header h1 {
@@ -854,11 +804,16 @@ footer .positioner {
 }
 
 
+.filter {
+    margin-right: 90px;
+}
+
 fieldset {
     border: none;
     margin: 0;
     padding: 0;
     width: 215px;
+    margin-bottom: 30px;
 }
 
 legend {
@@ -867,24 +822,37 @@ legend {
 
 fieldset:first-of-type input {
     width: 100px;
+    height: 24px;
     margin-right: 10px;
     margin-top: 20px;
-    margin-bottom: 35px;
+    outline: none;
 }
 
 fieldset:first-of-type input:last-of-type {
     margin: 0;
 }
 
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply,
 .reset-filter {
-    width: 205px;
-    margin-top: 37px;
+    width: 185px;
+    margin-top: 15px;
     padding: 15px 36px 17px 36px;
     border: 2px solid #FAC663;
+    outline: none;
     font-style: 14px;
     border-radius: 25px;
+    background-color: transparent;
     transition: background-color 0.2s ease;
     cursor: pointer;
+}
+
+.apply {
+    background-color: #FAC663;
 }
 
 .reset-filter:hover {
@@ -894,7 +862,7 @@ fieldset:first-of-type input:last-of-type {
 
 
 .checkbox {
-    display: inline-block;
+    display: table;
     margin-bottom: 15px;
     cursor: pointer;
 }
@@ -924,4 +892,191 @@ fieldset:first-of-type input:last-of-type {
     content: "";
 }
 
+.room-option {
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+.room-option .cat {
+    display: block;
+    margin: -1px;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.card-info .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.card-info dt,
+.card-info dd {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.card-info dt,
+.card-info dd {
+    font-size: 14px;
+}
+
+.card-info .size,
+.card-info .area,
+.card-info .equipment {
+    margin-bottom: 11px;
+    margin-top: 0;
+}
+
+.card-info .equipment dt,
+.card-info .price dt {
+    display: inline-block;
+    margin-top: 0;
+    padding-right: 11px;
+}
+
+.card-info .equipment dd img {
+    padding-right: 6px;
+}
+
+.card-info img:last-of-type {
+    padding: 0;
+}
+
+.card-info .price {
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.card-info .price dd {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-option .booking-button {
+    width: calc(100% - 20px);
+}
+.catalog-rooms .room-option:not(:nth-of-type(3n)) {
+    margin-right: 24px;
+}
+.container {
+    display: flex;
+}
+.banner-2 .positioner {
+    position: relative;
+    height: 379px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    padding-top: 66px;
+    background-image: url("/img/banner-2.jpg");
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+}
+
+.banner-2 .positioner::before {
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    width: 240px;
+    height: 240px;
+    padding: auto;
+    background-image: url(/koteyka/images/components/banner-2/icons//paw-banner-89dfec42cdf3b3a7719e4f2ab5da028b.svg);
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.info-banner {
+    margin-left: 270px;
+}
+
+.free-day {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Rubik, sans-serif;
+}
+
+.free-day span {
+    display: block;
+    font-size: 56px;
+    margin: 0;
+    line-height: 0.85;
+    padding: 0;
+}
+
+.stock {
+    width: 260px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.info-banner .booking-button {
+    margin-top: 35px;
+}
+.booking {
+    display: none;
+}
+
+.booking:target {
+    display: block;
+}
+.booking-button {
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 63px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.booking-button::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #ff7236;
+    background-image: url(/koteyka/images/components/booking-button/icons//lapa-91edaa9306e5910ab5702b8c22577135.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    content: "";
+}
+
+.booking-button.primary {
+    background-color: #FF7236;
+    box-shadow: none;
+    color: #fff;
+}
+
+.booking-button.primary::after {
+    background-color: #ffffff;
+    background-image: url(/koteyka/images/components/booking-button/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
+}
 

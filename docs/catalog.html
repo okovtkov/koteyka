@@ -2,18 +2,19 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="/koteyka/stylesheets/styles-9e9b617c22f545243977.css" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="/koteyka/stylesheets/styles-30b7d4d8e686b5e19f22.css" rel="stylesheet"></head>
 <body><header class="positioner">
-<a href="/koteyka/" class="logo">
+<a href="/koteyka/index.html" class="logo">
 <img src="/koteyka/img/logo.svg" alt="логотип">
 </a>
 <nav>
-<a href="#advantages">Почему мы?</a>
-<a href="/koteyka/room.html">Номера</a>
-<a href="#reviews">Отзывы</a>
+<a href="/koteyka/index.html#advantages">Почему мы?</a>
+<a href="/koteyka/catalog.html">Номера</a>
+<a href="/koteyka/index.html#reviews">Отзывы</a>
 <a href="#contacts">Как нас найти</a>
 </nav>
-</header><main><div class="catalog-header positioner">
+</header><main>
+<div id="booking" class="booking">lox</div> <div class="catalog-header positioner">
 <h1>Наши номера</h1><div class="select" tabindex="0">
 <div class="option no-chosen">Не выбрано</div>
 <div class="options">
@@ -34,60 +35,222 @@
 <div class="option desc">По цене</div>
 </label>
 </div>
-</div></div><div class="positioner"><fieldset>
+</div></div><div class="positioner container"><form class="filter">
+<fieldset>
 <legend>Цена за сутки, ₽</legend>
 <input type="text" name="from" placeholder="от 100">
 <input type="text" name="to" placeholder="до 600">
 </fieldset>
-<fieldset>
+<fieldset class="area">
 <legend>Площадь</legend><label class="checkbox">
 <input type="checkbox" name="area">
 <span>0,63 м2</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>0,90 м2</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>1,13 м2</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>1,56 м2</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>2,56 м2</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>2,88 м2</span>
-</label>
-<div></div></fieldset>
-<fieldset>
+</label></fieldset>
+<fieldset class="equipment">
 <legend>Оснащение номера</legend><label class="checkbox">
 <input type="checkbox" name="area">
 <span>Пустой номер</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>Лежак</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>Когтеточка</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>Игровой комплекс</span>
-</label>
-<div></div><label class="checkbox">
+</label><label class="checkbox">
 <input type="checkbox" name="area">
 <span>Домик</span>
-</label>
-<div></div></fieldset>
-<div class="reset-filter">Сбросить фильтр</div></main>
+</label></fieldset>
+<div class="filter-buttons">
+<button class="apply">Применить</button>
+<button type="reset" class="reset-filter">Сбросить фильтр</button>
+</div>
+</form><div class="catalog-rooms"><div class="room-option">
+<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
+<div class="card-info">
+<a href="/koteyka/room.html" class="title">Эконом</a>
+<dl>
+<div class="size">
+<dt>Размеры (ШхГхВ) - </dt>
+<dd>90х70х180 см</dd>
+</div>
+<div class="area">
+<dt>Площадь - </dt>
+<dd>0,63 м2</dd>
+</div>
+<div class="equipment">
+<dt>Оснащение номера</dt>
+<dd>
+<img src="/koteyka/img/equipment-lejak.jpg" alt="лежак">
+<img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка">
+<img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс">
+<img src="/koteyka/img/equipment-house.jpg" alt="домик">
+</dd>
+</div>
+<div class="price">
+<dt>Цена за сутки:</dt>
+<dd>100₽</dd>
+</div>
+</dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
+</div><div class="room-option">
+<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
+<div class="card-info">
+<a href="/koteyka/room.html" class="title">Эконом</a>
+<dl>
+<div class="size">
+<dt>Размеры (ШхГхВ) - </dt>
+<dd>90х70х180 см</dd>
+</div>
+<div class="area">
+<dt>Площадь - </dt>
+<dd>0,63 м2</dd>
+</div>
+<div class="equipment">
+<dt>Оснащение номера</dt>
+<dd>
+<img src="/koteyka/img/equipment-lejak.jpg" alt="лежак">
+<img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка">
+<img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс">
+<img src="/koteyka/img/equipment-house.jpg" alt="домик">
+</dd>
+</div>
+<div class="price">
+<dt>Цена за сутки:</dt>
+<dd>100₽</dd>
+</div>
+</dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
+</div><div class="room-option">
+<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
+<div class="card-info">
+<a href="/koteyka/room.html" class="title">Эконом</a>
+<dl>
+<div class="size">
+<dt>Размеры (ШхГхВ) - </dt>
+<dd>90х70х180 см</dd>
+</div>
+<div class="area">
+<dt>Площадь - </dt>
+<dd>0,63 м2</dd>
+</div>
+<div class="equipment">
+<dt>Оснащение номера</dt>
+<dd>
+<img src="/koteyka/img/equipment-lejak.jpg" alt="лежак">
+<img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка">
+<img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс">
+<img src="/koteyka/img/equipment-house.jpg" alt="домик">
+</dd>
+</div>
+<div class="price">
+<dt>Цена за сутки:</dt>
+<dd>100₽</dd>
+</div>
+</dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
+</div><div class="room-option">
+<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
+<div class="card-info">
+<a href="/koteyka/room.html" class="title">Эконом</a>
+<dl>
+<div class="size">
+<dt>Размеры (ШхГхВ) - </dt>
+<dd>90х70х180 см</dd>
+</div>
+<div class="area">
+<dt>Площадь - </dt>
+<dd>0,63 м2</dd>
+</div>
+<div class="equipment">
+<dt>Оснащение номера</dt>
+<dd>
+<img src="/koteyka/img/equipment-lejak.jpg" alt="лежак">
+<img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка">
+<img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс">
+<img src="/koteyka/img/equipment-house.jpg" alt="домик">
+</dd>
+</div>
+<div class="price">
+<dt>Цена за сутки:</dt>
+<dd>100₽</dd>
+</div>
+</dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
+</div><div class="room-option">
+<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
+<div class="card-info">
+<a href="/koteyka/room.html" class="title">Эконом</a>
+<dl>
+<div class="size">
+<dt>Размеры (ШхГхВ) - </dt>
+<dd>90х70х180 см</dd>
+</div>
+<div class="area">
+<dt>Площадь - </dt>
+<dd>0,63 м2</dd>
+</div>
+<div class="equipment">
+<dt>Оснащение номера</dt>
+<dd>
+<img src="/koteyka/img/equipment-lejak.jpg" alt="лежак">
+<img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка">
+<img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс">
+<img src="/koteyka/img/equipment-house.jpg" alt="домик">
+</dd>
+</div>
+<div class="price">
+<dt>Цена за сутки:</dt>
+<dd>100₽</dd>
+</div>
+</dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
+</div><div class="room-option">
+<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
+<div class="card-info">
+<a href="/koteyka/room.html" class="title">Эконом</a>
+<dl>
+<div class="size">
+<dt>Размеры (ШхГхВ) - </dt>
+<dd>90х70х180 см</dd>
+</div>
+<div class="area">
+<dt>Площадь - </dt>
+<dd>0,63 м2</dd>
+</div>
+<div class="equipment">
+<dt>Оснащение номера</dt>
+<dd>
+<img src="/koteyka/img/equipment-lejak.jpg" alt="лежак">
+<img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка">
+<img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс">
+<img src="/koteyka/img/equipment-house.jpg" alt="домик">
+</dd>
+</div>
+<div class="price">
+<dt>Цена за сутки:</dt>
+<dd>100₽</dd>
+</div>
+</dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
+</div></div> </div><div class="banner-2">
+<div class="positioner">
+<div class="info-banner">
+<p class="free-day">Каждый 7-й день <span>бесплатно!</span></p>
+<p class="stock">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p><a class="booking-button " href="#booking">Забронировать</a></div>
+</div>
+</div></main>
 <footer>
 <div class="contacts" id="contacts">
 <div class="background">
@@ -106,18 +269,18 @@
 <img src="/koteyka/img/map.jpg" alt="карта">
 </div>
 </div><div class="positioner">
-<a href="/koteyka/" class="logo">
+<a href="/koteyka/index.html" class="logo">
 <img src="/koteyka/img/logo.svg" alt="логотип">
 </a>
 <nav>
-<a href="#advantages">Почему мы?</a>
-<a href="/koteyka/room.html">Номера</a>
-<a href="#reviews">Отзывы</a>
+<a href="/koteyka/index.html#advantages">Почему мы?</a>
+<a href="/koteyka/catalog.html">Номера</a>
+<a href="/koteyka/index.html#reviews">Отзывы</a>
 <a href="#contacts">Как нас найти</a>
 </nav>
 </div><div class="privacy-policy">
 <div class="positioner">© 2019 Все права защищены<span>Политика конфиденциальности</span>
 </div>
 </div>
-</footer><script src="/koteyka/scripts/styles-0861a54a127e749f148d.js"></script></body>
+</footer><script src="/koteyka/scripts/styles-b527ceaf7b36c8d473e3.js"></script></body>
 </html>

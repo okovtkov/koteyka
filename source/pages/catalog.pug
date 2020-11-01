@@ -7,13 +7,17 @@
         include ../components/footer/footer.pug
         include ../components/catalog-header/catalog-header.pug
         include ../components/catalog-container/catalog-container.pug
+        include ../components/banner-2/banner-2.pug
+        include ../components/booking/booking.pug
 
     </head>
     <body>
         +header
         <main>
+            +booking
             +catalog-header
             +catalog-container
+            +banner-2
         </main>
         +footer
     </body>

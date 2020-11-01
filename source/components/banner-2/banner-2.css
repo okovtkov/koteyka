@@ -1,0 +1,55 @@
+.banner-2 .positioner {
+    position: relative;
+    height: 379px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    padding-top: 66px;
+    background-image: url("/img/banner-2.jpg");
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+}
+
+.banner-2 .positioner::before {
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    width: 240px;
+    height: 240px;
+    padding: auto;
+    background-image: url("./icons/paw-banner.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.info-banner {
+    margin-left: 270px;
+}
+
+.free-day {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Rubik, sans-serif;
+}
+
+.free-day span {
+    display: block;
+    font-size: 56px;
+    margin: 0;
+    line-height: 0.85;
+    padding: 0;
+}
+
+.stock {
+    width: 260px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.info-banner .booking-button {
+    margin-top: 35px;
+}

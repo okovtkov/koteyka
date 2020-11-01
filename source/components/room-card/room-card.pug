@@ -1,0 +1,34 @@
+include ../booking-button/booking-button.pug
+
+mixin room-card
+    <div class="room-option">
+        <img src="/img/econom-room.jpg" alt="номер эконом" class="cat">
+        <div class="card-info">
+            <a href="/room.html" class="title">Эконом</a>
+            <dl>
+                <div class="size">
+                    <dt>Размеры (ШхГхВ) - </dt>
+                    <dd>90х70х180 см</dd>
+                </div>
+                <div class="area">
+                    <dt>Площадь - </dt>
+                    <dd>0,63 м2</dd>
+                </div>
+                <div class="equipment">
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <img src="/img/equipment-lejak.jpg" alt="лежак">
+                        <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка">
+                        <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс">
+                        <img src="/img/equipment-house.jpg" alt="домик">
+                    </dd>
+                </div>
+                <div class="price">
+                    <dt>Цена за сутки:</dt>
+                    <dd>100₽</dd>
+                </div>
+            </dl>
+            +booking-button("primary")
+        </div>
+    </div>
+    

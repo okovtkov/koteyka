@@ -1,0 +1,7 @@
+.booking {
+    display: none;
+}
+
+.booking:target {
+    display: block;
+}

@@ -1,0 +1,44 @@
+.booking-button {
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 63px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.booking-button::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #ff7236;
+    background-image: url("./icons/lapa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    content: "";
+}
+
+.booking-button.primary {
+    background-color: #FF7236;
+    box-shadow: none;
+    color: #fff;
+}
+
+.booking-button.primary::after {
+    background-color: #ffffff;
+    background-image: url("./icons/paw.svg");
+}
