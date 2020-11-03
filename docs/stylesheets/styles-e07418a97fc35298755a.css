@@ -3,6 +3,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     font-family: "Lato", sans-serif;
     color: black;
@@ -1030,11 +1031,119 @@ fieldset:first-of-type input:last-of-type {
 }
 .booking {
     display: none;
+    z-index: 11;
 }
 
 .booking:target {
-    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
+
+.room-reservation {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 70px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url("/koteyka/images/components/booking/icons//paw (1)-ea5bc1fe99bcff081d4743a85fdd6126.svg");
+    background-position: -45px -45px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+.close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(/koteyka/images/components/booking/icons//close-9b5e922fe3ce0873162efb172514c395.svg);
+    top: 40px;
+    right: 40px;
+}
+
+.room-reservation h2 {
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.room-reservation input {
+    display: block;
+    width: 430px;
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.room-reservation p,
+.room-reservation .date-from,
+.room-reservation .date-to {
+    display: inline-block;
+}
+
+.room-reservation .date {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.date input {
+    display: inline-block;
+    margin: 0;
+    width: 134px;
+    font-size: 16px;
+}
+
+.date .date-from,
+.date .date-to {
+    position: relative;
+}
+
+.date-from {
+    padding-left: 35px;
+}
+
+.date-to {
+    padding-left: 31px;
+}
+
+.date-from::before {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 16px;
+    content: "с";
+}
+
+.date-to::before {
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    font-size: 16px;
+    content: "до";
+}
+
+.date-from input, 
+.date-to input {
+    padding: 15px 16px;
+}
+
+ .send {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+ }
 .booking-button {
     position: relative;
     display: inline-block;
@@ -1078,5 +1187,12 @@ fieldset:first-of-type input:last-of-type {
 .booking-button.primary::after {
     background-color: #ffffff;
     background-image: url(/koteyka/images/components/booking-button/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
+}
+.complete {
+    display: block;
+}
+
+.booking-complete {
+    outline: 1px solid red;
 }
 

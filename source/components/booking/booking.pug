@@ -1,4 +1,27 @@
+include ../booking-button/booking-button.pug
+
 mixin booking 
     <div id="booking" class="booking">
-        | lox
+        <form class="room-reservation">
+            <a href="#">
+                <div class="close"></div>
+            </a>
+            <h2>Забронировать номер</h2>
+            <input type="text" class="name" placeholder="Ваше имя">
+            <input type="text" class="pet-name" placeholder="Имя Питомца">
+            <input type="tel" class="tel" placeholder="Телефон">
+            <input type="email" class="email" placeholder="E-mail">
+            <div class="date">
+                <p class="arrival">Дата заезда</p>
+                <div class="date-from">
+                    <input type="date" placeholder="хх.хх.хххх">
+                </div>
+                <div class="date-to">
+                    <input type="date" placeholder="хх.хх.хххх">
+                </div>
+            </div>
+            <div class="send">
+                +booking-button("primary", "Отправить заявку")(href="#complete")
+            </div>
+        </form>
     </div> 

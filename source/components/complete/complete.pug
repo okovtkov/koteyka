@@ -1,0 +1,13 @@
+include ../booking-button/booking-button.pug
+
+mixin complete
+    <div class="complete" id="complete">
+        <div class="booking-complete">
+            <a href="#">
+                <div class="close"></div>
+            </a>
+            <h2>Спасибо за заявку!</h2>
+            <p>Мы свяжимся с Вами в ближайшее время</p>
+            +booking-button("Ок")(href="#")
+        </div>
+    </div>

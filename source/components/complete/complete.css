@@ -1,0 +1,7 @@
+.complete {
+    display: block;
+}
+
+.booking-complete {
+    outline: 1px solid red;
+}
