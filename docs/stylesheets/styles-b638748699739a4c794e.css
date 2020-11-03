@@ -1031,7 +1031,6 @@ fieldset:first-of-type input:last-of-type {
 }
 .booking {
     display: none;
-    z-index: 11;
 }
 
 .booking:target {
@@ -1043,8 +1042,8 @@ fieldset:first-of-type input:last-of-type {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+    z-index: 11;
 }
 
 .room-reservation {
@@ -1189,10 +1188,72 @@ fieldset:first-of-type input:last-of-type {
     background-image: url(/koteyka/images/components/booking-button/icons//paw-203171d8e0d540b651cbb55f8780e5e4.svg);
 }
 .complete {
-    display: block;
+    display: none;
+}
+
+.complete:target {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 12;
 }
 
 .booking-complete {
-    outline: 1px solid red;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 43px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    background-color: white;
+}
+
+.booking-complete::after {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: -45px;
+    left: -45px;
+    background-image: url("/koteyka/images/components/booking/icons//paw (1)-ea5bc1fe99bcff081d4743a85fdd6126.svg");
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    content: "";
+}
+
+.booking-complete .close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 18px;
+    height: 18px;
+}
+
+.booking-complete h2 {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.booking-complete p {
+    margin-left: 132px;
+    margin-right: 132px;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.booking-complete .booking-button {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
