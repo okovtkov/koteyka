@@ -1,0 +1,24 @@
+include ../social-networks/social-networks.pug
+
+mixin contacts
+    <article class="contacts" id="contacts">
+        <div class="contacts__content">
+            <h2 class="contacts__title">Как нас найти</h2>
+            <dl>
+                <dt class="contacts__key">Адрес</dt>
+                <dd class="contacts__value">Санкт-Петербург,<br>
+                | ул Большая Конюшенная, д 19</dd>
+                <dt class="contacts__key">Режим работы</dt>
+                <dd class="contacts__value">Ежедневно, с 9:00 до 20:00</dd>
+                <dt class="contacts__key">Телефон</dt>
+                <dd class="contacts__value">8 (800) 333-55-99</dd>
+                <dt class="contacts__key">E-mail</dt>
+                <dd class="contacts__value">info@cat-hotel.ru</dd>
+                <dt class="contacts__key">Социальные сети</dt>
+                +social-networks
+            </dl>
+        </div>
+        <div class="contacts__map">
+            <img src="/img/map.jpg" alt="карта" class="contacts__map-img">
+        </div>
+    </article>

@@ -1,12 +1,12 @@
 mixin header(tag="header")
-    <#{tag} class="positioner">
-        <a href="/index.html" class="logo">
-            <img src="/img/logo.svg" alt="логотип">
+    <#{tag} class="header positioner">
+        <a href="/index.html" class="header__logo">
+            <img src="/img/logo.svg" alt="логотип" class="header__img">
         </a>
         <nav>
-            <a href="/index.html#advantages">Почему мы?</a>
-            <a href="/catalog.html">Номера</a>
-            <a href="/index.html#reviews">Отзывы</a>
-            <a href="#contacts">Как нас найти</a>
+            <a href="/index.html#advantages" class="header__link">Почему мы?</a>
+            <a href="/catalog.html" class="header__link">Номера</a>
+            <a href="/index.html#reviews" class="header__link">Отзывы</a>
+            <a href="#contacts" class="header__link">Как нас найти</a>
         </nav>
     </#{tag}>
