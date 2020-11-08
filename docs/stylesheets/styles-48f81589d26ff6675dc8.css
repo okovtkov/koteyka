@@ -102,21 +102,21 @@ h4, h5, h6 {
     content: "";    
 }
 
-.advantages h2 {
+.advantages__title_main {
     margin: 140px 0 50px 0;
     padding: 0;
     font-size: 36px;
     text-align: center;
 }
 
-.advantages ul {
+.advantages__ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
 }
 
-.advantages li {
+.advantages__list {
     position: relative;
     width: 370px;
     margin-top: 20px;
@@ -129,38 +129,38 @@ h4, h5, h6 {
     background-position: 30px 30px;
 }
 
-.advantages h3 {
+.advantages__title {
     margin-bottom: 20px;
     margin-top: 0;
 }
 
-.advantages ul li p {
+.advantages__desc {
     width: 90%;
     margin: 0;
     padding: 0;
 }
 
-.temperature {
+.advantages__temperature {
     background-image: url(/koteyka/images/components/advantages/icons//temperature-92130f216e3e0fd200b14c9e8b2666ba.svg);
 }
 
-.video {
+.advantages__video {
     background-image: url(/koteyka/images/components/advantages/icons//video-6f0105f397a7074150b51612d8fdd9ba.svg);
 }
 
-.taxi {
+.advantages__taxi {
     background-image: url(/koteyka/images/components/advantages/icons//taxi-d408477b94815d0f63d55f03a8bd8df1.svg);
 }
 
-.food {
+.advantages__food {
     background-image: url(/koteyka/images/components/advantages/icons//food-6a4d57d89ad93bf1982138745e138790.svg);
 }
 
-.walk {
+.advantages__walk {
     background-image: url(/koteyka/images/components/advantages/icons//walk-397e6bec88be2343e1dacec725aa671b.svg);
 }
 
-.veterinarian {
+.advantages__veterinarian {
     background-image: url(/koteyka/images/components/advantages/icons//veterinarian-e205549374bdd52179a3d290ca44ea59.svg);
 }
 .rooms {

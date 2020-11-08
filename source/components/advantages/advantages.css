@@ -19,21 +19,21 @@
     content: "";    
 }
 
-.advantages h2 {
+.advantages__title_main {
     margin: 140px 0 50px 0;
     padding: 0;
     font-size: 36px;
     text-align: center;
 }
 
-.advantages ul {
+.advantages__ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
 }
 
-.advantages li {
+.advantages__list {
     position: relative;
     width: 370px;
     margin-top: 20px;
@@ -46,37 +46,37 @@
     background-position: 30px 30px;
 }
 
-.advantages h3 {
+.advantages__title {
     margin-bottom: 20px;
     margin-top: 0;
 }
 
-.advantages ul li p {
+.advantages__desc {
     width: 90%;
     margin: 0;
     padding: 0;
 }
 
-.temperature {
+.advantages__temperature {
     background-image: url("./icons/temperature.svg");
 }
 
-.video {
+.advantages__video {
     background-image: url("./icons/video.svg");
 }
 
-.taxi {
+.advantages__taxi {
     background-image: url("./icons/taxi.svg");
 }
 
-.food {
+.advantages__food {
     background-image: url("./icons/food.svg");
 }
 
-.walk {
+.advantages__walk {
     background-image: url("./icons/walk.svg");
 }
 
-.veterinarian {
+.advantages__veterinarian {
     background-image: url("./icons/veterinarian.svg");
 }
