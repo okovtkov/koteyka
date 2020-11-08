@@ -19,8 +19,10 @@ h4, h5, h6 {
     margin-right: auto;
 }
 
-.positioner.narrow {
+.positioner_narrow {
     width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header {
     display: flex;
@@ -51,17 +53,17 @@ h4, h5, h6 {
     background-repeat: no-repeat;
 }
 
-.banner .info {
+.banner__info {
     display: block;
     padding-top: 153px;
     padding-bottom: 153px;
 }
 
-.city {
+.banner__city {
     font-size: 14px;
 }
 
-h1 {
+.banner__title {
     margin: 15px 0 25px;
     padding: 0;
     font-size: 62px;
@@ -69,14 +71,14 @@ h1 {
     line-height: 1;
 }
 
-.banner p {
+.banner__desc {
     margin: 0;
     padding: 0;
     font-size: 20px;
     font-weight: 500;
 }
 
-.banner .booking-button {
+.banner__button {
     margin-top: 40px;
 }
 .advantages {

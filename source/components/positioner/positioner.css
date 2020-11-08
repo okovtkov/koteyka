@@ -4,6 +4,8 @@
     margin-right: auto;
 }
 
-.positioner.narrow {
+.positioner_narrow {
     width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
 }
