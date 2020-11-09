@@ -2,13 +2,13 @@
     margin-top: 140px;
 }
 
-.rooms .positioner {
+.rooms__positioner {
     position: relative;
     overflow: hidden;
     padding-bottom: 20px;
 }
 
-.rooms .positioner::before {
+.rooms__positioner::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,12 +20,12 @@
     content: "";
 }
 
-.rooms .positioner input {
+.rooms__slider {
     display: none;
 }
 
-.positioner .left,
-.positioner .right { 
+.rooms__button_prev,
+.rooms__button_next { 
     position: absolute;
     bottom: 20px;
     width: 36px;
@@ -39,58 +39,58 @@
     cursor: pointer;
 }
 
-.positioner .right {
+.rooms__button_next {
     left: 1100px;
 }
 
-.positioner .left {
+.rooms__button_prev {
     left: 1049px;
 }
 
-.rooms .positioner h2 {
+.rooms__title_main {
     margin: 0 0 70px 0;
     padding: 0;
     text-align: center;
 }
 
-.rooms .positioner .slide {
+.slide {
     display: flex;
     width: 300%;
     transition: transform 1s ease;
 }
 
-.rooms .positioner .room {
+.slide__room {
     display: flex;
     align-items: center;
 }
 
-.rooms .positioner .room img {
+.slide__img {
     width: 600px;
     height: 404px;
     border-radius: 10px;
     margin-left: 168px;
 }
 
-.room .info {
+.slide__info {
     margin-left: -70px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.room .info h3 {
+.slide__title {
     padding-left: 100px;
     padding-top: 40px; 
     margin: 0;
 }
 
-.room .info ul {
+.slide__ul {
     padding: 0;
     margin-top: 30px;
     margin-bottom: 0;
 }
 
-.room .info ul li {
+.slide__list {
     position: relative;
     padding-right: 80px;
     padding-left: 121px;
@@ -99,7 +99,7 @@
     list-style: none;
 }
 
-.room .info ul li::before {
+.slide__list::before {
     position: absolute;
     top: 3px;
     left: 100px;
@@ -110,17 +110,17 @@
     content: "";
 }
 
-.rooms .booking-button {
+.slide__booking-button {
     margin: 10px 0 40px 100px;
 }
 
-.rooms .positioner .radio-button {
+.rooms__radio-button {
     display: flex;
     justify-content: center;
     margin-top: 55px;
 }
 
-.rooms .positioner label {
+.rooms__label {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -141,8 +141,8 @@
     transform: translate(-2340px);
 }
 
-#btn-1:checked ~ .radio-button label[for="btn-1"],
-#btn-2:checked ~ .radio-button label[for="btn-2"],
-#btn-3:checked ~ .radio-button label[for="btn-3"] {
+#btn-1:checked ~ .rooms__radio-button .rooms__label_btn-1,
+#btn-2:checked ~ .rooms__radio-button .rooms__label_btn-2,
+#btn-3:checked ~ .rooms__radio-button .rooms__label_btn-3 {
     background-color: #ff7236;
 } 
