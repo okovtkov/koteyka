@@ -1,14 +1,11 @@
 .rooms {
-    margin-top: 140px;
-}
-
-.rooms__positioner {
     position: relative;
+    margin-top: 140px;
     overflow: hidden;
     padding-bottom: 20px;
 }
 
-.rooms__positioner::before {
+.rooms::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,77 +17,53 @@
     content: "";
 }
 
-.rooms__slider {
-    display: none;
-}
-
-.rooms__button_prev,
-.rooms__button_next { 
-    position: absolute;
-    bottom: 20px;
-    width: 36px;
-    height: 36px;
-    background-color: white;
-    border-radius: 50%;
-    border: none;
-    color: #ff7236;
-    font-weight: bold;
-    box-shadow: 0px 0px 25px rgba(161, 161, 161, 0.25);
-    cursor: pointer;
-}
-
-.rooms__button_next {
-    left: 1100px;
-}
-
-.rooms__button_prev {
-    left: 1049px;
-}
-
 .rooms__title_main {
     margin: 0 0 70px 0;
     padding: 0;
     text-align: center;
 }
 
-.slide {
+.rooms__list {
     display: flex;
     width: 300%;
     transition: transform 1s ease;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.slide__room {
+.rooms__room {
     display: flex;
     align-items: center;
 }
 
-.slide__img {
+.rooms__img {
     width: 600px;
     height: 404px;
     border-radius: 10px;
     margin-left: 168px;
 }
 
-.slide__info {
+.rooms__info {
     margin-left: -70px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.slide__title {
+.rooms__title {
     padding-left: 100px;
     padding-top: 40px; 
     margin: 0;
 }
 
-.slide__ul {
+.rooms__ul {
     padding: 0;
     margin-top: 30px;
     margin-bottom: 0;
 }
 
-.slide__list {
+.rooms__item {
     position: relative;
     padding-right: 80px;
     padding-left: 121px;
@@ -99,7 +72,7 @@
     list-style: none;
 }
 
-.slide__list::before {
+.rooms__item::before {
     position: absolute;
     top: 3px;
     left: 100px;
@@ -110,39 +83,6 @@
     content: "";
 }
 
-.slide__booking-button {
+.rooms__booking-button {
     margin: 10px 0 40px 100px;
 }
-
-.rooms__radio-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 55px;
-}
-
-.rooms__label {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #e1e1e1;
-    margin-right: 12px;
-    cursor: pointer;
-}
-
-#btn-1:checked ~ .slide {
-    transform: translate(0);
-}
-
-#btn-2:checked ~ .slide {
-    transform: translate(-1170px);
-}
-
-#btn-3:checked ~ .slide {
-    transform: translate(-2340px);
-}
-
-#btn-1:checked ~ .rooms__radio-button .rooms__label_btn-1,
-#btn-2:checked ~ .rooms__radio-button .rooms__label_btn-2,
-#btn-3:checked ~ .rooms__radio-button .rooms__label_btn-3 {
-    background-color: #ff7236;
-} 

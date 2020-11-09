@@ -4,22 +4,12 @@
     overflow-x: hidden;  
 }
 
-.reviews .right {
-    left: 1100px;
-    bottom: 20px;
-}
-
-.reviews .left {
-    left: 1049px;
-    bottom: 20px;
-}
-
-.reviews .positioner {
+.reviews__positioner {
     position: relative;
     padding-bottom: 32px;
 }
 
-.reviews .positioner::before {
+.reviews__positioner::before {
     position: absolute;
     top: -185px;
     right: -130px;
@@ -30,16 +20,12 @@
     content: "";
 }
 
-.reviews .positioner input {
-    display: none;
-}
-
-.reviews h2 {
+.reviews__title_main {
     text-align: center;
     margin-bottom: 70px;
 }
 
-.reviews .positioner .review {
+.reviews__review {
     display: flex;
     /* 
     100% - ширина позиционера
@@ -50,7 +36,7 @@
     transition: transform 1s ease;
 }
 
-.reviews .positioner .review .info {
+.reviews__info {
     flex-shrink: 0;
     padding-left: 70px;
     padding-top: 35px;
@@ -66,11 +52,11 @@
     background-position: 35px 35px;
 }
 
-blockquote {
+.reviews__quote {
     margin: 0;
 }
 
-blockquote footer {
+.reviews__footer {
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
@@ -78,35 +64,3 @@ blockquote footer {
     font-size: 14px;
     color: #848484;
 }
-
-.reviews .positioner .radio-button {
-    display: flex;
-    justify-content: center;
-}
-
-.reviews .positioner .radio-button label {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #e1e1e1;
-    margin-right: 12px;
-    cursor: pointer;
-}
-
-#btn-4:checked ~ .review {
-    transform: translate(0);
-}
-
-#btn-5:checked ~ .review {
-    transform: translate(-147px);
-}
-
-#btn-6:checked ~ .review {
-    transform: translate(-294px);
-}
-
-#btn-4:checked ~ .radio-button label[for="btn-4"],
-#btn-5:checked ~ .radio-button label[for="btn-5"],
-#btn-6:checked ~ .radio-button label[for="btn-6"] {
-    background-color: #ff7236;
-} 

@@ -1,0 +1,74 @@
+.slider.positioner {
+    position: relative;
+}
+
+.slider__toggler {
+    display: none;
+}
+
+.slider__button { 
+    position: absolute;
+    bottom: 20px;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    color: #ff7236;
+    font-weight: bold;
+    box-shadow: 0px 0px 25px rgba(161, 161, 161, 0.25);
+    cursor: pointer;
+}
+
+.slider__button_next {
+    left: 1100px;
+}
+
+.slider__button_prev {
+    left: 1049px;
+}
+
+.slider__radio-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.slider__label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.slider__toggler[name="rooms"]:nth-child(1):checked ~ .slider__list {
+    transform: translate(0);
+}
+
+.slider__toggler[name="rooms"]:nth-child(2):checked ~ .slider__list {
+    transform: translate(-1170px);
+}
+
+.slider__toggler[name="rooms"]:nth-child(3):checked ~ .slider__list {
+    transform: translate(-2340px);
+}
+
+.slider__toggler[name="reviews"]:nth-child(1):checked ~ .slider__list {
+    transform: translate(0);
+}
+
+.slider__toggler[name="reviews"]:nth-child(2):checked ~ .slider__list {
+    transform: translate(-147px);
+}
+
+.slider__toggler[name="reviews"]:nth-child(3):checked ~ .slider__list {
+    transform: translate(-294px);
+}
+
+.slider__toggler:nth-child(1):checked ~ .slider__radio-button .slider__label_btn-1,
+.slider__toggler:nth-child(2):checked ~ .slider__radio-button .slider__label_btn-2,
+.slider__toggler:nth-child(3):checked ~ .slider__radio-button .slider__label_btn-3 {
+    background-color: #ff7236;
+}

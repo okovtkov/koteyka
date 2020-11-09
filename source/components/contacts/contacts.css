@@ -30,6 +30,7 @@
 
 .contacts__map {
     position: relative;
+    margin-left: 13px;
 }
 
 .contacts__map::after {
