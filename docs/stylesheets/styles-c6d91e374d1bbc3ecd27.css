@@ -1010,7 +1010,7 @@ fieldset:first-of-type input:last-of-type {
     z-index: 12;
 }
 
-.booking-complete {
+.complete__booking {
     position: relative;
     overflow: hidden;
     margin-top: 100px;
@@ -1021,7 +1021,7 @@ fieldset:first-of-type input:last-of-type {
     background-color: white;
 }
 
-.booking-complete::after {
+.complete__booking::after {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -1033,7 +1033,7 @@ fieldset:first-of-type input:last-of-type {
     content: "";
 }
 
-.booking-complete .close {
+.complete__close {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -1041,7 +1041,7 @@ fieldset:first-of-type input:last-of-type {
     height: 18px;
 }
 
-.booking-complete h2 {
+.complete__title_main {
     display: table;
     margin-left: auto;
     margin-right: auto;
@@ -1049,7 +1049,7 @@ fieldset:first-of-type input:last-of-type {
     margin-bottom: 25px;
 }
 
-.booking-complete p {
+.complete__notification {
     margin-left: 132px;
     margin-right: 132px;
     margin-bottom: 50px;
@@ -1057,7 +1057,7 @@ fieldset:first-of-type input:last-of-type {
     font-size: 16px;
 }
 
-.booking-complete .booking-button {
+.complete__button {
     display: table;
     margin-left: auto;
     margin-right: auto;

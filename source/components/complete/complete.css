@@ -15,7 +15,7 @@
     z-index: 12;
 }
 
-.booking-complete {
+.complete__booking {
     position: relative;
     overflow: hidden;
     margin-top: 100px;
@@ -26,7 +26,7 @@
     background-color: white;
 }
 
-.booking-complete::after {
+.complete__booking::after {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -38,7 +38,7 @@
     content: "";
 }
 
-.booking-complete .close {
+.complete__close {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -46,7 +46,7 @@
     height: 18px;
 }
 
-.booking-complete h2 {
+.complete__title_main {
     display: table;
     margin-left: auto;
     margin-right: auto;
@@ -54,7 +54,7 @@
     margin-bottom: 25px;
 }
 
-.booking-complete p {
+.complete__notification {
     margin-left: 132px;
     margin-right: 132px;
     margin-bottom: 50px;
@@ -62,7 +62,7 @@
     font-size: 16px;
 }
 
-.booking-complete .booking-button {
+.complete__button {
     display: table;
     margin-left: auto;
     margin-right: auto;
