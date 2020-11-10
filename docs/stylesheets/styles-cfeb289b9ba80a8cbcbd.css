@@ -852,7 +852,7 @@ fieldset:first-of-type input:last-of-type {
     z-index: 11;
 }
 
-.room-reservation {
+.booking__room-reservation {
     position: relative;
     display: inline-block;
     margin-top: 100px;
@@ -865,7 +865,7 @@ fieldset:first-of-type input:last-of-type {
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.close {
+.booking__close {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -874,14 +874,15 @@ fieldset:first-of-type input:last-of-type {
     right: 40px;
 }
 
-.room-reservation h2 {
+.booking__title_main {
     margin: 0;
     padding-top: 14px;
     padding-bottom: 50px;
     text-align: center;
 }
 
-.room-reservation input {
+.booking__input,
+.booking__date {
     display: block;
     width: 430px;
     margin-bottom: 20px;
@@ -892,38 +893,38 @@ fieldset:first-of-type input:last-of-type {
     outline: none;
 }
 
-.room-reservation p,
-.room-reservation .date-from,
-.room-reservation .date-to {
+.booking__arrival,
+.booking__date-from,
+.booking__date-to {
     display: inline-block;
 }
 
-.room-reservation .date {
+.booking__duration {
     display: block;
     margin-bottom: 50px;
 }
 
-.date input {
+.booking__date {
     display: inline-block;
     margin: 0;
     width: 134px;
     font-size: 16px;
 }
 
-.date .date-from,
-.date .date-to {
+.booking__date-from,
+.booking__date-to {
     position: relative;
 }
 
-.date-from {
+.booking__date-from {
     padding-left: 35px;
 }
 
-.date-to {
+.booking__date-to {
     padding-left: 31px;
 }
 
-.date-from::before {
+.booking__date-from::before {
     position: absolute;
     top: 17px;
     left: 20px;
@@ -931,7 +932,7 @@ fieldset:first-of-type input:last-of-type {
     content: "с";
 }
 
-.date-to::before {
+.booking__date-to::before {
     position: absolute;
     top: 17px;
     left: 5px;
@@ -939,12 +940,11 @@ fieldset:first-of-type input:last-of-type {
     content: "до";
 }
 
-.date-from input, 
-.date-to input {
+.booking__date {
     padding: 15px 16px;
 }
 
- .send {
+ .booking__send {
     display: table;
     margin-left: auto;
     margin-right: auto;

@@ -2,25 +2,25 @@ include ../booking-button/booking-button.pug
 
 mixin booking 
     <div id="booking" class="booking">
-        <form class="room-reservation">
+        <form class="booking__room-reservation">
             <a href="#">
-                <div class="close"></div>
+                <div class="booking__close"></div>
             </a>
-            <h2>Забронировать номер</h2>
-            <input type="text" class="name" placeholder="Ваше имя">
-            <input type="text" class="pet-name" placeholder="Имя Питомца">
-            <input type="tel" class="tel" placeholder="Телефон">
-            <input type="email" class="email" placeholder="E-mail">
-            <div class="date">
-                <p class="arrival">Дата заезда</p>
-                <div class="date-from">
-                    <input type="date" placeholder="хх.хх.хххх">
+            <h2 class="booking__title_main">Забронировать номер</h2>
+            <input type="text" class="booking__input booking__name" placeholder="Ваше имя">
+            <input type="text" class="booking__input booking__pet-name" placeholder="Имя Питомца">
+            <input type="tel" class="booking__input booking__tel" placeholder="Телефон">
+            <input type="email" class="booking__input booking__email" placeholder="E-mail">
+            <div class="booking__duration">
+                <p class="booking__arrival">Дата заезда</p>
+                <div class="booking__date-from">
+                    <input type="date" class="booking__date">
                 </div>
-                <div class="date-to">
-                    <input type="date" placeholder="хх.хх.хххх">
+                <div class="booking__date-to">
+                    <input type="date" class="booking__date">
                 </div>
             </div>
-            <div class="send">
+            <div class="booking__send">
                 +booking-button("primary", "Отправить заявку")(href="#complete")
             </div>
         </form>
