@@ -6,18 +6,22 @@
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.room-option .cat {
+.room-option:not(:nth-of-type(3n)) {
+    margin-right: 24px;
+}
+
+.room-option__cat {
     display: block;
     margin: -1px;
     margin-bottom: 20px;
 }
 
-.card-info {
+.room-option__card-info {
     padding-left: 20px;
     padding-bottom: 25px;
 }
 
-.card-info .title {
+.room-option__title {
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
@@ -26,50 +30,38 @@
     text-decoration: none;
 }
 
-.card-info dt,
-.card-info dd {
+.room-option__key,
+.room-option__value {
     display: inline-block;
     padding: 0;
     margin: 0;
-}
-
-.card-info dt,
-.card-info dd {
     font-size: 14px;
 }
 
-.card-info .size,
-.card-info .area,
-.card-info .equipment {
+.room-option__info  {
     margin-bottom: 11px;
     margin-top: 0;
 }
 
-.card-info .equipment dt,
-.card-info .price dt {
-    display: inline-block;
-    margin-top: 0;
-    padding-right: 11px;
-}
-
-.card-info .equipment dd img {
+.room-option__value_img {
     padding-right: 6px;
 }
 
-.card-info img:last-of-type {
-    padding: 0;
+.room-option__value_img:first-of-type {
+    margin-left: 12px;
 }
 
-.card-info .price {
+.room-option__price {
     margin-bottom: 25px;
     margin-top: 0;
 }
 
-.card-info .price dd {
+.room-option__text_bold {
     font-size: 18px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
-.room-option .booking-button {
+.room-option__booking-button {
     width: calc(100% - 20px);
 }

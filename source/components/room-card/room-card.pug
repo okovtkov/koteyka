@@ -2,33 +2,33 @@ include ../booking-button/booking-button.pug
 
 mixin room-card
     <div class="room-option">
-        <img src="/img/econom-room.jpg" alt="номер эконом" class="cat">
-        <div class="card-info">
-            <a href="/room.html" class="title">Эконом</a>
+        <img src="/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+        <div class="room-option__card-info">
+            <a href="/room.html" class="room-option__title">Эконом</a>
             <dl>
-                <div class="size">
-                    <dt>Размеры (ШхГхВ) - </dt>
-                    <dd>90х70х180 см</dd>
+                <div class="room-option__info room-option__size">
+                    <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
+                    <dd class="room-option__value">90х70х180 см</dd>
                 </div>
-                <div class="area">
-                    <dt>Площадь - </dt>
-                    <dd>0,63 м2</dd>
+                <div class="room-option__info room-option__area">
+                    <dt class="room-option__key">Площадь - </dt>
+                    <dd class="room-option__value">0,63 м2</dd>
                 </div>
-                <div class="equipment">
-                    <dt>Оснащение номера</dt>
-                    <dd>
-                        <img src="/img/equipment-lejak.jpg" alt="лежак">
-                        <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка">
-                        <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс">
-                        <img src="/img/equipment-house.jpg" alt="домик">
+                <div class="room-option__info room-option__equipment">
+                    <dt class="room-option__key">Оснащение номера</dt>
+                    <dd class="room-option__value">
+                        <img src="/img/equipment-lejak.jpg" alt="лежак" class="room-option__value_img">
+                        <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__value_img">
+                        <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__value_img">
+                        <img src="/img/equipment-house.jpg" alt="домик" class="room-option__value_img">
                     </dd>
                 </div>
-                <div class="price">
-                    <dt>Цена за сутки:</dt>
-                    <dd>100₽</dd>
+                <div class="room-option__price">
+                    <dt class="room-option__key">Цена за сутки:</dt>
+                    <dd class="room-option__value room-option__text_bold">100₽</dd>
                 </div>
             </dl>
-            +booking-button("primary")
+            +booking-button("primary room-option__booking-button")
         </div>
     </div>
     
