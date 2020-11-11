@@ -1,12 +1,10 @@
 include ../booking-button/booking-button.pug
 
 mixin banner-2
-    <div class="banner-2">
-        <div class="positioner">
-            <div class="info-banner">
-                <p class="free-day">Каждый 7-й день <span>бесплатно!</span></p>
-                <p class="stock">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
-                +booking-button
-            </div>
+    <div class="banner-2 positioner">
+        <div class="banner-2__info">
+            <p class="banner-2__free-day">Каждый 7-й день <span class="banner-2__free-day_large">бесплатно!</span></p>
+            <p class="banner-2__stock">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+            +booking-button("banner-2__booking-button")
         </div>
     </div>

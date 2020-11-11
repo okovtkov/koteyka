@@ -758,7 +758,7 @@ h4, h5, h6 {
 .container {
     display: flex;
 }
-.banner-2 .positioner {
+.banner-2 {
     position: relative;
     height: 379px;
     margin-top: 140px;
@@ -770,7 +770,7 @@ h4, h5, h6 {
     outline: none;
 }
 
-.banner-2 .positioner::before {
+.banner-2::before {
     position: absolute;
     left: -20px;
     top: -30px;
@@ -782,11 +782,11 @@ h4, h5, h6 {
     content: "";
 }
 
-.info-banner {
+.banner-2__info {
     margin-left: 270px;
 }
 
-.free-day {
+.banner-2__free-day {
     margin: 0;
     padding: 0;
     font-size: 36px;
@@ -794,7 +794,7 @@ h4, h5, h6 {
     font-family: Rubik, sans-serif;
 }
 
-.free-day span {
+.banner-2__free-day_large {
     display: block;
     font-size: 56px;
     margin: 0;
@@ -802,7 +802,7 @@ h4, h5, h6 {
     padding: 0;
 }
 
-.stock {
+.banner-2__stock {
     width: 260px;
     margin-top: 25px;
     margin-bottom: 0;
@@ -810,7 +810,7 @@ h4, h5, h6 {
     font-size: 16px;
 }
 
-.info-banner .booking-button {
+.banner-2__booking-button {
     margin-top: 35px;
 }
 .booking {
