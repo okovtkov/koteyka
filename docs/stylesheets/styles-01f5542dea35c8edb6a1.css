@@ -489,22 +489,30 @@ h4, h5, h6 {
 }
 
 
-.no-chosen,
-.select,
-.option {
-    border-radius: 25px;
-}
-
-.select:focus .no-chosen,
-.select:focus .option,
-.select:focus {
-    border-radius: 0;
-    box-shadow: none; 
-}
-
 .select {
     position: relative;
     box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
+}
+
+.select:focus {
+    outline: none;
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
+    z-index: 10;
+}
+
+.select:focus .select__options .select__option {
+    display: block;
+}
+
+.select,
+.select__option {
+    border-radius: 25px;
+    transition: border-radius 0.1s ease;
+}
+
+.select:focus,
+.select:focus .select__option {
+    border-radius: 0;
 }
 
 .select::after {
@@ -521,56 +529,39 @@ h4, h5, h6 {
     content: "";
 }
 
-.select,
-.select:focus .options .option {
-    transition: all 0.1s ease;
-}
-
-.select:focus {
-    outline: none;
-}
-
 .select:focus::after {
     transform: rotate(180deg) translateY(2px);
 }
 
-.select:focus .options .option {
-    display: block;
-}
-
-.select .option {
-    box-shadow: none;
-}
-
-.select:focus {
-    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); 
-    z-index: 10;
-}
-
-.option {
+.select__option {
     position: relative;
-    display: block;
+    display: none;
     padding: 12px 55px 13px 30px;
     width: 100%;
     white-space: nowrap;
     cursor: pointer;
     background-color: #fff;
-}
-
-.desc, .asc {
     background-position: 20px 17px;
     background-repeat: no-repeat;
 }
 
-.desc {
+.select__option_no-chosen {
+    display: block;
+}
+
+.select__option:hover {
+    background-color: lightgray;
+}
+
+.select__option_desc {
     background-image: url(/koteyka/images/components/catalog-select/icons//arrow-down-b8ce08c9d3585fbc908f7e33983510c9.svg);
 }
 
-.asc {
+.select__option_asc {
     background-image: url(/koteyka/images/components/catalog-select/icons//arrow-up-a403b2d20b0eed9f1be6d0d874acde77.svg);
 }
 
-.options {
+.select__options {
     position: absolute;
     top: 100%;
     left: 0;
@@ -579,24 +570,17 @@ h4, h5, h6 {
     z-index: 2;
 }
 
-.option:hover {
-    background-color: lightgray;
-}
-
-.option-toggler {
+.select__toggler {
     display: none;
 }
 
-.option-toggler:checked + .option {
+.select__toggler:checked + .select__option {
     position: absolute;
     bottom: 100%;
     left: 0;
-    display: block !important; 
+    display: block; 
 }
 
-.options .option {
-    display: none;
-}
 .catalog-header {
     display: flex;
     align-items: center;
@@ -605,7 +589,7 @@ h4, h5, h6 {
     margin-top: 60px;
 }
 
-.catalog-header h1 {
+.catalog-header__title_main {
     font-size: 36px;
     margin: auto 0;
 }
