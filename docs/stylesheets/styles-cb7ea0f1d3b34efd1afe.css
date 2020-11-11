@@ -663,24 +663,21 @@ h4, h5, h6 {
     display: table;
     margin-bottom: 15px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
-.checkbox input:checked + span::before {
+.checkbox__area:checked + span::before {
     background-image: url(/koteyka/images/components/checkbox/icons//check-968fb6e5ea7fc7668476f1adab730255.svg);
     background-repeat: no-repeat;
     background-position: 4px 5px;
     content: "";
 }
 
-.checkbox:first-of-type {
-    margin-top: 20px;
-}
-
-.checkbox input {
+.checkbox__area {
     display: none;
 }
 
-.checkbox span::before {
+.checkbox__value::before {
     display: inline-block; 
     width: 20px;
     height: 20px;
