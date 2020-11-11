@@ -2,13 +2,13 @@ include ../checkbox/checkbox.pug
 
 mixin catalog-filter
     <form class="filter">
-        <fieldset>
-            <legend>Цена за сутки, ₽</legend>
-            <input type="text" name="from" placeholder="от 100">
-            <input type="text" name="to" placeholder="до 600">
+        <fieldset class="filter_fieldset filter__price">
+            <legend class="filter__name">Цена за сутки, ₽</legend>
+            <input type="text" name="from" placeholder="от 100" class="filter__price_min">
+            <input type="text" name="to" placeholder="до 600" class="filter__price_max">
         </fieldset>
-        <fieldset class="area">
-            <legend>Площадь</legend>
+        <fieldset class="filter_fieldset filter__area">
+            <legend class="filter__name">Площадь</legend>
             +checkbox("0,63 м2")
             +checkbox("0,90 м2")
             +checkbox("1,13 м2")
@@ -16,16 +16,16 @@ mixin catalog-filter
             +checkbox("2,56 м2")
             +checkbox("2,88 м2")
         </fieldset>
-        <fieldset class="equipment">
-            <legend>Оснащение номера</legend>
+        <fieldset class="filter_fieldset filter__equipment">
+            <legend class="filter__name">Оснащение номера</legend>
             +checkbox("Пустой номер")
             +checkbox("Лежак")
             +checkbox("Когтеточка")
             +checkbox("Игровой комплекс")
             +checkbox("Домик")
         </fieldset>
-        <div class="filter-buttons">
-            <button class="apply">Применить</button>
-            <button type="reset" class="reset-filter">Сбросить фильтр</button>
+        <div class="filter__buttons">
+            <button class="filter__apply">Применить</button>
+            <button type="reset" class="filter__reset">Сбросить фильтр</button>
         </div>
     </form>

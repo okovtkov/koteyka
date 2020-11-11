@@ -2,19 +2,24 @@
     margin-right: 90px;
 }
 
-fieldset {
+.filter_fieldset {
     border: none;
     margin: 0;
     padding: 0;
+}
+
+.filter__price {
+    margin-bottom: 35px;
+}
+
+.filter__name {
+    margin: 0;
+    padding: 0;
     width: 215px;
-    margin-bottom: 30px;
 }
 
-legend {
-    font-size: 16px;
-}
-
-fieldset:first-of-type input {
+.filter__price_min,
+.filter__price_max {
     width: 100px;
     height: 24px;
     margin-right: 10px;
@@ -22,17 +27,17 @@ fieldset:first-of-type input {
     outline: none;
 }
 
-fieldset:first-of-type input:last-of-type {
+.filter__price_max {
     margin: 0;
 }
 
-.filter-buttons {
+.filter__buttons {
     display: flex;
     flex-direction: column;
 }
 
-.apply,
-.reset-filter {
+.filter__apply,
+.filter__reset {
     width: 185px;
     margin-top: 15px;
     padding: 15px 36px 17px 36px;
@@ -45,11 +50,12 @@ fieldset:first-of-type input:last-of-type {
     cursor: pointer;
 }
 
-.apply {
+.filter__apply {
+    margin-top: 20px;
     background-color: #FAC663;
 }
 
-.reset-filter:hover {
+.filter__reset:hover {
     background-color: #ffcd70;
     color: white;
 }

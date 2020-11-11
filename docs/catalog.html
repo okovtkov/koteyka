@@ -2,7 +2,7 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="/koteyka/stylesheets/styles-01f5542dea35c8edb6a1.css" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="/koteyka/stylesheets/styles-93508db5cd08c4c54864.css" rel="stylesheet"></head>
 <body><header class="header positioner">
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
@@ -62,14 +62,14 @@
 <div class="select__option select__option_desc">По цене</div>
 </label>
 </div>
-</div></div><div class="positioner container"><form class="filter">
-<fieldset>
-<legend>Цена за сутки, ₽</legend>
-<input type="text" name="from" placeholder="от 100">
-<input type="text" name="to" placeholder="до 600">
+</div></div><aside class="positioner container"><form class="filter">
+<fieldset class="filter_fieldset filter__price">
+<legend class="filter__name">Цена за сутки, ₽</legend>
+<input type="text" name="from" placeholder="от 100" class="filter__price_min">
+<input type="text" name="to" placeholder="до 600" class="filter__price_max">
 </fieldset>
-<fieldset class="area">
-<legend>Площадь</legend><label class="checkbox">
+<fieldset class="filter_fieldset filter__area">
+<legend class="filter__name">Площадь</legend><label class="checkbox">
 <input type="checkbox" name="area">
 <span>0,63 м2</span>
 </label><label class="checkbox">
@@ -88,8 +88,8 @@
 <input type="checkbox" name="area">
 <span>2,88 м2</span>
 </label></fieldset>
-<fieldset class="equipment">
-<legend>Оснащение номера</legend><label class="checkbox">
+<fieldset class="filter_fieldset filter__equipment">
+<legend class="filter__name">Оснащение номера</legend><label class="checkbox">
 <input type="checkbox" name="area">
 <span>Пустой номер</span>
 </label><label class="checkbox">
@@ -105,9 +105,9 @@
 <input type="checkbox" name="area">
 <span>Домик</span>
 </label></fieldset>
-<div class="filter-buttons">
-<button class="apply">Применить</button>
-<button type="reset" class="reset-filter">Сбросить фильтр</button>
+<div class="filter__buttons">
+<button class="filter__apply">Применить</button>
+<button type="reset" class="filter__reset">Сбросить фильтр</button>
 </div>
 </form><div class="catalog-rooms"><div class="room-option">
 <img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="cat">
@@ -271,7 +271,7 @@
 <dd>100₽</dd>
 </div>
 </dl><a class="booking-button primary" href="#booking">Забронировать</a></div>
-</div></div> </div><div class="banner-2">
+</div></div> </aside><div class="banner-2">
 <div class="positioner">
 <div class="info-banner">
 <p class="free-day">Каждый 7-й день <span>бесплатно!</span></p>
