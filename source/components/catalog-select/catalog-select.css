@@ -16,7 +16,7 @@
 .select,
 .select__option {
     border-radius: 25px;
-    transition: border-radius 0.1s ease;
+    transition: border-radius 0.3s ease;
 }
 
 .select:focus,
@@ -32,7 +32,7 @@
     height: 10px;
     background-image: url("./icons/select-inactive.svg");
     background-repeat: no-repeat;
-    transition: transform 0.2s linear;
+    transition: transform 0.3s linear;
     transform-origin: center;
     z-index: 3;
     content: "";
@@ -77,6 +77,12 @@
     width: 100%;
     box-shadow: inherit; 
     z-index: 2;
+    opacity: 0.3;
+}
+
+.select:focus .select__options {
+    opacity: 1;
+    transition: opacity 0.7s ease-out;
 }
 
 .select__toggler {
