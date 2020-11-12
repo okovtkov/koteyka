@@ -9,7 +9,7 @@
 
 .gallery__images {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -29,7 +29,7 @@
     height: 112px;
     width: 70px;
     opacity: 0.3;
-    margin: 0 auto;
+    margin: 0;
     transition: opacity 0.2s ease;
     border-radius: 8px;
     cursor: pointer;

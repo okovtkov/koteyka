@@ -336,15 +336,16 @@ h4, h5, h6 {
     overflow: hidden;
 }
 
-.room-info .positioner {
+.room-info_container {
     position: relative;
     display: flex;
     align-items: flex-start;
 }
 
-.room-info .positioner::after {
+.room-info_container::after {
     position: absolute;
     top: -50px;
+    display: inline-block;
     right: -130px;
     width: 251px;
     height: 285px;
@@ -353,34 +354,29 @@ h4, h5, h6 {
     content: "";
 }
 
-.about {
+.room-info__about {
     margin-left: 70px;
 }
 
-.about h2 {
+.room-info__title_main {
     font-size: 36px;
     padding: 0;
     margin: 0 0 22px 0;
 }
 
-.about p {
+.room-info__text {
     font-size: 16px;
     margin: 0;
     margin-top: 17px;
     padding: 0;
 }
 
-.about p:last-of-type {
+.room-info__text:last-of-type {
     margin-top: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.about p span {
-    margin-left: 12px;
-    font-size: 18px;
-}
-
-.about .features {
+.room-info__features {
     margin: 0;
     margin-top: 13px;
     padding: 0;
@@ -388,23 +384,25 @@ h4, h5, h6 {
     font-size: 16px; 
 }
 
-.about .features li {
+.room-info__list {
     position: relative;
     padding-left: 20px;
     margin-top: 9px;
+}
+
+.room-info__price {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-info__title_main,
+.room-info__text,
+.room-info__list {
     color: #1a212f;
 }
 
-.about h2,
-.about p,
-.about li {
-    color: #1a212f;
-}
-
-.lounger::before,
-.house::before,
-.game-complex::before,
-.scratching-post::before {
+.room-info__list::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -414,19 +412,19 @@ h4, h5, h6 {
     content: "";
 }
 
-.lounger::before {
+.room-info__lounger::before {
     background-image: url(/koteyka/images/components/room-info/icons//lounger-a294493d99ec9701cccd18aecfe1c6d0.svg);
 }
 
-.house::before {
+.room-info__house::before {
     background-image: url(/koteyka/images/components/room-info/icons//house-3101f017a574ede0b1621039a97875fe.svg);
 }
 
-.game-complex::before {
+.room-info__game-complex::before {
     background-image: url("/koteyka/images/components/room-info/icons//game complex-e3ef668b988fb74c9a31a855feef9a0c.svg");
 }
 
-.scratching-post::before {
+.room-info__scratching-post::before {
     background-image: url("/koteyka/images/components/room-info/icons//scratching post-8b73f8a81605ad3d025aab1e666d1e42.svg");
 }
 
@@ -442,7 +440,7 @@ h4, h5, h6 {
 
 .gallery__images {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -462,7 +460,7 @@ h4, h5, h6 {
     height: 112px;
     width: 70px;
     opacity: 0.3;
-    margin: 0 auto;
+    margin: 0;
     transition: opacity 0.2s ease;
     border-radius: 8px;
     cursor: pointer;
@@ -507,7 +505,7 @@ h4, h5, h6 {
 .select,
 .select__option {
     border-radius: 25px;
-    transition: border-radius 0.3s ease;
+    transition: border-radius 0.1s ease;
 }
 
 .select:focus,
@@ -523,7 +521,7 @@ h4, h5, h6 {
     height: 10px;
     background-image: url(/koteyka/images/components/catalog-select/icons//select-inactive-bac7c2595918fc2c2c56998a3b7c8fb6.svg);
     background-repeat: no-repeat;
-    transition: transform 0.3s linear;
+    transition: transform 0.2s linear;
     transform-origin: center;
     z-index: 3;
     content: "";
@@ -568,12 +566,6 @@ h4, h5, h6 {
     width: 100%;
     box-shadow: inherit; 
     z-index: 2;
-    opacity: 0.3;
-}
-
-.select:focus .select__options {
-    opacity: 1;
-    transition: opacity 0.7s ease-out;
 }
 
 .select__toggler {
@@ -584,7 +576,7 @@ h4, h5, h6 {
     position: absolute;
     bottom: 100%;
     left: 0;
-    display: block; 
+    display: block;
 }
 
 .catalog-header {

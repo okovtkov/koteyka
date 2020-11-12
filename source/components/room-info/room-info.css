@@ -5,15 +5,16 @@
     overflow: hidden;
 }
 
-.room-info .positioner {
+.room-info_container {
     position: relative;
     display: flex;
     align-items: flex-start;
 }
 
-.room-info .positioner::after {
+.room-info_container::after {
     position: absolute;
     top: -50px;
+    display: inline-block;
     right: -130px;
     width: 251px;
     height: 285px;
@@ -22,34 +23,29 @@
     content: "";
 }
 
-.about {
+.room-info__about {
     margin-left: 70px;
 }
 
-.about h2 {
+.room-info__title_main {
     font-size: 36px;
     padding: 0;
     margin: 0 0 22px 0;
 }
 
-.about p {
+.room-info__text {
     font-size: 16px;
     margin: 0;
     margin-top: 17px;
     padding: 0;
 }
 
-.about p:last-of-type {
+.room-info__text:last-of-type {
     margin-top: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.about p span {
-    margin-left: 12px;
-    font-size: 18px;
-}
-
-.about .features {
+.room-info__features {
     margin: 0;
     margin-top: 13px;
     padding: 0;
@@ -57,23 +53,25 @@
     font-size: 16px; 
 }
 
-.about .features li {
+.room-info__list {
     position: relative;
     padding-left: 20px;
     margin-top: 9px;
+}
+
+.room-info__price {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-info__title_main,
+.room-info__text,
+.room-info__list {
     color: #1a212f;
 }
 
-.about h2,
-.about p,
-.about li {
-    color: #1a212f;
-}
-
-.lounger::before,
-.house::before,
-.game-complex::before,
-.scratching-post::before {
+.room-info__list::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -83,19 +81,19 @@
     content: "";
 }
 
-.lounger::before {
+.room-info__lounger::before {
     background-image: url("./icons/lounger.svg");
 }
 
-.house::before {
+.room-info__house::before {
     background-image: url("./icons/house.svg");
 }
 
-.game-complex::before {
+.room-info__game-complex::before {
     background-image: url("./icons/game\ complex.svg");
 }
 
-.scratching-post::before {
+.room-info__scratching-post::before {
     background-image: url("./icons/scratching\ post.svg");
 }
 
