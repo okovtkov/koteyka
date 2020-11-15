@@ -7,13 +7,11 @@
 }
 
 .contacts__content {
-    padding: 60px 93px 60px 199px; 
+    padding: 60px 93px 60px 186px; 
 }
 
-.contacts__title {
-    margin-top: 0;
+.title__contacts {
     margin-bottom: 50px;
-    font-size: 36px;
 }
 
 .contacts__key {
@@ -46,6 +44,7 @@
 }
 
 .contacts__map-img {
+    width: 100%;
     height: 100%;
     max-width: 100%;
 }

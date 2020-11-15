@@ -1,0 +1,27 @@
+.title {
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title_2,
+.title_booking {
+    text-align: center;
+}
+
+.title_1 {
+    font-size: 62px;
+}
+
+.title_2 {
+    font-size: 36px;
+}
+
+.title_3 {
+    font-size: 22px;
+}
+
+.title_booking {
+    font-size: 28px;
+}

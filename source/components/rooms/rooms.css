@@ -17,10 +17,8 @@
     content: "";
 }
 
-.rooms__title_main {
-    margin: 0 0 70px 0;
-    padding: 0;
-    text-align: center;
+.title__rooms {
+    margin-bottom: 70px;
 }
 
 .rooms__list {
@@ -51,10 +49,9 @@
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.rooms__title {
-    padding-left: 100px;
-    padding-top: 40px; 
-    margin: 0;
+.title__room {
+    margin-left: 100px;
+    margin-top: 40px;
 }
 
 .rooms__ul {

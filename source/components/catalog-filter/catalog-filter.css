@@ -2,7 +2,7 @@
     margin-right: 90px;
 }
 
-.filter_fieldset {
+.filter__fieldset {
     border: none;
     margin: 0;
     padding: 0;
@@ -41,19 +41,23 @@
 .filter__reset {
     width: 185px;
     margin-top: 15px;
-    padding: 15px 36px 17px 36px;
     border: 2px solid #FAC663;
     outline: none;
-    font-style: 14px;
+    font-size: 14px;
     border-radius: 25px;
     background-color: transparent;
     transition: background-color 0.2s ease;
     cursor: pointer;
 }
 
+.filter__reset {
+    padding: 15px 30px 16px 30px;
+}
+
 .filter__apply {
     margin-top: 20px;
     background-color: #FAC663;
+    padding: 15px 36px 16px 36px;
 }
 
 .filter__reset:hover {

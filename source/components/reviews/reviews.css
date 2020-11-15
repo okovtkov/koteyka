@@ -1,7 +1,7 @@
 .reviews {
     position: relative;
-    padding-top: 120px;
-    overflow-x: hidden;  
+    padding-top: 130px;
+    overflow-x: hidden;
 }
 
 .reviews__positioner {
@@ -20,8 +20,7 @@
     content: "";
 }
 
-.reviews__title_main {
-    text-align: center;
+.title__reviews {
     margin-bottom: 70px;
 }
 

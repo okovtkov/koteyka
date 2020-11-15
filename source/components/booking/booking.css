@@ -32,16 +32,8 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background-image: url("./icons/close.svg");
     top: 40px;
     right: 40px;
-}
-
-.booking__title_main {
-    margin: 0;
-    padding-top: 14px;
-    padding-bottom: 50px;
-    text-align: center;
 }
 
 .booking__input,

@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        include ../components/header/header.pug
-        include ../components/banner/banner.pug
-        include ../components/advantages/advantages.pug
-        include ../components/rooms/rooms.pug
-        include ../components/reviews/reviews.pug
-        include ../components/footer/footer.pug
-        include ../components/booking/booking.pug
-        include ../components/complete/complete.pug
+include ../components/page/page.pug
+include ../components/banner/banner.pug
+include ../components/advantages/advantages.pug
+include ../components/rooms/rooms.pug
+include ../components/reviews/reviews.pug
+include ../components/booking/booking.pug
+include ../components/complete/complete.pug
 
-    </head>
-    <body>
-        +header
-        <main>
-            +booking
-            +complete
-            +banner
-            +advantages
-            +rooms("Номера")
-            +reviews
-        </main>
-        +footer
-    </body>
-</html>
++page("Котейка")
+    +booking
+    +complete
+    +banner
+    +advantages
+    +rooms("Номера")
+    +reviews

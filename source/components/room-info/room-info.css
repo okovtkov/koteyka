@@ -5,13 +5,13 @@
     overflow: hidden;
 }
 
-.room-info_container {
+.room-info__container {
     position: relative;
     display: flex;
     align-items: flex-start;
 }
 
-.room-info_container::after {
+.room-info__container::after {
     position: absolute;
     top: -50px;
     display: inline-block;
@@ -27,10 +27,8 @@
     margin-left: 70px;
 }
 
-.room-info__title_main {
-    font-size: 36px;
-    padding: 0;
-    margin: 0 0 22px 0;
+.title__room-info {
+    margin-bottom: 22px;
 }
 
 .room-info__text {

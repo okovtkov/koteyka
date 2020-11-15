@@ -61,18 +61,11 @@ h4, h5, h6 {
 
 .banner__city {
     font-size: 14px;
-}
-
-.banner__title {
-    margin: 15px 0 25px;
-    padding: 0;
-    font-size: 62px;
-    font-weight: 900;
-    line-height: 1;
+    margin-bottom: 15px;
 }
 
 .banner__desc {
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
     font-size: 20px;
     font-weight: 500;
@@ -80,6 +73,33 @@ h4, h5, h6 {
 
 .banner__button {
     margin-top: 40px;
+}
+.title {
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title_2,
+.title_booking {
+    text-align: center;
+}
+
+.title_1 {
+    font-size: 62px;
+}
+
+.title_2 {
+    font-size: 36px;
+}
+
+.title_3 {
+    font-size: 22px;
+}
+
+.title_booking {
+    font-size: 28px;
 }
 .advantages {
     position: relative;
@@ -102,11 +122,8 @@ h4, h5, h6 {
     content: "";    
 }
 
-.advantages__title_main {
-    margin: 140px 0 50px 0;
-    padding: 0;
-    font-size: 36px;
-    text-align: center;
+.title__advantages {
+    margin-top: 140px;
 }
 
 .advantages__ul {
@@ -114,13 +131,14 @@ h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    margin-top: 50px;
 }
 
 .advantages__list {
     position: relative;
     width: 370px;
     margin-top: 20px;
-    padding: 153px 30px 30px;
+    padding: 121px 30px 30px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -129,9 +147,9 @@ h4, h5, h6 {
     background-position: 30px 30px;
 }
 
-.advantages__title {
+.title.title_3 {
     margin-bottom: 20px;
-    margin-top: 0;
+    margin-top: 35px;
 }
 
 .advantages__desc {
@@ -182,10 +200,8 @@ h4, h5, h6 {
     content: "";
 }
 
-.rooms__title_main {
-    margin: 0 0 70px 0;
-    padding: 0;
-    text-align: center;
+.title__rooms {
+    margin-bottom: 70px;
 }
 
 .rooms__list {
@@ -216,10 +232,9 @@ h4, h5, h6 {
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.rooms__title {
-    padding-left: 100px;
-    padding-top: 40px; 
-    margin: 0;
+.title__room {
+    margin-left: 100px;
+    margin-top: 40px;
 }
 
 .rooms__ul {
@@ -253,8 +268,8 @@ h4, h5, h6 {
 }
 .reviews {
     position: relative;
-    padding-top: 120px;
-    overflow-x: hidden;  
+    padding-top: 130px;
+    overflow-x: hidden;
 }
 
 .reviews__positioner {
@@ -273,8 +288,7 @@ h4, h5, h6 {
     content: "";
 }
 
-.reviews__title_main {
-    text-align: center;
+.title__reviews {
     margin-bottom: 70px;
 }
 
@@ -336,13 +350,13 @@ h4, h5, h6 {
     overflow: hidden;
 }
 
-.room-info_container {
+.room-info__container {
     position: relative;
     display: flex;
     align-items: flex-start;
 }
 
-.room-info_container::after {
+.room-info__container::after {
     position: absolute;
     top: -50px;
     display: inline-block;
@@ -358,10 +372,8 @@ h4, h5, h6 {
     margin-left: 70px;
 }
 
-.room-info__title_main {
-    font-size: 36px;
-    padding: 0;
-    margin: 0 0 22px 0;
+.title__room-info {
+    margin-bottom: 22px;
 }
 
 .room-info__text {
@@ -587,8 +599,7 @@ h4, h5, h6 {
     margin-top: 60px;
 }
 
-.catalog-header__title_main {
-    font-size: 36px;
+.title__catalog-header {
     margin: auto 0;
 }
 
@@ -597,7 +608,7 @@ h4, h5, h6 {
     margin-right: 90px;
 }
 
-.filter_fieldset {
+.filter__fieldset {
     border: none;
     margin: 0;
     padding: 0;
@@ -636,19 +647,23 @@ h4, h5, h6 {
 .filter__reset {
     width: 185px;
     margin-top: 15px;
-    padding: 15px 36px 17px 36px;
     border: 2px solid #FAC663;
     outline: none;
-    font-style: 14px;
+    font-size: 14px;
     border-radius: 25px;
     background-color: transparent;
     transition: background-color 0.2s ease;
     cursor: pointer;
 }
 
+.filter__reset {
+    padding: 15px 30px 16px 30px;
+}
+
 .filter__apply {
     margin-top: 20px;
     background-color: #FAC663;
+    padding: 15px 36px 16px 36px;
 }
 
 .filter__reset:hover {
@@ -784,15 +799,11 @@ h4, h5, h6 {
     margin-left: 270px;
 }
 
-.banner-2__free-day {
-    margin: 0;
-    padding: 0;
-    font-size: 36px;
-    font-weight: bold;
-    font-family: Rubik, sans-serif;
+.title__banner-2 {
+    text-align: left;
 }
 
-.banner-2__free-day_large {
+.banner-2__free-day {
     display: block;
     font-size: 56px;
     margin: 0;
@@ -845,16 +856,8 @@ h4, h5, h6 {
     position: absolute;
     width: 18px;
     height: 18px;
-    background-image: url(/koteyka/images/components/booking/icons//close-9b5e922fe3ce0873162efb172514c395.svg);
     top: 40px;
     right: 40px;
-}
-
-.booking__title_main {
-    margin: 0;
-    padding-top: 14px;
-    padding-bottom: 50px;
-    text-align: center;
 }
 
 .booking__input,
@@ -1047,13 +1050,11 @@ h4, h5, h6 {
 }
 
 .contacts__content {
-    padding: 60px 93px 60px 199px; 
+    padding: 60px 93px 60px 186px; 
 }
 
-.contacts__title {
-    margin-top: 0;
+.title__contacts {
     margin-bottom: 50px;
-    font-size: 36px;
 }
 
 .contacts__key {
@@ -1086,11 +1087,13 @@ h4, h5, h6 {
 }
 
 .contacts__map-img {
+    width: 100%;
     height: 100%;
     max-width: 100%;
 }
 .social-networks__link {
     margin-right: 20px;
+    text-decoration: none;
 }
 .slider.positioner {
     position: relative;

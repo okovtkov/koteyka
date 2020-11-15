@@ -1,8 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
+<title>Номер</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="/koteyka/stylesheets/styles-2c3ba93b19ef78983c0b.css" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="/koteyka/stylesheets/styles-0bf3730c9110426f490d.css" rel="stylesheet"></head>
 <body><header class="header positioner">
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
@@ -16,9 +17,9 @@
 </header><main><div id="booking" class="booking">
 <form class="booking__room-reservation">
 <a href="#">
-<div class="booking__close"></div>
+<img src="/koteyka/img/close.svg" alt="закрыть" class="booking__close">
 </a>
-<h2 class="booking__title_main">Забронировать номер</h2>
+<h2 class="title title_booking">Забронировать номер</h2>
 <input type="text" class="booking__input booking__name" placeholder="Ваше имя">
 <input type="text" class="booking__input booking__pet-name" placeholder="Имя Питомца">
 <input type="tel" class="booking__input booking__tel" placeholder="Телефон">
@@ -37,12 +38,12 @@
 </div> <div class="complete" id="complete">
 <div class="complete__booking">
 <a href="#">
-<div class="complete__close"></div>
+<img src="/koteyka/img/close.svg" alt="закрыть" class="booking__close">
 </a>
-<h2 class="complete__title_main">Спасибо за заявку!</h2>
+<h2 class="title title_booking">Спасибо за заявку!</h2>
 <p class="complete__notification">Мы свяжимся с Вами в ближайшее время</p><a class="booking-button primary complete__button" href="#">Ок</a></div>
 </div><div class="room-info">
-<div class="room-info_container positioner"><div class="gallery">
+<div class="room-info__container positioner"><div class="gallery">
 <input type="radio" name="gallery" id="btn-4" class="gallery__toggler" checked>
 <input type="radio" name="gallery" id="btn-5" class="gallery__toggler">
 <input type="radio" name="gallery" id="btn-6" class="gallery__toggler">
@@ -50,27 +51,27 @@
 <ul class="gallery__images">
 <li class="gallery__list">
 <label for="btn-4">
-<img src="/koteyka/img/drum.png", alt="барабанщик-легушька" class="gallery__img gallery__frog_drum">
+<img src="/koteyka/img/drum.png", alt="барабанщик-легушька" class="gallery__img">
 </label>
 </li>
 <li class="gallery__list">
 <label for="btn-5">
-<img src="/koteyka/img/nigga.jpg", alt="рэп-легушька" class="gallery__img gallery__frog_nigga">
+<img src="/koteyka/img/nigga.jpg", alt="рэп-легушька" class="gallery__img">
 </label>
 </li>
 <li class="gallery__list">
 <label for="btn-6">
-<img src="/koteyka/img/gentleman.jpg", alt="джентельмен-легушька" class="gallery__img gallery__frog_gentleman">
+<img src="/koteyka/img/gentleman.jpg", alt="джентельмен-легушька" class="gallery__img">
 </label>
 </li>
 <li class="gallery__list">
 <label for="btn-7">
-<img src="/koteyka/img/cowboy.jpeg", alt="ковбой-легушька" class="gallery__img gallery__frog_cowboy">
+<img src="/koteyka/img/cowboy.jpeg", alt="ковбой-легушька" class="gallery__img">
 </label>
 </li>
 </ul>
 </div><div class="room-info__about">
-<h2 class="room-info__title_main">Супер-Люкс</h2>
+<h2 class="title title__room-info title_2">Супер-Люкс</h2>
 <p class="room-info__text">Размеры (ШхГхВ) - 180х160х180 см</p>
 <p class="room-info__text">Площадь - 2,88 м2</p>
 <p class="room-info__text">Оснащение номера</p>
@@ -83,7 +84,7 @@
 <p class="room-info__text">Цена за сутки: <span class="room-info__price">600₽</span></p><a class="booking-button primary" href="#booking">Забронировать</a></div>
 </div>
 </div><div class="rooms positioner" id="rooms">
-<h2 class="rooms__title_main">Другие номера</h2><div class="slider">
+<h2 class="title title__rooms title_2">Другие номера</h2><div class="slider">
 <input class="slider__toggler" type="radio" name="rooms" id="rooms-1" checked>
 <input class="slider__toggler" type="radio" name="rooms" id="rooms-2">
 <input class="slider__toggler" type="radio" name="rooms" id="rooms-3"><button class="slider__button slider__button_prev">&lt;</button>
@@ -92,7 +93,7 @@
 <li class="rooms__room">
 <img src="/koteyka/img/room-1.jpg" alt="Эконом плюс" class="rooms__img">
 <div class="rooms__info">
-<h3 class="rooms__title">Эконом плюс</h3>
+<h3 class="title title__room title_3">Эконом плюс</h3>
 <ul class="rooms__ul">
 <li class="rooms__item">Площадь - 0,90 м2</li>
 <li class="rooms__item">Размеры (ШхГхВ) - 90х100х180 см</li>
@@ -102,7 +103,7 @@
 <li class="rooms__room">
 <img src="/koteyka/img/room-2.jpg" alt="Люкс" class="rooms__img">
 <div class="rooms__info">
-<h3 class="rooms__title">Люкс</h3>
+<h3 class="title title__room title_3">Люкс</h3>
 <ul class="rooms__ul">
 <li class="rooms__item">Площадь - 1,5 м2</li>
 <li class="rooms__item">Размеры (ШхГхВ) - 90х60х90 см</li>
@@ -112,7 +113,7 @@
 <li class="rooms__room">
 <img src="/koteyka/img/room-3.jpg" alt="Президентский" class="rooms__img">
 <div class="rooms__info">
-<h3 class="rooms__title">Президентский</h3>
+<h3 class="title title__room title_3">Президентский</h3>
 <ul class="rooms__ul">
 <li class="rooms__item">Площадь - 2,28 м2</li>
 <li class="rooms__item">Размеры (ШхГхВ) - 228х228х228 см</li>
@@ -126,7 +127,7 @@
 </div></div></main><footer class="footer">
 <article class="contacts" id="contacts">
 <div class="contacts__content">
-<h2 class="contacts__title">Как нас найти</h2>
+<h2 class="title title__contacts title_2">Как нас найти</h2>
 <dl>
 <dt class="contacts__key">Адрес</dt>
 <dd class="contacts__value">Санкт-Петербург,<br>ул Большая Конюшенная, д 19</dd><dt class="contacts__key">Режим работы</dt>
@@ -164,5 +165,5 @@
 <div class="positioner footer__positioner">© 2019 Все права защищены<span>Политика конфиденциальности</span>
 </div>
 </div>
-</footer><script src="/koteyka/scripts/styles-32cf97bb8ffa8158abdd.js"></script></body>
+</footer><script src="/koteyka/scripts/styles-90cbbe2e583c964b5fdb.js"></script></body>
 </html>

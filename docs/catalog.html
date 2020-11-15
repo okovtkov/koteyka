@@ -1,8 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
+<title>Каталог</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="/koteyka/stylesheets/styles-2c3ba93b19ef78983c0b.css" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="/koteyka/stylesheets/styles-0bf3730c9110426f490d.css" rel="stylesheet"></head>
 <body><header class="header positioner">
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
@@ -16,9 +17,9 @@
 </header><main><div id="booking" class="booking">
 <form class="booking__room-reservation">
 <a href="#">
-<div class="booking__close"></div>
+<img src="/koteyka/img/close.svg" alt="закрыть" class="booking__close">
 </a>
-<h2 class="booking__title_main">Забронировать номер</h2>
+<h2 class="title title_booking">Забронировать номер</h2>
 <input type="text" class="booking__input booking__name" placeholder="Ваше имя">
 <input type="text" class="booking__input booking__pet-name" placeholder="Имя Питомца">
 <input type="tel" class="booking__input booking__tel" placeholder="Телефон">
@@ -37,12 +38,12 @@
 </div> <div class="complete" id="complete">
 <div class="complete__booking">
 <a href="#">
-<div class="complete__close"></div>
+<img src="/koteyka/img/close.svg" alt="закрыть" class="booking__close">
 </a>
-<h2 class="complete__title_main">Спасибо за заявку!</h2>
+<h2 class="title title_booking">Спасибо за заявку!</h2>
 <p class="complete__notification">Мы свяжимся с Вами в ближайшее время</p><a class="booking-button primary complete__button" href="#">Ок</a></div>
 </div><div class="catalog-header positioner">
-<h1 class="catalog-header__title_main">Наши номера</h1><div class="select" tabindex="0">
+<h1 class="title title__catalog-header title_2">Наши номера</h1><div class="select" tabindex="0">
 <div class="select__option select__option_no-chosen">Не выбрано</div>
 <div class="select__options">
 <label>
@@ -62,13 +63,14 @@
 <div class="select__option select__option_desc">По цене</div>
 </label>
 </div>
-</div></div><aside class="positioner container"><form class="filter">
-<fieldset class="filter_fieldset filter__price">
+</div></div><div class="positioner container"><aside>
+<form class="filter">
+<fieldset class="filter__fieldset filter__price">
 <legend class="filter__name">Цена за сутки, ₽</legend>
 <input type="text" name="from" placeholder="от 100" class="filter__price_min">
 <input type="text" name="to" placeholder="до 600" class="filter__price_max">
 </fieldset>
-<fieldset class="filter_fieldset filter__area">
+<fieldset class="filter__fieldset filter__area">
 <legend class="filter__name">Площадь</legend><label class="checkbox">
 <input type="checkbox" name="area" class="checkbox__area">
 <span class="checkbox__value">0,63 м2</span>
@@ -88,7 +90,7 @@
 <input type="checkbox" name="area" class="checkbox__area">
 <span class="checkbox__value">2,88 м2</span>
 </label></fieldset>
-<fieldset class="filter_fieldset filter__equipment">
+<fieldset class="filter__fieldset filter__equipment">
 <legend class="filter__name">Оснащение номера</legend><label class="checkbox">
 <input type="checkbox" name="area" class="checkbox__area">
 <span class="checkbox__value">Пустой номер</span>
@@ -109,7 +111,8 @@
 <button class="filter__apply">Применить</button>
 <button type="reset" class="filter__reset">Сбросить фильтр</button>
 </div>
-</form><div class="catalog-rooms"><div class="room-option">
+</form>
+</aside><div class="catalog-rooms"><div class="room-option">
 <img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <div class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
@@ -271,14 +274,14 @@
 <dd class="room-option__value room-option__text_bold">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></div>
-</div></div> </aside><div class="banner-2 positioner">
+</div></div> </div><div class="banner-2 positioner">
 <div class="banner-2__info">
-<p class="banner-2__free-day">Каждый 7-й день <span class="banner-2__free-day_large">бесплатно!</span></p>
+<h2 class="title title__banner-2 title_2">Каждый 7-й день <span class="banner-2__free-day">бесплатно!</span></h2>
 <p class="banner-2__stock">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p><a class="booking-button banner-2__booking-button" href="#booking">Забронировать</a></div>
 </div></main><footer class="footer">
 <article class="contacts" id="contacts">
 <div class="contacts__content">
-<h2 class="contacts__title">Как нас найти</h2>
+<h2 class="title title__contacts title_2">Как нас найти</h2>
 <dl>
 <dt class="contacts__key">Адрес</dt>
 <dd class="contacts__value">Санкт-Петербург,<br>ул Большая Конюшенная, д 19</dd><dt class="contacts__key">Режим работы</dt>
@@ -316,5 +319,5 @@
 <div class="positioner footer__positioner">© 2019 Все права защищены<span>Политика конфиденциальности</span>
 </div>
 </div>
-</footer><script src="/koteyka/scripts/styles-32cf97bb8ffa8158abdd.js"></script></body>
+</footer><script src="/koteyka/scripts/styles-90cbbe2e583c964b5fdb.js"></script></body>
 </html>

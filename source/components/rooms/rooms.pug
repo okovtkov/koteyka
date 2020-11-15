@@ -3,13 +3,13 @@ include ../slider/slider.pug
 
 mixin rooms(title)
     <div class="rooms positioner" id="rooms">
-        <h2 class="rooms__title_main">#{title}</h2>
+        <h2 class="title title__rooms title_2">#{title}</h2>
         +slider("rooms")
             <ul class="rooms__list slider__list">
                 <li class="rooms__room">
                     <img src="/img/room-1.jpg" alt="Эконом плюс" class="rooms__img">
                     <div class="rooms__info">
-                        <h3 class="rooms__title">Эконом плюс</h3>
+                        <h3 class="title title__room title_3">Эконом плюс</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
                                 | Площадь - 0,90 м2
@@ -27,7 +27,7 @@ mixin rooms(title)
                 <li class="rooms__room">
                     <img src="/img/room-2.jpg" alt="Люкс" class="rooms__img">
                     <div class="rooms__info">
-                        <h3 class="rooms__title">Люкс</h3>
+                        <h3 class="title title__room title_3">Люкс</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
                                 | Площадь - 1,5 м2
@@ -45,7 +45,7 @@ mixin rooms(title)
                 <li class="rooms__room">
                     <img src="/img/room-3.jpg" alt="Президентский" class="rooms__img">
                     <div class="rooms__info">
-                        <h3 class="rooms__title">Президентский</h3>
+                        <h3 class="title title__room title_3">Президентский</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
                                 | Площадь - 2,28 м2
