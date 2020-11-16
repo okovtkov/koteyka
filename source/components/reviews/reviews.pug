@@ -1,12 +1,12 @@
 include ../slider/slider.pug
 
 mixin reviews
-    <div class="reviews" id="reviews">
+    <article class="reviews" id="reviews">
         <div class="positioner reviews__positioner">
             <h2 class="title title__reviews title_2">Отзывы</h2>
             +slider("reviews")
                 <div class="reviews__review slider__list">
-                    <div class="reviews__info">
+                    <section class="reviews__info">
                         <blockquote class="reviews__quote">
                             | Первый раз пришлось оставить моего Рыжика
                             | в гостинице, очень переживал. Администратор Зухра каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
@@ -16,8 +16,8 @@ mixin reviews
                                 <time datetime="2020-10-12" class="reviews__date">12 октября, 2020</time>
                             </footer>
                         </blockquote>
-                    </div>
-                    <div class="reviews__info">
+                    </section>
+                    <section class="reviews__info">
                         <blockquote class="reviews__quote">
                             | Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. 
                             | В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.
@@ -26,8 +26,8 @@ mixin reviews
                                 <time datetime="2020-05-24" class="reviews__date">24 мая, 2020</time>
                             </footer>
                         </blockquote>
-                    </div>
-                    <div class="reviews__info">
+                    </section>
+                    <section class="reviews__info">
                         <blockquote class="reviews__quote">
                             | Мой кот — настоящая привереда, угодить ему сложно. 
                             | У меня были особые требования к уходу за ним, и “Котейка” отлично справились. 
@@ -37,7 +37,7 @@ mixin reviews
                                 <time datetime="2020-04-24" class="reviews__date">24 апреля, 2020</time>
                             </footer>
                         </blockquote>
-                    </div>
+                    </section>
                 </div>
         </div>
-    </div>
+    </article>

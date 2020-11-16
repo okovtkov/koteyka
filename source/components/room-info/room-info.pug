@@ -2,10 +2,10 @@ include ../gallery/gallery.pug
 include ../booking-button/booking-button.pug
 
 mixin room-info
-    <div class="room-info">
+    <article class="room-info">
         <div class="room-info__container positioner">
             +gallery
-            <div class="room-info__about">
+            <section class="room-info__about">
                 <h2 class="title title__room-info title_2">Супер-Люкс</h2>
                 <p class="room-info__text">Размеры (ШхГхВ) - 180х160х180 см</p>
                 <p class="room-info__text">Площадь - 2,88 м2</p>
@@ -18,6 +18,6 @@ mixin room-info
                 </ul>
                 <p class="room-info__text">Цена за сутки: <span class="room-info__price">600₽</span></p>
                 +booking-button("primary")
-            </div>
+            </section>
         </div>
-    </div>
+    </article>

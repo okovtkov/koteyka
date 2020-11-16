@@ -2,13 +2,13 @@ include ../booking-button/booking-button.pug
 include ../slider/slider.pug
 
 mixin rooms(title)
-    <div class="rooms positioner" id="rooms">
+    <section class="rooms positioner" id="rooms">
         <h2 class="title title__rooms title_2">#{title}</h2>
         +slider("rooms")
             <ul class="rooms__list slider__list">
                 <li class="rooms__room">
                     <img src="/img/room-1.jpg" alt="Эконом плюс" class="rooms__img">
-                    <div class="rooms__info">
+                    <section class="rooms__info">
                         <h3 class="title title__room title_3">Эконом плюс</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
@@ -22,11 +22,11 @@ mixin rooms(title)
                             </li>
                         </ul>
                         +booking-button("primary rooms__booking-button")
-                    </div>
+                    </section>
                 </li>
                 <li class="rooms__room">
                     <img src="/img/room-2.jpg" alt="Люкс" class="rooms__img">
-                    <div class="rooms__info">
+                    <section class="rooms__info">
                         <h3 class="title title__room title_3">Люкс</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
@@ -40,11 +40,11 @@ mixin rooms(title)
                             </li>
                         </ul>
                         +booking-button("primary rooms__booking-button")
-                    </div>
+                    </section>
                 </li>
                 <li class="rooms__room">
                     <img src="/img/room-3.jpg" alt="Президентский" class="rooms__img">
-                    <div class="rooms__info">
+                    <section class="rooms__info">
                         <h3 class="title title__room title_3">Президентский</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
@@ -58,7 +58,7 @@ mixin rooms(title)
                             </li>
                         </ul>
                         +booking-button("primary rooms__booking-button")
-                    </div>
+                    </section>
                 </li>
             </ul>
-    </div>
+    </section>

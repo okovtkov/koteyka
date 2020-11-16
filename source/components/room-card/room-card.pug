@@ -1,9 +1,9 @@
 include ../booking-button/booking-button.pug
 
 mixin room-card
-    <div class="room-option">
+    <article class="room-option">
         <img src="/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
-        <div class="room-option__card-info">
+        <section class="room-option__card-info">
             <a href="/room.html" class="room-option__title">Эконом</a>
             <dl>
                 <div class="room-option__info room-option__size">
@@ -29,6 +29,6 @@ mixin room-card
                 </div>
             </dl>
             +booking-button("primary room-option__booking-button")
-        </div>
-    </div>
+        </section>
+    </article>
     
