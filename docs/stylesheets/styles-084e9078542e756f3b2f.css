@@ -60,14 +60,14 @@ h4, h5, h6 {
 }
 
 .banner__city {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 15px;
 }
 
 .banner__desc {
     margin-top: 25px;
     padding: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -87,19 +87,19 @@ h4, h5, h6 {
 }
 
 .title_1 {
-    font-size: 62px;
+    font-size: 3.875rem;
 }
 
 .title_2 {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .title_3 {
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .title_booking {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 50px;
 }
 .advantages {
@@ -329,7 +329,7 @@ h4, h5, h6 {
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 35px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #848484;
 }
 .footer__positioner {
@@ -378,7 +378,6 @@ h4, h5, h6 {
 }
 
 .room-info__text {
-    font-size: 16px;
     margin: 0;
     margin-top: 17px;
     padding: 0;
@@ -394,7 +393,6 @@ h4, h5, h6 {
     margin-top: 13px;
     padding: 0;
     list-style: none;
-    font-size: 16px; 
 }
 
 .room-info__list {
@@ -405,7 +403,7 @@ h4, h5, h6 {
 
 .room-info__price {
     margin-left: 12px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
@@ -650,7 +648,7 @@ h4, h5, h6 {
     margin-top: 15px;
     border: 2px solid #FAC663;
     outline: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     border-radius: 25px;
     background-color: transparent;
     transition: background-color 0.2s ease;
@@ -738,7 +736,7 @@ h4, h5, h6 {
     display: inline-block;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .room-option__info  {
@@ -806,7 +804,7 @@ h4, h5, h6 {
 
 .banner-2__free-day {
     display: block;
-    font-size: 56px;
+    font-size: 3.5rem;
     margin: 0;
     line-height: 0.85;
     padding: 0;
@@ -817,7 +815,6 @@ h4, h5, h6 {
     margin-top: 25px;
     margin-bottom: 0;
     padding: 0;
-    font-size: 16px;
 }
 
 .banner-2__booking-button {
@@ -869,7 +866,6 @@ h4, h5, h6 {
     padding: 16px 20px;
     border: 1px solid #D7D7D7;
     border-radius: 25px;
-    font-size: 16px;
     outline: none;
 }
 
@@ -888,7 +884,7 @@ h4, h5, h6 {
     display: inline-block;
     margin: 0;
     width: 134px;
-    font-size: 16px;
+    font-size: 1.1428rem;
 }
 
 .booking__date-from,
@@ -908,7 +904,6 @@ h4, h5, h6 {
     position: absolute;
     top: 17px;
     left: 20px;
-    font-size: 16px;
     content: "с";
 }
 
@@ -916,7 +911,6 @@ h4, h5, h6 {
     position: absolute;
     top: 17px;
     left: 5px;
-    font-size: 16px;
     content: "до";
 }
 
@@ -1034,7 +1028,6 @@ h4, h5, h6 {
     margin-right: 132px;
     margin-bottom: 50px;
     padding: 0;
-    font-size: 16px;
 }
 
 .complete__button {

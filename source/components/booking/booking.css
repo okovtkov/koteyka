@@ -44,7 +44,6 @@
     padding: 16px 20px;
     border: 1px solid #D7D7D7;
     border-radius: 25px;
-    font-size: 16px;
     outline: none;
 }
 
@@ -63,7 +62,7 @@
     display: inline-block;
     margin: 0;
     width: 134px;
-    font-size: 16px;
+    font-size: 1.1428rem;
 }
 
 .booking__date-from,
@@ -83,7 +82,6 @@
     position: absolute;
     top: 17px;
     left: 20px;
-    font-size: 16px;
     content: "с";
 }
 
@@ -91,7 +89,6 @@
     position: absolute;
     top: 17px;
     left: 5px;
-    font-size: 16px;
     content: "до";
 }
 

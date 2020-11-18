@@ -11,14 +11,14 @@
 }
 
 .banner__city {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 15px;
 }
 
 .banner__desc {
     margin-top: 25px;
     padding: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 

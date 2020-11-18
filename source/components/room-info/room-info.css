@@ -32,7 +32,6 @@
 }
 
 .room-info__text {
-    font-size: 16px;
     margin: 0;
     margin-top: 17px;
     padding: 0;
@@ -48,7 +47,6 @@
     margin-top: 13px;
     padding: 0;
     list-style: none;
-    font-size: 16px; 
 }
 
 .room-info__list {
@@ -59,7 +57,7 @@
 
 .room-info__price {
     margin-left: 12px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
