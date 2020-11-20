@@ -21,11 +21,11 @@
 }
 
 .slider__button_next {
-    left: 1100px;
+    left: 94.017%;
 }
 
 .slider__button_prev {
-    left: 1049px;
+    left: 89.6581%;
 }
 
 .slider__radio-button {
@@ -48,11 +48,11 @@
 }
 
 .slider__toggler[name="rooms"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-1170px);
+    transform: translate(-34%);
 }
 
 .slider__toggler[name="rooms"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-2340px);
+    transform: translate(-67%);
 }
 
 .slider__toggler[name="reviews"]:nth-child(1):checked ~ .slider__list {
@@ -60,11 +60,11 @@
 }
 
 .slider__toggler[name="reviews"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-147px);
+    transform: translate(-12.5641%);
 }
 
 .slider__toggler[name="reviews"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-294px);
+    transform: translate(-25.1282%);
 }
 
 .slider__toggler:nth-child(1):checked ~ .slider__radio-button .slider__label_btn-1,

@@ -13,16 +13,19 @@ h1, h2, h3,
 h4, h5, h6 {
     font-family: "Rubik", sans-serif;
 }
+
+img {
+    max-width: 100%;
+}
 .positioner {
-    width: 1170px;
+    width: 86.7%;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .positioner_narrow {
-    width: 1070px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 79.318%;
 }
 .header {
     display: flex;
@@ -51,12 +54,13 @@ h4, h5, h6 {
     background-size: cover;
     background-image: url(/koteyka/images/components/banner//cat-8b7234a99271c8d7384b2878f922cfd0.jpg);
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .banner__info {
     display: block;
-    padding-top: 153px;
-    padding-bottom: 153px;
+    padding-top: 11.3417%;
+    padding-bottom: 11.3417%;
 }
 
 .banner__city {
@@ -125,6 +129,7 @@ h4, h5, h6 {
 
 .title__advantages {
     margin-top: 140px;
+    white-space: pre-wrap;
 }
 
 .advantages__ul {
@@ -137,9 +142,9 @@ h4, h5, h6 {
 
 .advantages__list {
     position: relative;
-    width: 370px;
+    width: 31.6239316%;
     margin-top: 20px;
-    padding: 121px 30px 30px;
+    padding: 121px 2.5641% 30px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -184,9 +189,9 @@ h4, h5, h6 {
 }
 .rooms {
     position: relative;
-    margin-top: 140px;
+    margin-top: 11.965812%;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-bottom: 1.7094171%;
 }
 
 .rooms::before {
@@ -195,14 +200,14 @@ h4, h5, h6 {
     left: 0;
     background-image: url(/koteyka/images/components/rooms/icons//fish-d94c6ca25a8c694fa88c0db671ad4b37.svg);
     background-repeat: no-repeat;
-    width: 484px;
+    width: 610px;
     height: 151px;
     opacity: 0.1;
     content: "";
 }
 
 .title__rooms {
-    margin-bottom: 70px;
+    margin-bottom: 5.9829%;
 }
 
 .rooms__list {
@@ -216,39 +221,42 @@ h4, h5, h6 {
 
 .rooms__room {
     display: flex;
+    width: 100%;
     align-items: center;
 }
 
+.rooms__img-container {
+    width: 53.3333333%;
+    margin-left: 14.3712%; 
+}
+
 .rooms__img {
-    width: 600px;
-    height: 404px;
     border-radius: 10px;
-    margin-left: 168px;
 }
 
 .rooms__info {
-    margin-left: -70px;
+    width: 38.85%;
+    padding-left: 8.54700855%;
+    margin-left: -7.6923%;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
 .title__room {
-    margin-left: 100px;
-    margin-top: 40px;
+    margin-top: 2.99145%;
 }
 
 .rooms__ul {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 2.5641%;
     margin-bottom: 0;
 }
 
 .rooms__item {
     position: relative;
-    padding-right: 80px;
-    padding-left: 121px;
-    padding-bottom: 20px;
+    padding-left: 5.9322%;
+    padding-bottom: 5.6497%;
     margin: 0;
     list-style: none;
 }
@@ -256,7 +264,7 @@ h4, h5, h6 {
 .rooms__item::before {
     position: absolute;
     top: 3px;
-    left: 100px;
+    left: 0;
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -265,23 +273,23 @@ h4, h5, h6 {
 }
 
 .rooms__booking-button {
-    margin: 10px 0 40px 100px;
+    margin: 10px 0 40px 0;
 }
 .reviews {
     position: relative;
-    padding-top: 130px;
+    padding-top: 11.111111%;
     overflow-x: hidden;
 }
 
 .reviews__positioner {
     position: relative;
-    padding-bottom: 32px;
+    padding-bottom: 2.735%;
 }
 
 .reviews__positioner::before {
     position: absolute;
-    top: -185px;
-    right: -130px;
+    top: -41.8119%;
+    right: -11.1111111%;
     background-image: url(/koteyka/images/components/reviews/icons//background-lapa-2-4349a3cddd67db3b4b384501b4645182.svg);
     background-repeat: no-repeat;
     width: 350px;
@@ -290,7 +298,7 @@ h4, h5, h6 {
 }
 
 .title__reviews {
-    margin-bottom: 70px;
+    margin-bottom: 5.9829%;
 }
 
 .reviews__review {
@@ -306,22 +314,32 @@ h4, h5, h6 {
 
 .reviews__info {
     flex-shrink: 0;
-    padding-left: 70px;
-    padding-top: 35px;
-    margin-right: 30px;
-    margin-bottom: 55px;
-    padding-right: 38px;
-    width: 470px;
+    padding-left: 2.77%;
+    padding-top: 2.77%;
+    margin-right: 2.4%;
+    margin-bottom: 4.35%;
+    padding-right: 3%;
+    width: 37.0662%;
     background-color: white;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
-    background-image: url(/koteyka/images/components/reviews/icons//“-cfa37e05106380344672afbe366a690c.svg);
-    background-repeat: no-repeat;
-    background-position: 35px 35px;
 }
 
 .reviews__quote {
+    position: relative;
     margin: 0;
+    padding-left: 8.85%;
+}
+
+.reviews__quote::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 25px;
+    background-image: url(/koteyka/images/components/reviews/icons//“-cfa37e05106380344672afbe366a690c.svg);
+    background-repeat: no-repeat;
+    content: "";
 }
 
 .reviews__footer {
@@ -1112,11 +1130,11 @@ h4, h5, h6 {
 }
 
 .slider__button_next {
-    left: 1100px;
+    left: 94.017%;
 }
 
 .slider__button_prev {
-    left: 1049px;
+    left: 89.6581%;
 }
 
 .slider__radio-button {
@@ -1139,11 +1157,11 @@ h4, h5, h6 {
 }
 
 .slider__toggler[name="rooms"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-1170px);
+    transform: translate(-34%);
 }
 
 .slider__toggler[name="rooms"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-2340px);
+    transform: translate(-67%);
 }
 
 .slider__toggler[name="reviews"]:nth-child(1):checked ~ .slider__list {
@@ -1151,11 +1169,11 @@ h4, h5, h6 {
 }
 
 .slider__toggler[name="reviews"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-147px);
+    transform: translate(-12.5641%);
 }
 
 .slider__toggler[name="reviews"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-294px);
+    transform: translate(-25.1282%);
 }
 
 .slider__toggler:nth-child(1):checked ~ .slider__radio-button .slider__label_btn-1,

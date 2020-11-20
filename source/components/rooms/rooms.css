@@ -1,8 +1,8 @@
 .rooms {
     position: relative;
-    margin-top: 140px;
+    margin-top: 11.965812%;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-bottom: 1.7094171%;
 }
 
 .rooms::before {
@@ -11,14 +11,14 @@
     left: 0;
     background-image: url("./icons/fish.svg");
     background-repeat: no-repeat;
-    width: 484px;
+    width: 610px;
     height: 151px;
     opacity: 0.1;
     content: "";
 }
 
 .title__rooms {
-    margin-bottom: 70px;
+    margin-bottom: 5.9829%;
 }
 
 .rooms__list {
@@ -32,39 +32,42 @@
 
 .rooms__room {
     display: flex;
+    width: 100%;
     align-items: center;
 }
 
+.rooms__img-container {
+    width: 53.3333333%;
+    margin-left: 14.3712%; 
+}
+
 .rooms__img {
-    width: 600px;
-    height: 404px;
     border-radius: 10px;
-    margin-left: 168px;
 }
 
 .rooms__info {
-    margin-left: -70px;
+    width: 38.85%;
+    padding-left: 8.54700855%;
+    margin-left: -7.6923%;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
 .title__room {
-    margin-left: 100px;
-    margin-top: 40px;
+    margin-top: 2.99145%;
 }
 
 .rooms__ul {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 2.5641%;
     margin-bottom: 0;
 }
 
 .rooms__item {
     position: relative;
-    padding-right: 80px;
-    padding-left: 121px;
-    padding-bottom: 20px;
+    padding-left: 5.9322%;
+    padding-bottom: 5.6497%;
     margin: 0;
     list-style: none;
 }
@@ -72,7 +75,7 @@
 .rooms__item::before {
     position: absolute;
     top: 3px;
-    left: 100px;
+    left: 0;
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -81,5 +84,5 @@
 }
 
 .rooms__booking-button {
-    margin: 10px 0 40px 100px;
+    margin: 10px 0 40px 0;
 }

@@ -1,11 +1,10 @@
 .positioner {
-    width: 1170px;
+    width: 86.7%;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .positioner_narrow {
-    width: 1070px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 79.318%;
 }

@@ -2,12 +2,13 @@
     background-size: cover;
     background-image: url("./cat.jpg");
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .banner__info {
     display: block;
-    padding-top: 153px;
-    padding-bottom: 153px;
+    padding-top: 11.3417%;
+    padding-bottom: 11.3417%;
 }
 
 .banner__city {

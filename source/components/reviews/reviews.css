@@ -1,18 +1,18 @@
 .reviews {
     position: relative;
-    padding-top: 130px;
+    padding-top: 11.111111%;
     overflow-x: hidden;
 }
 
 .reviews__positioner {
     position: relative;
-    padding-bottom: 32px;
+    padding-bottom: 2.735%;
 }
 
 .reviews__positioner::before {
     position: absolute;
-    top: -185px;
-    right: -130px;
+    top: -41.8119%;
+    right: -11.1111111%;
     background-image: url("./icons/background-lapa-2.svg");
     background-repeat: no-repeat;
     width: 350px;
@@ -21,7 +21,7 @@
 }
 
 .title__reviews {
-    margin-bottom: 70px;
+    margin-bottom: 5.9829%;
 }
 
 .reviews__review {
@@ -37,22 +37,32 @@
 
 .reviews__info {
     flex-shrink: 0;
-    padding-left: 70px;
-    padding-top: 35px;
-    margin-right: 30px;
-    margin-bottom: 55px;
-    padding-right: 38px;
-    width: 470px;
+    padding-left: 2.77%;
+    padding-top: 2.77%;
+    margin-right: 2.4%;
+    margin-bottom: 4.35%;
+    padding-right: 3%;
+    width: 37.0662%;
     background-color: white;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
-    background-image: url("./icons/“.svg");
-    background-repeat: no-repeat;
-    background-position: 35px 35px;
 }
 
 .reviews__quote {
+    position: relative;
     margin: 0;
+    padding-left: 8.85%;
+}
+
+.reviews__quote::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 25px;
+    background-image: url("./icons/“.svg");
+    background-repeat: no-repeat;
+    content: "";
 }
 
 .reviews__footer {

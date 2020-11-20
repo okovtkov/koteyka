@@ -21,6 +21,7 @@
 
 .title__advantages {
     margin-top: 140px;
+    white-space: pre-wrap;
 }
 
 .advantages__ul {
@@ -33,9 +34,9 @@
 
 .advantages__list {
     position: relative;
-    width: 370px;
+    width: 31.6239316%;
     margin-top: 20px;
-    padding: 121px 30px 30px;
+    padding: 121px 2.5641% 30px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
