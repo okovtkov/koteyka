@@ -11,7 +11,7 @@
 
 .reviews__positioner::before {
     position: absolute;
-    top: -41.8119%;
+    top: -31.8119%;
     right: -11.1111111%;
     background-image: url("./icons/background-lapa-2.svg");
     background-repeat: no-repeat;
