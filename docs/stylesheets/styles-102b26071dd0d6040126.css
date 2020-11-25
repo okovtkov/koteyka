@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
     color: black;
+    background-color: #FFFEFD;
 }
 
 h1, h2, h3,
@@ -105,6 +106,12 @@ img {
 .title_booking {
     font-size: 1.75rem;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .title_3 {
+        font-size: 1.1rem;
+    }
 }
 .advantages {
     position: relative;
@@ -227,7 +234,7 @@ img {
 
 .rooms__img-container {
     width: 53.3333333%;
-    margin-left: 14.3712%; 
+    margin-left: 14.3712%;
 }
 
 .rooms__img {
@@ -237,7 +244,7 @@ img {
 .rooms__info {
     width: 38.85%;
     padding-left: 8.54700855%;
-    margin-left: -7.6923%;
+    margin-left: -8%;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -1130,11 +1137,11 @@ img {
 }
 
 .slider__button_next {
-    left: 94.017%;
+    left: 94%;
 }
 
 .slider__button_prev {
-    left: 89.6581%;
+    left: 89.5%;
 }
 
 .slider__radio-button {

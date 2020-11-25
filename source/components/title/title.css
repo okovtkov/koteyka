@@ -26,3 +26,9 @@
     font-size: 1.75rem;
     margin-bottom: 50px;
 }
+
+@media screen and (max-width: 900px) {
+    .title_3 {
+        font-size: 1.1rem;
+    }
+}
