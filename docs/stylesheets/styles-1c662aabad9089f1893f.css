@@ -89,15 +89,26 @@ img {
     }
 }
 
-.banner__button {
+.booking-button.banner__button {
     margin-top: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 53px;
+    font-size: 0.65rem;
 }
 
 @media screen and (min-width: 768px) {
-    .banner__button {
+    .booking-button.banner__button {
         margin-top: 40px;
+        padding-left: 30px;
+        padding-right: 63px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1rem;
     }
 }
+
 .title {
     font-weight: bold;
     font-family: "Rubik", sans-serif;
@@ -191,7 +202,7 @@ img {
     }
 }
 
-.title.title_3 {
+.advantages__title {
     margin-bottom: 20px;
     margin-top: 35px;
 }
@@ -227,6 +238,7 @@ img {
 }
 .rooms {
     position: relative;
+    width: 100%;
     margin-top: 11.965812%;
     overflow: hidden;
     padding-bottom: 1.7094171%;
@@ -245,7 +257,8 @@ img {
 }
 
 .title__rooms {
-    margin-bottom: 5.9829%;
+    padding-top: 5%;
+    margin-bottom: 5%;
 }
 
 .rooms__list {
@@ -259,30 +272,51 @@ img {
 
 .rooms__room {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
 }
 
+@media screen and (min-width: 665px) {
+    .rooms__room {
+        flex-wrap: nowrap;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+}
+
 .rooms__img-container {
-    width: 53.3333333%;
-    margin-left: 14.3712%;
+    width: 90%;
+    min-height: 44%;
 }
 
 .rooms__img {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    min-width: 288px;
+}
+
+@media screen and (min-width: 665px) {
+    .rooms__img {
+        border-radius: 10px;
+    }
 }
 
 .rooms__info {
-    width: 38.85%;
-    padding-left: 8.54700855%;
-    margin-left: -8%;
+    width: 90%;
+    padding-left: 5.5%;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
-.title__room {
-    margin-top: 2.99145%;
+@media screen and (min-width: 665px) {
+    .rooms__info {
+        width: 70%;
+        border-radius: 10px;
+        margin-left: -5%;
+        padding-left: 6.54700855%;
+    }
 }
 
 .rooms__ul {
@@ -293,8 +327,8 @@ img {
 
 .rooms__item {
     position: relative;
-    padding-left: 5.9322%;
-    padding-bottom: 5.6497%;
+    padding-left: 7%;
+    padding-bottom: 3%;
     margin: 0;
     list-style: none;
 }
@@ -311,7 +345,7 @@ img {
 }
 
 .rooms__booking-button {
-    margin: 10px 0 40px 0;
+    margin: 10px 0 20px 0;
 }
 .reviews {
     position: relative;
@@ -982,12 +1016,12 @@ img {
 .booking-button {
     position: relative;
     display: inline-block;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 15px;
-    padding-right: 53px;
+    padding-left: 30px;
+    padding-right: 63px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1rem;
     border-radius: 25px;
-    font-size: 0.65rem;
     border: none;
     outline: none;
     text-decoration: none;
@@ -995,16 +1029,6 @@ img {
     box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
     background-color: #ffffff;
     cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-    .booking-button {
-        padding-left: 30px;
-        padding-right: 63px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 1rem;
-    }
 }
 
 .booking-button::after {

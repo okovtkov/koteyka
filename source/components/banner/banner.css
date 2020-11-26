@@ -36,12 +36,22 @@
     }
 }
 
-.banner__button {
+.booking-button.banner__button {
     margin-top: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 53px;
+    font-size: 0.65rem;
 }
 
 @media screen and (min-width: 768px) {
-    .banner__button {
+    .booking-button.banner__button {
         margin-top: 40px;
+        padding-left: 30px;
+        padding-right: 63px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1rem;
     }
 }
