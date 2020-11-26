@@ -31,27 +31,55 @@
     100вв - ширина окна
     16пкс - ширина вертикальной прокртуки
     */
-    width: calc(100% + (100vw - 100%) / 2);
+    /* width: calc(100% + (100vw - 100%) / 2); */
     transition: transform 1s ease;
 }
 
 .reviews__info {
     flex-shrink: 0;
-    padding-left: 2.77%;
-    padding-top: 2.77%;
-    margin-right: 2.4%;
+    /* padding-left: 2.77%; */
+    padding-left: 4%;
+    /* padding-top: 2.77%; */
+    padding-top: 7%;
+    /* margin-right: 2.4%; */
+    margin-right: 8%;
     margin-bottom: 4.35%;
-    padding-right: 3%;
-    width: 37.0662%;
+    padding-right: 4%;
+    /* width: 37.0662%; */
+    width: 100%;
     background-color: white;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
 }
 
+@media screen and (min-width: 768px) {
+    .reviews__info {
+        width: 46%;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviews__info {
+        width: 37.0662%;
+        padding-top: 2.77%;
+        padding-left: 2.77%;
+        padding-right: 3%;
+        margin-right: 2.4%;
+    }
+}
+
 .reviews__quote {
     position: relative;
     margin: 0;
-    padding-left: 8.85%;
+    /* padding-left: 8.85%; */
+    padding-left: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews__quote {
+        padding-left: 8.85%;
+    }
 }
 
 .reviews__quote::before {

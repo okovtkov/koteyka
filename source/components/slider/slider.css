@@ -60,11 +60,35 @@
 }
 
 .slider__toggler[name="reviews"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-12.5641%);
+    transform: translate(-108%);
+}
+
+@media screen and (min-width: 768px) {
+    .slider__toggler[name="reviews"]:nth-child(2):checked ~ .slider__list {
+        transform: translate(-27%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slider__toggler[name="reviews"]:nth-child(2):checked ~ .slider__list {
+        transform: translate(-6%);
+    }
 }
 
 .slider__toggler[name="reviews"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-25.1282%);
+    transform: translate(-216%);
+}
+
+@media screen and (min-width: 768px) {
+    .slider__toggler[name="reviews"]:nth-child(3):checked ~ .slider__list {
+        transform: translate(-54%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slider__toggler[name="reviews"]:nth-child(3):checked ~ .slider__list {
+        transform: translate(-12%);
+    }
 }
 
 .slider__toggler:nth-child(1):checked ~ .slider__radio-button .slider__label_btn-1,
