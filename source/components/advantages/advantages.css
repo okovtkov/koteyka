@@ -34,15 +34,27 @@
 
 .advantages__list {
     position: relative;
-    width: 31.6239316%;
+    width: 100%;
     margin-top: 20px;
-    padding: 121px 2.5641% 30px;
+    padding: 121px 2.5641% 30px 20px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     background-color: white;
     background-repeat: no-repeat;
     background-position: 30px 30px;
+}
+
+@media screen and (min-width: 600px) {
+    .advantages__list {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .advantages__list {
+        width: 31%;
+    }
 }
 
 .title.title_3 {

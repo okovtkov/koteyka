@@ -65,19 +65,38 @@ img {
 }
 
 .banner__city {
-    font-size: 0.875rem;
+    font-size: 0.575rem;
     margin-bottom: 15px;
 }
 
+@media screen and (min-width: 769px) {
+    .banner__city {
+        font-size: 0.875rem;
+    }
+}
+
 .banner__desc {
-    margin-top: 25px;
+    margin-top: 1.830161054172767%;
     padding: 0;
-    font-size: 1.25rem;
+    width: 55%;
+    font-size: 0.75rem; /* 1.25 */
     font-weight: 500;
 }
 
+@media screen and (min-width: 769px) {
+    .banner__desc {
+        font-size: 1.25rem;
+    }
+}
+
 .banner__button {
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__button {
+        margin-top: 40px;
+    }
 }
 .title {
     font-weight: bold;
@@ -92,7 +111,13 @@ img {
 }
 
 .title_1 {
-    font-size: 3.875rem;
+    font-size: 2rem;   /* 3.75 */
+}
+
+@media screen and (min-width: 768px) {
+    .title_1 {
+        font-size: 3rem;
+    }
 }
 
 .title_2 {
@@ -106,12 +131,6 @@ img {
 .title_booking {
     font-size: 1.75rem;
     margin-bottom: 50px;
-}
-
-@media screen and (max-width: 900px) {
-    .title_3 {
-        font-size: 1.1rem;
-    }
 }
 .advantages {
     position: relative;
@@ -149,15 +168,27 @@ img {
 
 .advantages__list {
     position: relative;
-    width: 31.6239316%;
+    width: 100%;
     margin-top: 20px;
-    padding: 121px 2.5641% 30px;
+    padding: 121px 2.5641% 30px 20px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     background-color: white;
     background-repeat: no-repeat;
     background-position: 30px 30px;
+}
+
+@media screen and (min-width: 600px) {
+    .advantages__list {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .advantages__list {
+        width: 31%;
+    }
 }
 
 .title.title_3 {
@@ -951,12 +982,12 @@ img {
 .booking-button {
     position: relative;
     display: inline-block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 63px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 53px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 0.65rem;
     border: none;
     outline: none;
     text-decoration: none;
@@ -964,6 +995,16 @@ img {
     box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
     background-color: #ffffff;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .booking-button {
+        padding-left: 30px;
+        padding-right: 63px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1rem;
+    }
 }
 
 .booking-button::after {
@@ -1062,18 +1103,96 @@ img {
 }
 .contacts {
     position: relative;
-    display: flex;
-    justify-content: center;
     margin-top: 120px;
     background-color: #fac663; 
 }
 
+@media screen and (min-width: 970px) {
+    .contacts {   
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .contacts__content {
-    padding: 60px 93px 60px 186px; 
+    /* padding: 60px 93px 60px 186px;  */
+    padding: 0 12px;
+    text-align: center;
+}
+
+@media screen and (min-width: 970px) {
+    .contacts__content {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .contacts__content {
+        width: 50%; 
+    }
 }
 
 .title__contacts {
     margin-bottom: 50px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px) { 
+    .title__contacts {
+        margin-top: 10.40091935636564%;
+        padding-top: 0;
+    }
+}
+
+.contacts__container {
+    margin-left: 10%;
+    margin-bottom: 70px;
+}
+
+@media screen and (min-width: 500px) { 
+    .contacts__container {
+        margin-left: 17%;
+    }
+}
+
+@media screen and (min-width: 650px) { 
+    .contacts__container {
+        margin-left: 19%;
+    }
+}
+
+@media screen and (min-width: 769px) { 
+    .contacts__container {
+        margin-left: 23%;
+    }
+}
+
+@media screen and (min-width: 970px) { 
+    .contacts__container {
+        /* margin-left: 1.54639175257732%; */
+        text-align: center;
+    }
+}
+
+.contacts__item {
+    text-align: left;
+    padding-right: 15px;
+}
+
+@media screen and (min-width: 400px) {
+    .contacts__item {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .contacts__item {
+        width: 100%;
+    }
 }
 
 .contacts__key {
@@ -1090,22 +1209,27 @@ img {
 
 .contacts__map {
     position: relative;
-    margin-left: 13px;
+    margin-left: 0;
 }
 
-.contacts__map::after {
-    position: absolute;
-    top: 255px;
-    left: 245px;
-    width: 64px;
-    height: 116px;
-    background-image: url(/koteyka/images/components/contacts/icons//position-2dc3afe967c4e64647c410aa9cf96658.svg);
-    background-repeat: no-repeat;
-    z-index: 1;
+@media screen and (min-width: 970px) {
+    .contacts__map {
+        width: 70%;
+    }
+}
+
+.contacts__map:before {
+    display: block;
+    width: 100%;
+    height: 1px;
+    padding-top: 72.68%;
     content: "";
 }
 
 .contacts__map-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     max-width: 100%;

@@ -12,17 +12,36 @@
 }
 
 .banner__city {
-    font-size: 0.875rem;
+    font-size: 0.575rem;
     margin-bottom: 15px;
 }
 
+@media screen and (min-width: 769px) {
+    .banner__city {
+        font-size: 0.875rem;
+    }
+}
+
 .banner__desc {
-    margin-top: 25px;
+    margin-top: 1.830161054172767%;
     padding: 0;
-    font-size: 1.25rem;
+    width: 55%;
+    font-size: 0.75rem; /* 1.25 */
     font-weight: 500;
 }
 
+@media screen and (min-width: 769px) {
+    .banner__desc {
+        font-size: 1.25rem;
+    }
+}
+
 .banner__button {
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__button {
+        margin-top: 40px;
+    }
 }
