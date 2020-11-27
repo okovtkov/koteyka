@@ -10,3 +10,9 @@
     color: #8f8f8f;
     border-top: 2px solid #efefef;
 }
+
+@media screen and (max-width: 550px) {
+    .footer .header {
+        display: none;
+    }
+}

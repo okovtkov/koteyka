@@ -1,5 +1,6 @@
 @import "../components/body/body.css";
 @import "../components/positioner/positioner.css";
+@import "../components/booking-button/booking-button.css";
 @import "../components/header/header.css";
 @import "../components/banner/banner.css";
 @import "../components/title/title.css";
@@ -18,7 +19,6 @@
 @import "../components/catalog-container/catalog-container.css";
 @import "../components/banner-2/banner-2.css";
 @import "../components/booking/booking.css";
-@import "../components/booking-button/booking-button.css";
 @import "../components/complete/complete.css";
 @import "../components/contacts/contacts.css";
 @import "../components/social-networks/social-networks.css";
