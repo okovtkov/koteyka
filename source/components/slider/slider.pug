@@ -3,8 +3,8 @@ mixin slider(name)
         input(type="radio" class="slider__toggler" name=`${name}` id=`${name}-1` checked)
         input(type="radio" class="slider__toggler" name=`${name}` id=`${name}-2`)
         input(type="radio" class="slider__toggler" name=`${name}` id=`${name}-3`)
-        <button class="slider__button slider__button_prev">&lt;</button>
-        <button class="slider__button slider__button_next">&gt;</button>
+        <button class="slider__button slider__button_prev rooms__button_prev-pc">&lt;</button>
+        <button class="slider__button slider__button_next rooms__button_next-pc">&gt;</button>
         block
         <div class="slider__radio-button">
             label(for=`${name}-1` class="slider__label slider__label_btn-1")

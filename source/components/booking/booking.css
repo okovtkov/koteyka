@@ -18,8 +18,9 @@
 .booking__room-reservation {
     position: relative;
     display: inline-block;
-    margin-top: 100px;
-    padding: 70px;
+    margin-top: 8.547008547008547%;
+    padding: 5%;
+    width: 70%;
     border-radius: 10px;
     background-color: white;
     background-image: url("./icons/paw\ \(1\).svg");
@@ -28,20 +29,46 @@
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
+@media screen and (min-width: 1024px) {
+    .booking__room-reservation {
+        width: 42%;
+    }
+}
+
 .booking__close {
     position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 40px;
-    right: 40px;
+    width: 4.5%;
+    height: 4.5%;
+    top: 2%;
+    right: 7%;
+}
+
+@media screen and (min-width: 550px) {
+    .booking__close {
+        top: 3%;
+        right: 6%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .booking__close {
+        top: 3%;
+    }
+}
+
+@media screen and (min-width: 1286px) {
+    .booking__close {
+        top: 5%;
+        right: 5%;
+    }
 }
 
 .booking__input,
 .booking__date {
     display: block;
-    width: 430px;
-    margin-bottom: 20px;
-    padding: 16px 20px;
+    width: 100%;
+    margin-bottom: 3.508771929824561%;
+    padding: 3.8% 7%;
     border: 1px solid #D7D7D7;
     border-radius: 25px;
     outline: none;
@@ -55,33 +82,94 @@
 
 .booking__duration {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 11.5%;
+}
+
+.booking__arrival {
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding-left: 5%;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 550px) {
+    .booking__arrival {
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .booking__arrival {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1286px) {
+    .booking__arrival {
+        font-weight: normal;
+        padding: 0%;
+    }
 }
 
 .booking__date {
     display: inline-block;
     margin: 0;
-    width: 134px;
+    width: 140%;
+    transform: scale(0.7);
+    transform-origin: center left;
     font-size: 1.1428rem;
+}
+
+@media screen and (min-width: 550px) {
+    .booking__date {
+        transform: scale(0.8);
+        width: 125%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .booking__date {
+        transform: scale(1);
+        margin-bottom: 12px;
+        width: 100%;
+    }
 }
 
 .booking__date-from,
 .booking__date-to {
     position: relative;
+    width: 100%;
+}
+
+@media screen and (min-width: 1286px) {
+    .booking__date-to,
+    .booking__date-from {
+        display: inline-block;
+        width: 38.1%;
+        margin-bottom: 12px;
+    }
 }
 
 .booking__date-from {
-    padding-left: 35px;
+    padding-left: 31px;
+    margin-bottom: 0;
 }
 
 .booking__date-to {
     padding-left: 31px;
 }
 
+@media screen and (max-width: 1286px) {
+    .booking__date-to {
+        margin-left: 3px;
+    }
+}
+
 .booking__date-from::before {
     position: absolute;
     top: 17px;
-    left: 20px;
+    left: 15px;
     content: "с";
 }
 
@@ -101,3 +189,24 @@
     margin-left: auto;
     margin-right: auto;
  }
+
+ .primary_booking {
+    font-size: 0.8rem;
+    padding-right: 53px;
+ }
+
+ @media screen and (min-width: 375px) {
+    .primary_booking {
+        font-size: 0.9rem;
+        padding-right: 60px;
+    }
+ }
+
+ @media screen and (min-width: 425px) {
+    .primary_booking {
+        font-size: 1rem;
+        padding-right: 63px;
+    }
+ }
+    
+

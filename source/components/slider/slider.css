@@ -20,11 +20,11 @@
     cursor: pointer;
 }
 
-.slider__button_next {
-    left: 94%;
+.slider__button_next-pc {
+    left: 88%;
 }
 
-.slider__button_prev {
+.slider__button_prev-pc {
     left: 89.5%;
 }
 
