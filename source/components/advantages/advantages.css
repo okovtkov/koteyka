@@ -11,12 +11,36 @@
 .advantages .positioner::before {
     position: absolute;
     top: -150px;
-    right: -150px;
+        right: -110px;
     width: 410px;
     height: 385px;
+    transform: scale(0.7);
     background-image: url("./icons/background-lapa.svg");
     background-repeat: no-repeat;
     content: "";    
+}
+
+@media screen and (min-width: 550px) {
+    .advantages .positioner::before {
+        transform: scale(0.8);
+        top: -140px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages .positioner::before {
+        transform: scale(0.9);
+        top: -180px;
+        right: -120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .advantages .positioner::before {
+        transform: scale(1);
+        top: -150px;
+        right: -150px;
+    }
 }
 
 .title__advantages {

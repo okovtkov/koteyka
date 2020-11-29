@@ -8,14 +8,30 @@
 
 .rooms::before {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
-    background-image: url("./icons/fish.svg");
-    background-repeat: no-repeat;
     width: 610px;
     height: 151px;
+    transform: scale(0.7);
+    transform-origin: left;
+    background-image: url("./icons/fish.svg");
+    background-repeat: no-repeat;
     opacity: 0.1;
     content: "";
+}
+
+@media screen and (min-width: 426px) {
+    .rooms::before {
+        transform: scale(0.8);
+        top: -15px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .rooms::before {
+        transform: scale(1);
+        top: 0;
+    }
 }
 
 .title__rooms {
@@ -30,7 +46,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: 3px solid red;
 }
 
 .rooms__room {
@@ -62,6 +77,7 @@
 @media screen and (min-width: 665px) {
     .rooms__img {
         border-radius: 10px;
+        transform-origin: none;
     }
 }
 

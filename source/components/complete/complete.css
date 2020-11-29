@@ -17,13 +17,26 @@
 
 .complete__booking {
     position: relative;
+    width: 80%;
     overflow: hidden;
-    margin-top: 100px;
-    padding-top: 60px;
-    padding-bottom: 43px;
+    margin-top: 8.547%;
+    padding-top: 5.1282%;
+    padding-bottom: 3.6752%;
     border-radius: 10px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     background-color: white;
+}
+
+@media screen and (min-width: 550px) {
+    .complete__booking {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .complete__booking {
+        width: 48%;
+    }
 }
 
 .complete__booking::after {
@@ -40,25 +53,41 @@
 
 .complete__close {
     position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 18px;
-    height: 18px;
+    top: 7%;
+    right: 7%;
+    width: 4.5%;
+    height: 4.5%;
 }
 
-.complete__title_main {
+.title_complete {
     display: table;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 4%;
 }
 
 .complete__notification {
-    margin-left: 132px;
-    margin-right: 132px;
-    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7.7%;
+    /* 132/50 */
+    margin-top: 0;
     padding: 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+    .complete__notification {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .complete__notification {
+        font-size: 1rem;
+    }
 }
 
 .complete__button {

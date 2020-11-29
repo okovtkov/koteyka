@@ -324,12 +324,36 @@ img {
 .advantages .positioner::before {
     position: absolute;
     top: -150px;
-    right: -150px;
+        right: -110px;
     width: 410px;
     height: 385px;
+    transform: scale(0.7);
     background-image: url(/koteyka/images/components/advantages/icons//background-lapa-7975a34cd7760464b6839e522b8639fb.svg);
     background-repeat: no-repeat;
     content: "";    
+}
+
+@media screen and (min-width: 550px) {
+    .advantages .positioner::before {
+        transform: scale(0.8);
+        top: -140px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages .positioner::before {
+        transform: scale(0.9);
+        top: -180px;
+        right: -120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .advantages .positioner::before {
+        transform: scale(1);
+        top: -150px;
+        right: -150px;
+    }
 }
 
 .title__advantages {
@@ -414,14 +438,30 @@ img {
 
 .rooms::before {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
-    background-image: url(/koteyka/images/components/rooms/icons//fish-d94c6ca25a8c694fa88c0db671ad4b37.svg);
-    background-repeat: no-repeat;
     width: 610px;
     height: 151px;
+    transform: scale(0.7);
+    transform-origin: left;
+    background-image: url(/koteyka/images/components/rooms/icons//fish-d94c6ca25a8c694fa88c0db671ad4b37.svg);
+    background-repeat: no-repeat;
     opacity: 0.1;
     content: "";
+}
+
+@media screen and (min-width: 426px) {
+    .rooms::before {
+        transform: scale(0.8);
+        top: -15px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .rooms::before {
+        transform: scale(1);
+        top: 0;
+    }
 }
 
 .title__rooms {
@@ -436,7 +476,6 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: 3px solid red;
 }
 
 .rooms__room {
@@ -468,6 +507,7 @@ img {
 @media screen and (min-width: 665px) {
     .rooms__img {
         border-radius: 10px;
+        transform-origin: none;
     }
 }
 
@@ -529,17 +569,56 @@ img {
 
 .reviews__positioner::before {
     position: absolute;
-    top: -31.8119%;
-    right: -11.1111111%;
-    background-image: url(/koteyka/images/components/reviews/icons//background-lapa-2-4349a3cddd67db3b4b384501b4645182.svg);
-    background-repeat: no-repeat;
+    top: -40.8119%;
+    right: -35.1111111%;
     width: 350px;
     height: 350px;
+    transform: scale(0.7);
+    background-image: url(/koteyka/images/components/reviews/icons//background-lapa-2-4349a3cddd67db3b4b384501b4645182.svg);
+    background-repeat: no-repeat;
     content: "";
 }
 
+@media screen and (min-width: 425px) {
+    .reviews__positioner::before {
+        position: absolute;
+        top: -45.8119%;
+        right: -30.1111111%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .reviews__positioner::before {
+        position: absolute;
+        top: -50.8119%;
+        right: -25.1111111%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .reviews__positioner::before {
+        position: absolute;
+        transform: scale(1);
+        top: -31.8119%;
+        right: -11.1111111%;
+    }
+}
+
 .title__reviews {
+    margin-top: 40px;
     margin-bottom: 5.9829%;
+}
+
+@media screen and (min-width: 768px) {
+    .title__reviews {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title__reviews {
+        margin-top: 0;
+    }
 }
 
 .reviews__review {
@@ -555,15 +634,11 @@ img {
 
 .reviews__info {
     flex-shrink: 0;
-    /* padding-left: 2.77%; */
     padding-left: 4%;
-    /* padding-top: 2.77%; */
     padding-top: 7%;
-    /* margin-right: 2.4%; */
     margin-right: 8%;
     margin-bottom: 4.35%;
     padding-right: 4%;
-    /* width: 37.0662%; */
     width: 100%;
     background-color: white;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -590,7 +665,6 @@ img {
 .reviews__quote {
     position: relative;
     margin: 0;
-    /* padding-left: 8.85%; */
     padding-left: 10%;
 }
 
@@ -1345,13 +1419,26 @@ img {
 
 .complete__booking {
     position: relative;
+    width: 80%;
     overflow: hidden;
-    margin-top: 100px;
-    padding-top: 60px;
-    padding-bottom: 43px;
+    margin-top: 8.547%;
+    padding-top: 5.1282%;
+    padding-bottom: 3.6752%;
     border-radius: 10px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     background-color: white;
+}
+
+@media screen and (min-width: 550px) {
+    .complete__booking {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .complete__booking {
+        width: 48%;
+    }
 }
 
 .complete__booking::after {
@@ -1368,25 +1455,41 @@ img {
 
 .complete__close {
     position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 18px;
-    height: 18px;
+    top: 7%;
+    right: 7%;
+    width: 4.5%;
+    height: 4.5%;
 }
 
-.complete__title_main {
+.title_complete {
     display: table;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 4%;
 }
 
 .complete__notification {
-    margin-left: 132px;
-    margin-right: 132px;
-    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7.7%;
+    /* 132/50 */
+    margin-top: 0;
     padding: 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+    .complete__notification {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .complete__notification {
+        font-size: 1rem;
+    }
 }
 
 .complete__button {
@@ -1540,8 +1643,8 @@ img {
 }
 
 .slider__button { 
-    position: absolute;
-    bottom: 20px;
+    display: none;
+    bottom: 30px;
     width: 36px;
     height: 36px;
     background-color: white;
@@ -1553,27 +1656,57 @@ img {
     cursor: pointer;
 }
 
-.slider__button_next-pc {
-    left: 88%;
+@media screen and (min-width: 600px) {
+    .slider__button { 
+        display: block;
+        position: absolute;
+    }
 }
 
-.slider__button_prev-pc {
-    left: 89.5%;
+.slider__button_next {
+    left: 89%;
+}
+
+.slider__button_prev {
+    left: 85%;
+}
+
+@media screen and (min-width: 768px) {
+    .slider__button_next {
+        left: 89%;
+    }
+    
+    .slider__button_prev {
+        left: 83%;
+    }
 }
 
 .slider__radio-button {
     display: flex;
     justify-content: center;
-    margin-top: 55px;
+    margin-top: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .slider__radio-button {
+        margin-top: 55px;
+    }
 }
 
 .slider__label {
-    width: 12px;
-    height: 12px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background-color: #e1e1e1;
     margin-right: 12px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .slider__label {
+        width: 12px;
+        height: 12px;
+    }
 }
 
 .slider__toggler[name="rooms"]:nth-child(1):checked ~ .slider__list {
