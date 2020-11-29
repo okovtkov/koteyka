@@ -271,7 +271,7 @@ img {
 }
 
 .title_1 {
-    font-size: 2rem;   /* 3.75 */
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -280,8 +280,26 @@ img {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .title_1 {
+        font-size: 3.75rem;
+    }
+}
+
 .title_2 {
-    font-size: 2.25rem;
+    font-size: 1rem;   /* 2.25rem */
+}
+
+@media screen and (min-width: 768px) {
+    .title_2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title_2 {
+        font-size: 2.25rem;
+    }
 }
 
 .title_3 {
@@ -972,6 +990,7 @@ img {
 
 .filter {
     margin-right: 90px;
+    display: none;
 }
 
 .filter__fieldset {
@@ -1139,30 +1158,69 @@ img {
 }
 .banner-2 {
     position: relative;
-    height: 379px;
-    margin-top: 140px;
-    margin-bottom: 140px;
-    padding-top: 66px;
+    padding-top: 5.641025641025641%;
     background-image: url(/koteyka/images/components/banner-2//banner-2-9a3385bf0dedfdccebb67b936e604f4e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
     border-radius: 10px;
     border: 1px solid white;
     outline: none;
 }
 
+@media screen and (min-width: 768px) {
+    .banner-2 {
+        margin-top: 11.96581196581197%;
+        margin-bottom: 11.96581196581197%;
+    }
+}
+
 .banner-2::before {
     position: absolute;
-    left: -20px;
-    top: -30px;
+    left: -1.709401709401709%;
+    top: -7.9155672823219%;
     width: 240px;
     height: 240px;
     padding: auto;
+    transform: scale(0.3);
+    transform-origin: top left;
     background-image: url(/koteyka/images/components/banner-2/icons//paw-banner-89dfec42cdf3b3a7719e4f2ab5da028b.svg);
     background-repeat: no-repeat;
     content: "";
 }
 
+@media screen and (min-width: 550px) {
+    .banner-2::before {
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner-2::before {
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-2::before {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-2::before {
+        transform: scale(1);
+    }
+}
+
 .banner-2__info {
-    margin-left: 270px;
+    margin-left: 15%;  /* 23.07692307692308%; */
+}
+
+@media screen and (min-width: 550px) {
+    .banner-2__info {
+        margin-left: 23.07692307692308%;
+    }
 }
 
 .title__banner-2 {
@@ -1171,21 +1229,87 @@ img {
 
 .banner-2__free-day {
     display: block;
-    font-size: 3.5rem;
+    font-size: 1.75rem;   /* 3.5rem */
     margin: 0;
     line-height: 0.85;
     padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+    .banner-2__free-day {
+        font-size: 2.75rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-2__free-day {
+        font-size: 3.5rem;
+    }
+}
+
 .banner-2__stock {
-    width: 260px;
-    margin-top: 25px;
+    width: 75%;
+    margin-top: 2.136752136752137%;
     margin-bottom: 0;
     padding: 0;
+    font-size: 0.65rem;
+}
+
+
+@media screen and (min-width: 333px) {
+    .banner-2__stock {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    .banner-2__stock {
+        width: 50%;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .banner-2__stock {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner-2__stock {
+        width: 254px;
+        font-size: 1rem;
+    }
 }
 
 .banner-2__booking-button {
-    margin-top: 35px;
+    margin-top: 2.991452991452991%;
+}
+
+.banner-2__booking-button {
+    /* margin-top: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 53px;
+    font-size: 0.65rem; */
+    transform: scale(0.75);
+    transform-origin: left;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 426px) {
+    .banner-2__booking-button { 
+        margin-bottom: 6.666666666666667%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner-2__booking-button {
+        margin-top: 3.418803418803419%;
+        transform: scale(1);
+        font-size: 1rem;
+    }
 }
 .booking {
     display: none;
@@ -1499,7 +1623,7 @@ img {
 }
 .contacts {
     position: relative;
-    margin-top: 120px;
+    margin-top: 10.25641025641026%;
     background-color: #fac663; 
 }
 
@@ -1511,7 +1635,6 @@ img {
 }
 
 .contacts__content {
-    /* padding: 60px 93px 60px 186px;  */
     padding: 0 12px;
     text-align: center;
 }
@@ -1566,7 +1689,6 @@ img {
 
 @media screen and (min-width: 970px) { 
     .contacts__container {
-        /* margin-left: 1.54639175257732%; */
         text-align: center;
     }
 }

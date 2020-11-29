@@ -1,5 +1,6 @@
 .filter {
     margin-right: 90px;
+    display: none;
 }
 
 .filter__fieldset {

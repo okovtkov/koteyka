@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-    margin-top: 120px;
+    margin-top: 10.25641025641026%;
     background-color: #fac663; 
 }
 
@@ -12,7 +12,6 @@
 }
 
 .contacts__content {
-    /* padding: 60px 93px 60px 186px;  */
     padding: 0 12px;
     text-align: center;
 }
@@ -67,7 +66,6 @@
 
 @media screen and (min-width: 970px) { 
     .contacts__container {
-        /* margin-left: 1.54639175257732%; */
         text-align: center;
     }
 }
