@@ -95,3 +95,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 550px) {
+    .complete__button {
+        transform: scale(0.9);
+    }
+}

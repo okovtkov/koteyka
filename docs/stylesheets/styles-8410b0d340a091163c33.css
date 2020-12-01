@@ -76,16 +76,15 @@ img {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 11;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
     .header {
         position: sticky;
         top: 0;
-        /* left: 6.65%; */
         width: 100%;
         background-color: #fff;
-        z-index: 12;
     }
 }
 
@@ -1015,7 +1014,7 @@ img {
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 801px) {
     .catalog-header__filter {
         display: none;
     }
@@ -1026,54 +1025,60 @@ img {
 
 #filter:checked ~ .sidebar {
     max-width: 100%;
+    left: 0;
     transition: max-width 1s ease;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 800px) {
     #filter:checked ~ .sidebar {
-        display: block;
+        left: 0;
+    }
+
+    #filter:checked ~ .sidebar .filter {
+        left: 0;
+    }
+
+    #filter:checked ~ .sidebar .sidebar__close {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
-.sidebar {
-    max-width: 0;
-    position: fixed;
-    top: 62px;
-    left: 0;
-    padding-left: 40px;
-    overflow: auto;
-    height: 100%;
-    background-color:#FFFEFD;
-    z-index: 11;
-}
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 800px) {
     .sidebar {
-        display: none;
+        width: 100%;
+        position: fixed;
+        top: 62px;
+        left: -100%;
+        overflow: auto;
+        height: 100vh;
+        overscroll-behavior: none;
+        z-index: 8;
+        transition: left 1s ease;
     }
 }
 
 @media screen and (min-width: 550px) {
     .sidebar {
-        position:absolute;
-        top: 64px;
-        max-height: 100%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .sidebar {
-        position: inherit;
-        top: 0;
-        display: block;
-        max-width: 100%;
-        padding-left: 0;
-        overflow: visible;
+        top: 72px;
     }
 }
 
 .filter {
     margin-right: 90px;
+}
+
+@media screen and (max-width: 800px) {
+    .filter {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        min-height: 100%;
+        background-color: #FFFEFD;
+        padding-left: 30px;
+        transition: left 0.5s ease;
+        width: 270px;
+    }
 }
 
 .filter__fieldset {
@@ -1127,7 +1132,7 @@ img {
 
 .filter__reset {
     padding: 15px 30px 16px 30px;
-    margin-bottom: 62px;
+    margin-bottom: 82px;
 }
 
 .filter__apply {
@@ -1141,47 +1146,22 @@ img {
     color: white;
 }
 
-.background {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-#filter:checked ~ .background {
-    position: absolute;
-    top: 76px;
-    left: 0;
+.sidebar__close {
+    position: fixed;
+    top: 0;
+    left: 0px;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    transition: all 1s ease;
-    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.25);
+    overscroll-behavior: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+    visibility: hidden;
 }
 
-.sidebar__close::before,
-.sidebar__close::after {
-    position: absolute;
-    top: 5%;
-    right: 10%;
-    display: block;
-    height: 30px;
-    width: 4px;
-    background-color: lightgray;
-    transform: rotate(-45deg);
-    z-index: 12;
-    cursor: pointer;
-    transition: all 1s ease;
-    content: "";
-}
-
-.sidebar__close::after {
-    transform: rotate(45deg);
-    content: "";
-}
-
-@media screen and (min-width: 375px) {
-    .sidebar__close::before,
-    .sidebar__close::after {
+@media screen and (min-width: 800px) {
+    .sidebar__close {
         display: none;
     }
 }
@@ -1794,6 +1774,12 @@ img {
     display: table;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .complete__button {
+        transform: scale(0.9);
+    }
 }
 .contacts {
     position: relative;

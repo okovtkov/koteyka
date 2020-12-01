@@ -2,16 +2,15 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 11;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
     .header {
         position: sticky;
         top: 0;
-        /* left: 6.65%; */
         width: 100%;
         background-color: #fff;
-        z-index: 12;
     }
 }
 
