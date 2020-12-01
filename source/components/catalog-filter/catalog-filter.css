@@ -1,6 +1,57 @@
+.catalog-filter-activator {
+    display: none;
+}
+
+#filter:checked ~ .sidebar {
+    max-width: 100%;
+    transition: max-width 1s ease;
+}
+
+@media screen and (max-width: 360px) {
+    #filter:checked ~ .sidebar {
+        display: block;
+    }
+}
+
+.sidebar {
+    max-width: 0;
+    position: fixed;
+    top: 62px;
+    left: 0;
+    padding-left: 40px;
+    overflow: auto;
+    height: 100%;
+    background-color:#FFFEFD;
+    z-index: 11;
+}
+
+@media screen and (max-width: 360px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .sidebar {
+        position:absolute;
+        top: 64px;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sidebar {
+        position: inherit;
+        top: 0;
+        display: block;
+        max-width: 100%;
+        padding-left: 0;
+        overflow: visible;
+    }
+}
+
 .filter {
     margin-right: 90px;
-    display: none;
 }
 
 .filter__fieldset {
@@ -10,6 +61,7 @@
 }
 
 .filter__price {
+    margin-top: 30px;
     margin-bottom: 35px;
 }
 
@@ -53,6 +105,7 @@
 
 .filter__reset {
     padding: 15px 30px 16px 30px;
+    margin-bottom: 62px;
 }
 
 .filter__apply {
@@ -66,3 +119,47 @@
     color: white;
 }
 
+.background {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#filter:checked ~ .background {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+.sidebar__close::before,
+.sidebar__close::after {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    display: block;
+    height: 30px;
+    width: 4px;
+    background-color: lightgray;
+    transform: rotate(-45deg);
+    z-index: 12;
+    cursor: pointer;
+    transition: all 1s ease;
+    content: "";
+}
+
+.sidebar__close::after {
+    transform: rotate(45deg);
+    content: "";
+}
+
+@media screen and (min-width: 375px) {
+    .sidebar__close::before,
+    .sidebar__close::after {
+        display: none;
+    }
+}

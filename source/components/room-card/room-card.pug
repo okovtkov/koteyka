@@ -1,7 +1,7 @@
 include ../booking-button/booking-button.pug
 
-mixin room-card
-    <article class="room-option">
+mixin room-card(className)
+    article(class=`${className} room-option`)
         <img src="/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
         <section class="room-option__card-info">
             <a href="/room.html" class="room-option__title">Эконом</a>
@@ -30,5 +30,4 @@ mixin room-card
             </dl>
             +booking-button("primary room-option__booking-button")
         </section>
-    </article>
     

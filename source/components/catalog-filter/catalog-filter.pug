@@ -1,7 +1,8 @@
 include ../checkbox/checkbox.pug
 
 mixin catalog-filter
-    <aside>
+    <input type="checkbox" class="catalog-filter-activator" id="filter"> 
+    <aside class="sidebar">
         <form class="filter">
             <fieldset class="filter__fieldset filter__price">
                 <legend class="filter__name">Цена за сутки, ₽</legend>
@@ -30,4 +31,6 @@ mixin catalog-filter
                 <button type="reset" class="filter__reset">Сбросить фильтр</button>
             </div>
         </form>
+        <label class="sidebar__close" for="filter"></label>
     </aside>
+    <label class="background" for="filter"></label>

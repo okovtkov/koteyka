@@ -2,6 +2,11 @@ include ../catalog-select/catalog-select.pug
 
 mixin catalog-header 
     <div class="catalog-header positioner">
-        <h1 class="title title__catalog-header title_2">Наши номера</h1>
-        +catalog-select
+        <h1 class="title catalog-header__title title_2">Наши номера</h1>
+        <div class="catalog-header__sorting">
+            +catalog-select
+            <label class="catalog-header__filter-activation" for="filter">
+                <img src="/img/tune-24px.svg" class="catalog-header__filter">
+            </label>
+        </div>
     </div>

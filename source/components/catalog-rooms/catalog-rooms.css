@@ -1,0 +1,22 @@
+.catalog-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-rooms__item {
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .catalog-rooms__item {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .catalog-rooms__item {
+        width: 32%;
+    }
+}
+    

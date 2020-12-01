@@ -37,21 +37,25 @@
 }
 
 .banner__button {
-    margin-top: 10px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 15px;
-    padding-right: 53px;
-    font-size: 0.65rem;
+    margin-top: 3.418803418803419%;
+    transform: scale(0.65);
+    transform-origin: top left;
+}
+
+@media screen and (min-width: 425px) {
+    .banner__button { 
+        transform: scale(0.75);
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .banner__button { 
+        transform: scale(0.85);
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .banner__button {
-        margin-top: 40px;
-        padding-left: 30px;
-        padding-right: 63px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 1rem;
+    .banner__button { 
+        transform: scale(1);
     }
 }

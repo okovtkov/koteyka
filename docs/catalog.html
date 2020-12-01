@@ -4,16 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="/koteyka/stylesheets/styles-32bd6096a18b904f6d5a.css" rel="stylesheet"></head>
+<link href="/koteyka/stylesheets/styles-bcdf6d7c07534f917d42.css" rel="stylesheet"></head>
 <body><header class="header positioner">
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
 </a>
-<label class="header__burger" for="header-burger">
-<div class="header__line header__line_1"></div>
-<div class="header__line header__line_2"></div>
-<div class="header__line header__line_3"></div>
-</label>
+<label class="header__burger" for="header-burger"></label>
 <input type="checkbox" name="burger" class="header__burger-check" id="header-burger">
 <nav class="header__menu">
 <a href="/koteyka/index.html#advantages" class="header__link" for="header-burger">Почему мы?</a>
@@ -50,7 +46,8 @@
 <h2 class="title title_booking title_complete">Спасибо за заявку!</h2>
 <p class="complete__notification">Мы свяжимся с Вами в ближайшее время</p><a class="booking-button primary complete__button" href="#">Ок</a></div>
 </div><div class="catalog-header positioner">
-<h1 class="title title__catalog-header title_2">Наши номера</h1><div class="select" tabindex="0">
+<h1 class="title catalog-header__title title_2">Наши номера</h1>
+<div class="catalog-header__sorting"><div class="select" tabindex="0">
 <div class="select__option select__option_no-chosen">Не выбрано</div>
 <div class="select__options">
 <label>
@@ -70,7 +67,12 @@
 <div class="select__option select__option_desc">По цене</div>
 </label>
 </div>
-</div></div><div class="positioner container"><aside>
+</div><label class="catalog-header__filter-activation" for="filter">
+<img src="/koteyka/img/tune-24px.svg" class="catalog-header__filter">
+</label>
+</div>
+</div><div class="positioner container"><input type="checkbox" class="catalog-filter-activator" id="filter"> 
+<aside class="sidebar">
 <form class="filter">
 <fieldset class="filter__fieldset filter__price">
 <legend class="filter__name">Цена за сутки, ₽</legend>
@@ -119,8 +121,10 @@
 <button type="reset" class="filter__reset">Сбросить фильтр</button>
 </div>
 </form>
-</aside><article class="catalog-rooms"><article class="room-option">
-<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+<label class="sidebar__close" for="filter"></label>
+</aside>
+<label class="background" for="filter"></label><article class="catalog-rooms">
+<article class="catalog-rooms__item room-option"><img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <section class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
 <dl>
@@ -146,8 +150,8 @@
 <dd class="room-option__value room-option__text_bold">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
-</article><article class="room-option">
-<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+</article>
+<article class="catalog-rooms__item room-option"><img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <section class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
 <dl>
@@ -173,8 +177,8 @@
 <dd class="room-option__value room-option__text_bold">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
-</article><article class="room-option">
-<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+</article>
+<article class="catalog-rooms__item room-option"><img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <section class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
 <dl>
@@ -200,8 +204,8 @@
 <dd class="room-option__value room-option__text_bold">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
-</article><article class="room-option">
-<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+</article>
+<article class="catalog-rooms__item room-option"><img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <section class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
 <dl>
@@ -227,8 +231,8 @@
 <dd class="room-option__value room-option__text_bold">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
-</article><article class="room-option">
-<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+</article>
+<article class="catalog-rooms__item room-option"><img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <section class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
 <dl>
@@ -254,8 +258,8 @@
 <dd class="room-option__value room-option__text_bold">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
-</article><article class="room-option">
-<img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+</article>
+<article class="catalog-rooms__item room-option"><img src="/koteyka/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
 <section class="room-option__card-info">
 <a href="/koteyka/room.html" class="room-option__title">Эконом</a>
 <dl>
@@ -326,11 +330,7 @@
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
 </a>
-<label class="header__burger" for="header-burger">
-<div class="header__line header__line_1"></div>
-<div class="header__line header__line_2"></div>
-<div class="header__line header__line_3"></div>
-</label>
+<label class="header__burger" for="header-burger"></label>
 <input type="checkbox" name="burger" class="header__burger-check" id="header-burger">
 <nav class="header__menu">
 <a href="/koteyka/index.html#advantages" class="header__link" for="header-burger">Почему мы?</a>
