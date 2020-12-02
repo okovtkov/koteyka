@@ -81,7 +81,7 @@ img {
 
 @media screen and (max-width: 800px) {
     .header {
-        position: sticky;
+        /* position: relative; */
         top: 0;
         width: 100%;
         background-color: #fff;
@@ -1226,23 +1226,20 @@ img {
     }
 }
 
+.sidebar {
+    top: 0px;
+}
+
 @media screen and (max-width: 800px) {
     .sidebar {
         width: 100%;
         position: fixed;
-        top: 62px;
         left: -100%;
         overflow: auto;
         height: 100vh;
         overscroll-behavior: none;
         z-index: 8;
         transition: left 1s ease;
-    }
-}
-
-@media screen and (min-width: 550px) {
-    .sidebar {
-        top: 72px;
     }
 }
 
@@ -1314,7 +1311,7 @@ img {
 
 .filter__reset {
     padding: 15px 30px 16px 30px;
-    margin-bottom: 82px;
+    margin-bottom: 20px;
 }
 
 .filter__apply {
