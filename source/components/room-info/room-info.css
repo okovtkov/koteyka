@@ -1,14 +1,28 @@
 .room-info {
     position: relative;
     max-width: 100%;
-    padding-top: 70px;
+    padding-top: 5.982905982905983%;
     overflow: hidden;
 }
 
 .room-info__container {
     position: relative;
     display: flex;
+    flex-direction: column-reverse;
     align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    .room-info__container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .room-info__container {
+        justify-content: flex-start;
+    }
 }
 
 .room-info__container::after {
@@ -16,35 +30,87 @@
     top: -50px;
     display: inline-block;
     right: -130px;
-    width: 251px;
+    width: 281px;
     height: 285px;
     background-image: url("./icons/background-lapa-3.svg");
     background-repeat: no-repeat;
+    transform: scale(0.5);
     content: "";
 }
 
+@media screen and (min-width: 375px) {
+    .room-info__container::after {
+        right: -100px;
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .room-info__container::after {
+        right: -100px;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .room-info__container::after {
+        right: -120px;
+        transform: scale(1);
+    }
+}
+
+.room-info__container .booking-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+@media screen and (min-width: 550px) {
+    .room-info__container .booking-button {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .room-info__container .booking-button {
+        display: none;
+    }
+}
+
 .room-info__about {
-    margin-left: 70px;
+    margin-left: 5.982905982905983%;
+}
+
+@media screen and (min-width: 768px) {
+    .room-info__about {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .room-info__about {
+        margin-left: 180px;
+    }
 }
 
 .title__room-info {
-    margin-bottom: 22px;
+    margin-bottom: 8.4%;
 }
 
 .room-info__text {
     margin: 0;
-    margin-top: 17px;
+    margin-top: 6.5%;
     padding: 0;
 }
 
 .room-info__text:last-of-type {
-    margin-top: 24px;
-    margin-bottom: 30px;
+    margin-top: 1.452991452991453%;
+    margin-bottom: 2.564102564102564%;
 }
 
 .room-info__features {
     margin: 0;
-    margin-top: 13px;
+    margin-top: 1.111111111111111%;
     padding: 0;
     list-style: none;
 }
@@ -52,11 +118,11 @@
 .room-info__list {
     position: relative;
     padding-left: 20px;
-    margin-top: 9px;
+    margin-top: 12px;
 }
 
 .room-info__price {
-    margin-left: 12px;
+    margin-left: 1.025641025641026%;
     font-size: 1.125rem;
     font-weight: bold;
 }
@@ -75,6 +141,31 @@
     height: 16px;
     background-repeat: no-repeat;
     content: "";
+}
+
+.room-info__about .booking-button {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .room-info__about .booking-button {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 206px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .room-info__about .booking-button {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1088px) {
+    .room-info__about .booking-button {
+        margin-top: 30px;
+    }
 }
 
 .room-info__lounger::before {

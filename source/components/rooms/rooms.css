@@ -1,7 +1,7 @@
 .rooms {
     position: relative;
     width: 100%;
-    margin-top: 11.965812%;
+    margin-top: 6%;
     overflow: hidden;
     padding-bottom: 1.7094171%;
 }
@@ -95,6 +95,13 @@
         border-radius: 10px;
         margin-left: -5%;
         padding-left: 6.54700855%;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .rooms__info {
+        transform: scale(1);
     }
 }
 
