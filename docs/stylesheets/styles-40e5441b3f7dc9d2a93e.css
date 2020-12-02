@@ -899,6 +899,10 @@ img {
     }
 }
 
+.room-info__title {
+    font-size: 1.75rem;
+}
+
 .room-info__lounger::before {
     background-image: url(/koteyka/images/components/room-info/icons//lounger-a294493d99ec9701cccd18aecfe1c6d0.svg);
 }

@@ -168,6 +168,10 @@
     }
 }
 
+.room-info__title {
+    font-size: 1.75rem;
+}
+
 .room-info__lounger::before {
     background-image: url("./icons/lounger.svg");
 }
