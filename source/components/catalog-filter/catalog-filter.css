@@ -114,6 +114,12 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 550px) {
+    .filter__reset {
+        margin-bottom: 82px;
+    }
+}
+
 .filter__apply {
     margin-top: 20px;
     background-color: #FAC663;
