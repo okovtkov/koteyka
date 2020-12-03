@@ -23,14 +23,17 @@
     }
 }
 
-.sidebar {
-    top: 0px;
+@media screen and (max-width: 550px) {
+    .sidebar {
+        margin-top: 62px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .sidebar {
-        width: 100%;
         position: fixed;
+        width: 100%;
+        top: 0px;
         left: -100%;
         overflow: auto;
         height: 100vh;
