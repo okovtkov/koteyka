@@ -1,31 +1,38 @@
 include ../booking-button/booking-button.pug
 
-mixin room-card(className)
+mixin room-card(className, room)
+    - console.log(room);
     article(class=`${className} room-option`)
-        <img src="/img/econom-room.jpg" alt="номер эконом" class="room-option__cat">
+        <img src=#{room.image} alt=#{room.name} class="room-option__cat">
         <section class="room-option__card-info">
-            <a href="/room.html" class="room-option__title">Эконом</a>
+            <a href="/room.html" class="room-option__title">#{room.name}</a>
             <dl>
                 <div class="room-option__info room-option__size">
                     <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-                    <dd class="room-option__value">90х70х180 см</dd>
+                    <dd class="room-option__value">#{room.size}</dd>
                 </div>
                 <div class="room-option__info room-option__area">
                     <dt class="room-option__key">Площадь - </dt>
-                    <dd class="room-option__value">0,63 м2</dd>
+                    <dd class="room-option__value">#{room.area}</dd>
                 </div>
                 <div class="room-option__info room-option__equipment">
                     <dt class="room-option__key">Оснащение номера</dt>
                     <dd class="room-option__value">
-                        <img src="/img/equipment-lejak.jpg" alt="лежак" class="room-option__value_img">
-                        <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__value_img">
-                        <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__value_img">
-                        <img src="/img/equipment-house.jpg" alt="домик" class="room-option__value_img">
+                        if room.comforts.includes("лежак")  
+                            <img src="/img/equipment-lejak.jpg" alt="лежак" class="room-option__value_img">
+                        if room.comforts.includes("когтеточка")
+                            <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__value_img">
+                        if room.comforts.includes("клубок")
+                            <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__value_img">
+                        if room.comforts.includes("домик")
+                            <img src="/img/equipment-house.jpg" alt="домик" class="room-option__value_img">
+                        if room.comforts.length == 0
+                            <img src="/img/no-item.jpg" alt="без удобств" class="room-option__value_img">
                     </dd>
                 </div>
                 <div class="room-option__price">
                     <dt class="room-option__key">Цена за сутки:</dt>
-                    <dd class="room-option__value room-option__text_bold">100₽</dd>
+                    <dd class="room-option__value room-option__text_bold">#{room.price}₽</dd>
                 </div>
             </dl>
             +booking-button("primary room-option__booking-button")

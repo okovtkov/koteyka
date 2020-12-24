@@ -78,11 +78,11 @@
 }
 
 .slider__toggler[name="rooms"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-34%);
+    transform: translate(-33.2%);
 }
 
 .slider__toggler[name="rooms"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-67%);
+    transform: translate(-66.6%);
 }
 
 .slider__toggler[name="reviews"]:nth-child(1):checked ~ .slider__list {

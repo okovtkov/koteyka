@@ -286,13 +286,7 @@ img {
 }
 
 .title_2 {
-    font-size: 1rem;   /* 2.25rem */
-}
-
-@media screen and (min-width: 768px) {
-    .title_2 {
-        font-size: 1.75rem;
-    }
+    font-size: 1.75rem;   /* 2.25rem */
 }
 
 @media screen and (min-width: 1024px) {
@@ -374,8 +368,22 @@ img {
 }
 
 .title__advantages {
-    margin-top: 140px;
+    margin-top: 100px;
     white-space: pre-wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .title__advantages {
+        margin-top: 120px;
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title__advantages {
+        margin-top: 140px;
+        white-space: pre-wrap;
+    }
 }
 
 .advantages__ul {
@@ -383,7 +391,19 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .advantages__ul {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .advantages__ul {
+        margin-top: 50px;
+    }
 }
 
 .advantages__list {
@@ -413,7 +433,7 @@ img {
 
 .advantages__title {
     margin-bottom: 20px;
-    margin-top: 35px;
+    margin-top: 0px;
 }
 
 .advantages__desc {
@@ -2190,11 +2210,11 @@ img {
 }
 
 .slider__toggler[name="rooms"]:nth-child(2):checked ~ .slider__list {
-    transform: translate(-34%);
+    transform: translate(-33.2%);
 }
 
 .slider__toggler[name="rooms"]:nth-child(3):checked ~ .slider__list {
-    transform: translate(-67%);
+    transform: translate(-66.6%);
 }
 
 .slider__toggler[name="reviews"]:nth-child(1):checked ~ .slider__list {
