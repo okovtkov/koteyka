@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 885px) {
     .sidebar {
         position: fixed;
         width: 100%;
@@ -62,7 +62,7 @@
 
 .filter__fieldset {
     border: none;
-    margin: 0;
+    margin-left: 2px;
     padding: 0;
 }
 

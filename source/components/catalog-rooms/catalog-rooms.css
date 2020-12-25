@@ -14,7 +14,7 @@
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
     .catalog-rooms__item {
         width: 32%;
     }

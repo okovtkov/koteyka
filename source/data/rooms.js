@@ -35,7 +35,7 @@ let suitRoom = {
 };
 
 let luxRoom = {
-    image: "/img/lux.jpg",
+    image: "/img/room-2.jpg",
     name: "Люкс",
     size: "160х160х180 см",
     area: " 2,56 м2",
@@ -44,7 +44,7 @@ let luxRoom = {
 };
 
 let presidentRoom = {
-    image: "/img/president.jpg",
+    image: "/img/room-3.jpg",
     name: "Президентский",
     size: "180х160х180 см",
     area: "2,88 м2",
