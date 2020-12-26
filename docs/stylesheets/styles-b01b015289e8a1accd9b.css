@@ -867,15 +867,20 @@ img {
 
 .room-info__features {
     margin: 0;
-    margin-top: 1.111111111111111%;
+    margin-top: 2.111111111111111%;
     padding: 0;
     list-style: none;
 }
 
+.room-info__comforts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .room-info__list {
     position: relative;
-    padding-left: 20px;
-    margin-top: 12px;
+    padding-right: 10px;
 }
 
 .room-info__price {
@@ -1273,7 +1278,7 @@ img {
 }
 
 .filter {
-    margin-right: 90px;
+    margin-right: 65px;
 }
 
 @media screen and (max-width: 800px) {
@@ -1411,6 +1416,7 @@ img {
     display: inline-block;
     margin-bottom: 3.469900922762319%;
     border-radius: 10px;
+    width: 110%;
     border: 1px solid #e1e1e1;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
@@ -1434,6 +1440,7 @@ img {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
+    white-space: nowrap;
 }
 
 .room-option__title {
@@ -1504,6 +1511,7 @@ img {
 .catalog-rooms {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -1517,7 +1525,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
     .catalog-rooms__item {
         width: 32%;
     }

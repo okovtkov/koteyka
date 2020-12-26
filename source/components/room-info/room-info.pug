@@ -2,22 +2,44 @@ include ../gallery/gallery.pug
 include ../booking-button/booking-button.pug
 
 mixin room-info
+    - let room = require("../data/rooms.js");
     <article class="room-info">
         <div class="room-info__container positioner">
             +booking-button("primary")
             +gallery
             <section class="room-info__about">
-                <h2 class="title room-info__title title_2">Супер-Люкс</h2>
-                <p class="room-info__text">Размеры (ШхГхВ) - 180х160х180 см</p>
-                <p class="room-info__text">Площадь - 2,88 м2</p>
+                <h2 class="title room-info__title title_2">#{room[0].name}</h2>
+                <p class="room-info__text">Размеры (ШхГхВ) - #{room[0].size}</p>
+                <p class="room-info__text">Площадь - #{room[0].area}</p>
                 <p class="room-info__text">Оснащение номера</p>
                 <ul class="room-info__features">
-                    <li class="room-info__list room-info__lounger" id="btn-7">Лежак</li>
-                    <li class="room-info__list room-info__house">Домик</li>
-                    <li class="room-info__list room-info__game-complex">Игровой комплекс - 3 яруса</li>
-                    <li class="room-info__list room-info__scratching-post">Когтеточка</li>
+                    if room[0].comforts.length == 0
+                        <div class="room-info__comforts">
+                            <img src="/img/no-item.jpg" alt="без удобств" class="room-info__list"> 
+                            <aside class="room-info__caption">Без удобств</aside>
+                        </div>
+                    if room[0].comforts.includes("лежак")
+                        <div class="room-info__comforts">
+                            <img src="/img/equipment-lejak.jpg" alt="лежак" class="room-info__list"> 
+                            <aside class="room-info__caption">Лежак</aside>
+                        </div>
+                    if room[0].comforts.includes("домик")
+                        <div class="room-info__comforts">
+                            <img src="/img/equipment-house.jpg" alt="домик" class="room-info__list"> 
+                            <aside class="room-info__caption">Домик</aside>
+                        </div>
+                    if room[0].comforts.includes("клубок")
+                        <div class="room-info__comforts">
+                            <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-info__list"> 
+                            <aside class="room-info__caption">Игровой комплекс - 3 яруса</aside>
+                        </div>
+                    if room[0].comforts.includes("когтеточка")
+                        <div class="room-info__comforts">
+                            <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-info__list"> 
+                            <aside class="room-info__caption">Когтеточка</aside>
+                        </div>
                 </ul>
-                <p class="room-info__text">Цена за сутки: <span class="room-info__price">600₽</span></p>
+                <p class="room-info__text">Цена за сутки: <span class="room-info__price">#{room[0].price}₽</span></p>
                 +booking-button("primary")
             </section>
         </div>

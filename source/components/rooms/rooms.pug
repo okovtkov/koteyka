@@ -2,6 +2,10 @@ include ../booking-button/booking-button.pug
 include ../slider/slider.pug
 
 mixin rooms(title)
+    - let room = require("../data/rooms.js");
+    - let luxRoom = room[4];
+    - let presidentRoom = room[5];
+    - let economPlusRoom = room[1];
     <section class="rooms positioner" id="rooms">
         <h2 class="title title__rooms title_2">#{title}</h2>
         +slider("rooms")
@@ -11,16 +15,16 @@ mixin rooms(title)
                         <img src="/img/room-1.jpg" alt="Эконом плюс" class="rooms__img">
                     </div>
                     <section class="rooms__info">
-                        <h3 class="title title__rooms title_3">Эконом плюс</h3>
+                        <h3 class="title title__rooms title_3">#{economPlusRoom.name}</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
-                                | Площадь - 0,90 м2
+                                | Площадь - #{economPlusRoom.area}
                             </li>
                             <li class="rooms__item">
-                                | Размеры (ШхГхВ) - 90х100х180 см
+                                | Размеры (ШхГхВ) - #{economPlusRoom.size}
                             </li>
                             <li class="rooms__item">
-                                | Цена за сутки: 200р.
+                                | Цена за сутки: #{economPlusRoom.price}₽
                             </li>
                         </ul>
                         +booking-button("primary rooms__booking-button")
@@ -28,19 +32,19 @@ mixin rooms(title)
                 </li>
                 <li class="rooms__room">
                     <div class="rooms__img-container">
-                        <img src="/img/room-2.jpg" alt="Люкс" class="rooms__img">
+                        <img src="#{luxRoom.image}" alt="Люкс" class="rooms__img">
                     </div>
                     <section class="rooms__info">
-                        <h3 class="title title__rooms title_3">Люкс</h3>
+                        <h3 class="title title__rooms title_3">#{luxRoom.name}</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
-                                | Площадь - 1,5 м2
+                                | Площадь - #{luxRoom.area}
                             </li>
                             <li class="rooms__item">
-                                | Размеры (ШхГхВ) - 90х60х90 см
+                                | Размеры (ШхГхВ) - #{luxRoom.size}
                             </li>
                             <li class="rooms__item">
-                                | Цена за сутки: 100р.
+                                | Цена за сутки: #{luxRoom.price}₽
                             </li>
                         </ul>
                         +booking-button("primary rooms__booking-button")
@@ -48,19 +52,19 @@ mixin rooms(title)
                 </li>
                 <li class="rooms__room">
                     <div class="rooms__img-container">
-                        <img src="/img/room-3.jpg" alt="Президентский" class="rooms__img">
+                        <img src="#{presidentRoom.image}" alt="Президентский" class="rooms__img">
                     </div>
                     <section class="rooms__info">
-                        <h3 class="title title__rooms title_3">Президентский</h3>
+                        <h3 class="title title__rooms title_3">#{presidentRoom.name}</h3>
                         <ul class="rooms__ul">
                             <li class="rooms__item">
-                                | Площадь - 2,28 м2
+                                | Площадь - #{presidentRoom.area}
                             </li>
                             <li class="rooms__item">
-                                | Размеры (ШхГхВ) - 228х228х228 см
+                                | Размеры (ШхГхВ) - #{presidentRoom.size}
                             </li>
                             <li class="rooms__item">
-                                | Цена за сутки: 200$.
+                                | Цена за сутки: #{presidentRoom.price}₽
                             </li>
                         </ul>
                         +booking-button("primary rooms__booking-button")
