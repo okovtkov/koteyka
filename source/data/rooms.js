@@ -8,7 +8,7 @@ let economRoom = {
 };
 
 let economPlusRoom = {
-    image: "/img/econom+.jpg",
+    image: "/img/room-1.jpg",
     name: "Эконом-плюс",
     size: "90х100х180 см",
     area: "0,90 м2",
