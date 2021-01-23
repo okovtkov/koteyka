@@ -502,7 +502,8 @@ img {
 }
 
 .title__rooms {
-    padding-top: 5%;
+    color: black;
+    text-decoration: none;
     margin-bottom: 5%;
 }
 
@@ -551,6 +552,7 @@ img {
 .rooms__info {
     width: 90%;
     padding-left: 5.5%;
+    padding-top: 3%;
     background-color: white;
     border-radius: 0 0 10px 10px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);

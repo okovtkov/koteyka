@@ -4,7 +4,7 @@ mixin room-card(className, room)
     article(class=`${className} room-option`)
         <img src="#{room.image}" alt=#{room.name} class="room-option__cat">
         <section class="room-option__card-info">
-            <a href="/room.html" class="room-option__title">#{room.name}</a>
+            <a href="/#{room.link}.html" class="room-option__title">#{room.name}</a>
             <dl>
                 <div class="room-option__info room-option__size">
                     <dt class="room-option__key">Размеры (ШхГхВ) - </dt>

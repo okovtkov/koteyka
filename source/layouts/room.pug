@@ -1,0 +1,12 @@
+include ../components/room-info/room-info.pug
+include ../components/page/page.pug
+include ../components/rooms/rooms.pug
+include ../components/booking/booking.pug
+include ../components/complete/complete.pug
+
+mixin room(room)
+    +page(`Номер ${room.name}`)
+        +booking
+        +complete
+        +room-info(room)
+        +rooms("Другие номера")

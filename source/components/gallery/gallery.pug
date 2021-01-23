@@ -1,4 +1,4 @@
-mixin gallery 
+mixin gallery(room) 
     <section class="gallery">
         <input type="radio" name="gallery" id="btn-4" class="gallery__toggler" checked>
         <input type="radio" name="gallery" id="btn-5" class="gallery__toggler">
@@ -7,12 +7,12 @@ mixin gallery
         <ul class="gallery__images">
             <li class="gallery__list">
                 <label for="btn-4">
-                    <img src="/img/drum.png", alt="барабанщик-легушька" class="gallery__img">
+                    <img src="#{room.image}", alt="рэп-легушька" class="gallery__img">
                 </label>
             </li>
             <li class="gallery__list">
                 <label for="btn-5">
-                    <img src="/img/nigga.jpg", alt="рэп-легушька" class="gallery__img">
+                    <img src="/img/drum.png", alt="барабанщик-легушька" class="gallery__img">
                 </label>
             </li>
             <li class="gallery__list">
