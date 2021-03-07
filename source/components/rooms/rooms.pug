@@ -6,8 +6,8 @@ mixin rooms(title)
     - let rooms = [allRooms[1], allRooms[4], allRooms[5]];
     <section class="rooms positioner" id="rooms">
         <h2 class="title title__rooms title_2">#{title}</h2>
-        +slider("rooms")
-            <ul class="rooms__list slider__list">
+        +slider
+            <ul class="rooms__list slider__list" data-offset="100">
                 each room in rooms
                     <li class="rooms__room">
                         <div class="rooms__img-container">

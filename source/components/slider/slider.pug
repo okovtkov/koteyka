@@ -1,14 +1,11 @@
-mixin slider(name)
-    <div class="slider">
-        input(type="radio" class="slider__toggler" name=`${name}` id=`${name}-1` checked)
-        input(type="radio" class="slider__toggler" name=`${name}` id=`${name}-2`)
-        input(type="radio" class="slider__toggler" name=`${name}` id=`${name}-3`)
+mixin slider(offset, tag)
+    <div class="slider" data-offset="#{offset}" data-tag="#{tag}">
         <button class="slider__button slider__button_prev">&lt;</button>
         <button class="slider__button slider__button_next">&gt;</button>
         block
-        <div class="slider__radio-button">
-            label(for=`${name}-1` class="slider__label slider__label_btn-1")
-            label(for=`${name}-2` class="slider__label slider__label_btn-2")
-            label(for=`${name}-3` class="slider__label slider__label_btn-3")
+        <div class="slider__container">
+            <button class="slider__toggler slider__toggler_check"></button>
+            <button class="slider__toggler"></button>
+            <button class="slider__toggler"></button>
         </div>
     </div>
