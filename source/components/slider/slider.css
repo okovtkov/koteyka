@@ -3,9 +3,9 @@
     transition: left 0.5s ease;
 }
 
-.slider__button { 
+.slider__button {
     display: none;
-    bottom: 30px;
+    bottom: 20px;
     width: 36px;
     height: 36px;
     background-color: white;
@@ -19,45 +19,72 @@
 }
 
 @media screen and (min-width: 600px) {
-    .slider__button { 
+    .slider__button {
         display: block;
         position: absolute;
     }
 }
 
-.slider__button_next {
-    left: 89%;
-}
+@media screen and (min-width: 600px) {
+    .slider__button_next {
+        left: 91%;
+    }
 
-.slider__button_prev {
-    left: 85%;
+    .slider__button_prev {
+        left: 82%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .slider__button_next {
-        left: 89%;
-    }
-    
     .slider__button_prev {
-        left: 83%;
+        left: 84%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slider__button_prev {
+        left: 86%;
     }
 }
 
 .slider__container {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+}
+
+@media screen and (min-width: 320px) {
+    .slider__container {  
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .slider__container {  
+        margin-top: 60px;
+    }
 }
 
 .slider__toggler {
     margin-right: 20px;
-    width: 12px;
-    height: 12px;
     border-radius: 50%;
     border: none;
     background-color: #e1e1e1;
     margin-right: 12px;
     outline: none;
+}
+
+@media screen and (min-width: 320px) {
+    .slider__toggler {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .slider__toggler {
+        width: 12px;
+        height: 12px;
+    }
 }
 
 .slider__toggler_check {

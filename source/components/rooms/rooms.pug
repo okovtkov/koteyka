@@ -4,30 +4,32 @@ include ../slider/slider.pug
 mixin rooms(title)
     - let allRooms = require("../data/rooms.js");
     - let rooms = [allRooms[1], allRooms[4], allRooms[5]];
-    <section class="rooms positioner" id="rooms">
-        <h2 class="title title__rooms title_2">#{title}</h2>
-        +slider
-            <ul class="rooms__list slider__list" data-offset="100">
-                each room in rooms
-                    <li class="rooms__room">
-                        <div class="rooms__img-container">
-                            <img src="#{room.image}" alt=#{room.name} class="rooms__img">
-                        </div>
-                        <section class="rooms__info">
-                            <a href="/#{room.link}.html" class="title title__rooms title_3">#{room.name}</a>
-                            <ul class="rooms__ul">
-                                <li class="rooms__item">
-                                    | Площадь - #{room.area}
-                                </li>
-                                <li class="rooms__item">
-                                    | Размеры (ШхГхВ) - #{room.size}
-                                </li>
-                                <li class="rooms__item">
-                                    | Цена за сутки: #{room.price}₽
-                                </li>
-                            </ul>
-                            +booking-button("primary rooms__booking-button")
-                        </section>
-                    </li>
-            </ul>
+    <section class="rooms" id="rooms">
+        <div class="positioner rooms__positioner">
+            <h2 class="title title__rooms title_2">#{title}</h2>
+            +slider
+                <ul class="rooms__list slider__list" data-offset="100">
+                    each room in rooms
+                        <li class="rooms__room">
+                            <div class="rooms__img-container">
+                                <img src="#{room.image}" alt=#{room.name} class="rooms__img">
+                            </div>
+                            <section class="rooms__info">
+                                <a href="/#{room.link}.html" class="title title__rooms title_3">#{room.name}</a>
+                                <ul class="rooms__ul">
+                                    <li class="rooms__item">
+                                        | Площадь - #{room.area}
+                                    </li>
+                                    <li class="rooms__item">
+                                        | Размеры (ШхГхВ) - #{room.size}
+                                    </li>
+                                    <li class="rooms__item">
+                                        | Цена за сутки: #{room.price}₽
+                                    </li>
+                                </ul>
+                                +booking-button("primary rooms__booking-button")
+                            </section>
+                        </li>
+                </ul>
+        </div>
     </section>

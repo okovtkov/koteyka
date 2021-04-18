@@ -12,9 +12,11 @@ class Slider {
 
         prev.onclick = () => this.prev();
         next.onclick = () => this.next();
+        this.togglers.forEach((toggler, index) => toggler.onclick = () => this.slide(index));
     }
 
     slide(to) {
+        console.log(to);
         if (to >= this.count) to = 0;
         if (to < 0) to = this.count - 1;
         this.container.style.left = to * -1 * this.offset + '%';

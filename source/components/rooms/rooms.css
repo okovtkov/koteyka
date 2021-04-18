@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     margin-top: 6%;
-    overflow: hidden;
     padding-bottom: 1.7094171%;
 }
 
@@ -32,6 +31,11 @@
         transform: scale(1);
         top: 0;
     }
+}
+
+.rooms__positioner {
+    position: relative;
+    overflow: hidden;
 }
 
 .title__rooms {
