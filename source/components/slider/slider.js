@@ -3,7 +3,8 @@ class Slider {
         this.slider = slider;
         this.container = slider.querySelector('.slider__list');
         this.count = this.container.children.length;
-        this.offset = Number(this.container.dataset.offset);
+        let offset = getComputedStyle(this.container).getPropertyValue('--offset');
+        this.offset = parseInt(offset);
         this.togglers = Array.from(this.slider.querySelectorAll('.slider__toggler'));
         this.container.style.left = 0;
         this.current = 0;

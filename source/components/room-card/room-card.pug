@@ -8,11 +8,11 @@ mixin room-card(className, room)
             <dl>
                 <div class="room-option__info room-option__size">
                     <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-                    <dd class="room-option__value">#{room.size}</dd>
+                    <dd class="room-option__value room-option__size">#{room.size}</dd>
                 </div>
                 <div class="room-option__info room-option__area">
                     <dt class="room-option__key">Площадь - </dt>
-                    <dd class="room-option__value">#{room.area}</dd>
+                    <dd class="room-option__value room-option__area_js">#{room.area}</dd>
                 </div>
                 <div class="room-option__info room-option__equipment">
                     <dt class="room-option__key">Оснащение номера</dt>
@@ -31,7 +31,7 @@ mixin room-card(className, room)
                 </div>
                 <div class="room-option__price">
                     <dt class="room-option__key">Цена за сутки:</dt>
-                    <dd class="room-option__value room-option__text-bold">#{room.price}₽</dd>
+                    <dd class="room-option__value room-option__text-bold room-option__price_js">#{room.price}₽</dd>
                 </div>
             </dl>
             +booking-button("primary room-option__booking-button")

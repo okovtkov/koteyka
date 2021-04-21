@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color-300: #ffcd70;
+    --main-color-400: #fac663;
+    --main-color-700: #ff6600;
+}
+
 body {
     position: relative;
     margin: 0;

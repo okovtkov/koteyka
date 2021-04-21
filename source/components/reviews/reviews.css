@@ -72,6 +72,25 @@
     */
     /* width: calc(100% + (100vw - 100%) / 2); */
     transition: transform 1s ease;
+    --offset: 100%;
+}
+
+@media screen and (min-width: 320px) {
+    .reviews__review {
+        --offset: 108%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .reviews__review {
+        --offset: 56%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviews__review {
+        --offset: 8%;
+    }
 }
 
 .reviews__info {

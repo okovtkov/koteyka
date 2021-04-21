@@ -3,6 +3,6 @@ include ../room-card/room-card.pug
 mixin catalog-rooms
     - let rooms = require("../data/rooms.js");
     <article class="catalog-rooms">
-        each item in rooms
-            +room-card("catalog-rooms__item", item)
+        each room in rooms
+            +room-card("catalog-rooms__item", room)
     </article>

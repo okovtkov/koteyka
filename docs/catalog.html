@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="/koteyka/stylesheets/styles-5d8d58af373b44f98d8d.css" rel="stylesheet"></head>
+<link href="/koteyka/stylesheets/styles-897a9fbe7ecbc103c971.css" rel="stylesheet"></head>
 <body><header class="header positioner">
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
@@ -52,19 +52,19 @@
 <div class="select__options">
 <label>
 <input type="radio" name="catalog-select" class="select__toggler">
-<div class="select__option select__option_asc">По площади</div>
+<div class="select__option select__option_asc select__sorting" data-sort="asc" data-column="area">По площади</div>
 </label>
 <label>
 <input type="radio" name="catalog-select" class="select__toggler">
-<div class="select__option select__option_desc">По площади</div>
+<div class="select__option select__option_desc select__sorting" data-sort="desc" data-column="area">По площади</div>
 </label>
 <label>
 <input type="radio" name="catalog-select" class="select__toggler">
-<div class="select__option select__option_asc">По цене</div>
+<div class="select__option select__option_asc select__sorting" data-sort="asc" data-column="price">По цене</div>
 </label>
 <label>
 <input type="radio" name="catalog-select" class="select__toggler">
-<div class="select__option select__option_desc">По цене</div>
+<div class="select__option select__option_desc select__sorting" data-sort="desc" data-column="price">По цене</div>
 </label>
 </div>
 </div><label class="catalog-header__filter-activation" for="filter">
@@ -129,11 +129,11 @@
 <dl>
 <div class="room-option__info room-option__size">
 <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-<dd class="room-option__value">90х70х180 см</dd>
+<dd class="room-option__value room-option__size">90х70х180 см</dd>
 </div>
 <div class="room-option__info room-option__area">
 <dt class="room-option__key">Площадь - </dt>
-<dd class="room-option__value">0,63 м2</dd>
+<dd class="room-option__value room-option__area_js">0,63 м2</dd>
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
@@ -141,7 +141,7 @@
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
-<dd class="room-option__value room-option__text-bold">100₽</dd>
+<dd class="room-option__value room-option__text-bold room-option__price_js">100₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
 </article>
@@ -151,11 +151,11 @@
 <dl>
 <div class="room-option__info room-option__size">
 <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-<dd class="room-option__value">90х100х180 см</dd>
+<dd class="room-option__value room-option__size">90х100х180 см</dd>
 </div>
 <div class="room-option__info room-option__area">
 <dt class="room-option__key">Площадь - </dt>
-<dd class="room-option__value">0,90 м2</dd>
+<dd class="room-option__value room-option__area_js">0,90 м2</dd>
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
@@ -163,7 +163,7 @@
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
-<dd class="room-option__value room-option__text-bold">200₽</dd>
+<dd class="room-option__value room-option__text-bold room-option__price_js">200₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
 </article>
@@ -173,11 +173,11 @@
 <dl>
 <div class="room-option__info room-option__size">
 <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-<dd class="room-option__value">100х125х180 см</dd>
+<dd class="room-option__value room-option__size">100х125х180 см</dd>
 </div>
 <div class="room-option__info room-option__area">
 <dt class="room-option__key">Площадь - </dt>
-<dd class="room-option__value">1,13 м2</dd>
+<dd class="room-option__value room-option__area_js">1,13 м2</dd>
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
@@ -185,7 +185,7 @@
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
-<dd class="room-option__value room-option__text-bold">250₽</dd>
+<dd class="room-option__value room-option__text-bold room-option__price_js">250₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
 </article>
@@ -195,11 +195,11 @@
 <dl>
 <div class="room-option__info room-option__size">
 <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-<dd class="room-option__value">125х125х180 см</dd>
+<dd class="room-option__value room-option__size">125х125х180 см</dd>
 </div>
 <div class="room-option__info room-option__area">
 <dt class="room-option__key">Площадь - </dt>
-<dd class="room-option__value">1,56 м2</dd>
+<dd class="room-option__value room-option__area_js">1,56 м2</dd>
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
@@ -207,7 +207,7 @@
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
-<dd class="room-option__value room-option__text-bold">350₽</dd>
+<dd class="room-option__value room-option__text-bold room-option__price_js">350₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
 </article>
@@ -217,11 +217,11 @@
 <dl>
 <div class="room-option__info room-option__size">
 <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-<dd class="room-option__value">160х160х180 см</dd>
+<dd class="room-option__value room-option__size">160х160х180 см</dd>
 </div>
 <div class="room-option__info room-option__area">
 <dt class="room-option__key">Площадь - </dt>
-<dd class="room-option__value"> 2,56 м2</dd>
+<dd class="room-option__value room-option__area_js"> 2,56 м2</dd>
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
@@ -229,7 +229,7 @@
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
-<dd class="room-option__value room-option__text-bold">500₽</dd>
+<dd class="room-option__value room-option__text-bold room-option__price_js">500₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
 </article>
@@ -239,11 +239,11 @@
 <dl>
 <div class="room-option__info room-option__size">
 <dt class="room-option__key">Размеры (ШхГхВ) - </dt>
-<dd class="room-option__value">180х160х180 см</dd>
+<dd class="room-option__value room-option__size">180х160х180 см</dd>
 </div>
 <div class="room-option__info room-option__area">
 <dt class="room-option__key">Площадь - </dt>
-<dd class="room-option__value">2,88 м2</dd>
+<dd class="room-option__value room-option__area_js">2,88 м2</dd>
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
@@ -251,7 +251,7 @@
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
-<dd class="room-option__value room-option__text-bold">600₽</dd>
+<dd class="room-option__value room-option__text-bold room-option__price_js">600₽</dd>
 </div>
 </dl><a class="booking-button primary room-option__booking-button" href="#booking">Забронировать</a></section>
 </article></article></div><article class="banner-2 positioner">
@@ -311,5 +311,5 @@
 <span class="positioner footer__positioner">© 2019 Все права защищены<span>Политика конфиденциальности</span>
 </span>
 </div>
-</footer><script src="/koteyka/scripts/main-eea8e8675ccb5fb71078.js"></script><script src="/koteyka/scripts/styles-3a86dd32436b7dc846f2.js"></script></body>
+</footer><script src="/koteyka/scripts/main-e0da48bb6e6efef3f325.js"></script><script src="/koteyka/scripts/styles-3a86dd32436b7dc846f2.js"></script></body>
 </html>

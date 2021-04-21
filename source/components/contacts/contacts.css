@@ -1,7 +1,7 @@
 .contacts {
     position: relative;
     margin-top: 10.25641025641026%;
-    background-color: #fac663; 
+    background-color: var(--main-color-400); 
 }
 
 @media screen and (min-width: 970px) {

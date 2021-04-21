@@ -4,19 +4,19 @@ mixin catalog-select
         <div class="select__options">
             <label>
                 <input type="radio" name="catalog-select" class="select__toggler">
-                <div class="select__option select__option_asc">По площади</div>
+                <div class="select__option select__option_asc select__sorting" data-sort="asc" data-column="area">По площади</div>
             </label>
             <label>
                 <input type="radio" name="catalog-select" class="select__toggler">
-                <div class="select__option select__option_desc">По площади</div>
+                <div class="select__option select__option_desc select__sorting" data-sort="desc" data-column="area">По площади</div>
             </label>
             <label>
                 <input type="radio" name="catalog-select" class="select__toggler">
-                <div class="select__option select__option_asc">По цене</div>
+                <div class="select__option select__option_asc select__sorting" data-sort="asc" data-column="price">По цене</div>
             </label>
             <label>
                 <input type="radio" name="catalog-select" class="select__toggler">
-                <div class="select__option select__option_desc">По цене</div>
+                <div class="select__option select__option_desc select__sorting" data-sort="desc" data-column="price">По цене</div>
             </label>
         </div>
     </div>

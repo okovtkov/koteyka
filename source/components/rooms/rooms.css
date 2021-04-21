@@ -54,6 +54,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    --offset: 100%;
 }
 
 .rooms__room {
@@ -135,7 +136,7 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: #fac663;
+    background-color: var(--main-color-400);
     content: "";
 }
 

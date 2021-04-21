@@ -49,15 +49,15 @@
     transform: translate(-50%, -50%);
     height: 24px;
     width: 32px;
-    border-top: 2px solid #ff7236;
-    border-bottom: 2px solid #ff7236;
+    border-top: 2px solid var(--main-color-700);
+    border-bottom: 2px solid var(--main-color-700);
     content: "";
 }
 
 .header__burger::after { 
     border: none;
     height: 2px;
-    background-color: #ff7236;
+    background-color: var(--main-color-700);
 }
 
 @media screen and (max-width: 550px) {

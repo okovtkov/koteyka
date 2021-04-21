@@ -9,13 +9,24 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./components/catalog-select/catalog-select.js":
+/*!*****************************************************!*\
+  !*** ./components/catalog-select/catalog-select.js ***!
+  \*****************************************************/
+/***/ (() => {
+
+"use strict";
+eval("\r\n\r\nlet options = Array.from(document.querySelectorAll('.select__sorting'));\r\n\r\noptions.forEach(option => {\r\n    option.addEventListener('click', () => {\r\n        let sortingBy = option.dataset.sort;\r\n        let column = option.dataset.column;\r\n        let selector = `.room-option__${column}_js`;\r\n        let cards = Array.from(document.querySelectorAll('.catalog-rooms__item'));\r\n        let container = document.querySelector('.catalog-rooms');\r\n\r\n       let sortedCards = sortCards(cards, selector, sortingBy);\r\n       container.append(...sortedCards);\r\n    });\r\n})\r\n\r\nfunction sortCards(cards, selector, type) {\r\n    return cards.slice(0).sort((a, b) => {\r\n        a = parseFloat(a.querySelector(selector).textContent.replace(',', '.'));\r\n        b = parseFloat(b.querySelector(selector).textContent.replace(',', '.'));\r\n        return (type === 'asc') ? a - b : b - a; \r\n    });\r\n}\n\n//# sourceURL=webpack:///./components/catalog-select/catalog-select.js?");
+
+/***/ }),
+
 /***/ "./components/slider/slider.js":
 /*!*************************************!*\
   !*** ./components/slider/slider.js ***!
   \*************************************/
 /***/ (() => {
 
-eval("class Slider {\r\n    constructor(slider) {\r\n        this.slider = slider;\r\n        this.container = slider.querySelector('.slider__list');\r\n        this.count = this.container.children.length;\r\n        this.offset = Number(this.container.dataset.offset);\r\n        this.togglers = Array.from(this.slider.querySelectorAll('.slider__toggler'));\r\n        this.container.style.left = 0;\r\n        this.current = 0;\r\n        let prev = this.slider.querySelector('.slider__button_prev');\r\n        let next = this.slider.querySelector('.slider__button_next');\r\n\r\n        prev.onclick = () => this.prev();\r\n        next.onclick = () => this.next();\r\n        this.togglers.forEach((toggler, index) => toggler.onclick = () => this.slide(index));\r\n    }\r\n\r\n    slide(to) {\r\n        console.log(to);\r\n        if (to >= this.count) to = 0;\r\n        if (to < 0) to = this.count - 1;\r\n        this.container.style.left = to * -1 * this.offset + '%';\r\n        this.selectToggler(to);\r\n        this.current = to;\r\n    }\r\n\r\n    next() {\r\n        this.slide(this.current + 1);\r\n    }\r\n\r\n    prev() {\r\n        this.slide(this.current - 1);\r\n    }\r\n\r\n    selectToggler(num) {\r\n        this.slider.querySelector('.slider__toggler_check').classList.remove('slider__toggler_check');\r\n        this.togglers[num].classList.add('slider__toggler_check');\r\n    }\r\n}\r\n\r\nlet sliders = Array.from(document.querySelectorAll('.slider'));\r\n\r\nfor (let slider of sliders) {\r\n    new Slider(slider);\r\n}\n\n//# sourceURL=webpack:///./components/slider/slider.js?");
+eval("class Slider {\r\n    constructor(slider) {\r\n        this.slider = slider;\r\n        this.container = slider.querySelector('.slider__list');\r\n        this.count = this.container.children.length;\r\n        let offset = getComputedStyle(this.container).getPropertyValue('--offset');\r\n        this.offset = parseInt(offset);\r\n        this.togglers = Array.from(this.slider.querySelectorAll('.slider__toggler'));\r\n        this.container.style.left = 0;\r\n        this.current = 0;\r\n        let prev = this.slider.querySelector('.slider__button_prev');\r\n        let next = this.slider.querySelector('.slider__button_next');\r\n\r\n        prev.onclick = () => this.prev();\r\n        next.onclick = () => this.next();\r\n        this.togglers.forEach((toggler, index) => toggler.onclick = () => this.slide(index));\r\n    }\r\n\r\n    slide(to) {\r\n        console.log(to);\r\n        if (to >= this.count) to = 0;\r\n        if (to < 0) to = this.count - 1;\r\n        this.container.style.left = to * -1 * this.offset + '%';\r\n        this.selectToggler(to);\r\n        this.current = to;\r\n    }\r\n\r\n    next() {\r\n        this.slide(this.current + 1);\r\n    }\r\n\r\n    prev() {\r\n        this.slide(this.current - 1);\r\n    }\r\n\r\n    selectToggler(num) {\r\n        this.slider.querySelector('.slider__toggler_check').classList.remove('slider__toggler_check');\r\n        this.togglers[num].classList.add('slider__toggler_check');\r\n    }\r\n}\r\n\r\nlet sliders = Array.from(document.querySelectorAll('.slider'));\r\n\r\nfor (let slider of sliders) {\r\n    new Slider(slider);\r\n}\n\n//# sourceURL=webpack:///./components/slider/slider.js?");
 
 /***/ }),
 
@@ -26,7 +37,7 @@ eval("class Slider {\r\n    constructor(slider) {\r\n        this.slider = slide
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_slider_slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/slider/slider.js */ \"./components/slider/slider.js\");\n/* harmony import */ var _components_slider_slider_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_slider_slider_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./javascript/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_slider_slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/slider/slider.js */ \"./components/slider/slider.js\");\n/* harmony import */ var _components_slider_slider_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_slider_slider_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_catalog_select_catalog_select_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/catalog-select/catalog-select.js */ \"./components/catalog-select/catalog-select.js\");\n/* harmony import */ var _components_catalog_select_catalog_select_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_catalog_select_catalog_select_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./javascript/main.js?");
 
 /***/ })
 

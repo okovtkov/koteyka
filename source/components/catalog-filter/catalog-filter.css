@@ -100,7 +100,7 @@
 .filter__reset {
     width: 185px;
     margin-top: 15px;
-    border: 2px solid #FAC663;
+    border: 2px solid var(--main-color-400);
     outline: none;
     font-size: 0.875rem;
     border-radius: 25px;
@@ -122,12 +122,12 @@
 
 .filter__apply {
     margin-top: 20px;
-    background-color: #FAC663;
+    background-color: var(--main-color-400);
     padding: 15px 36px 16px 36px;
 }
 
 .filter__reset:hover {
-    background-color: #ffcd70;
+    background-color: var(--main-color-300);
     color: white;
 }
 
