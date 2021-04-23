@@ -18,15 +18,15 @@ mixin room-card(className, room)
                     <dt class="room-option__key">Оснащение номера</dt>
                     <dd class="room-option__value">
                         if room.comforts.includes("лежак")  
-                            <img src="/img/equipment-lejak.jpg" alt="лежак" class="room-option__img">
+                            <img src="/img/equipment-lejak.jpg" alt="Лежак" class="room-option__img">
                         if room.comforts.includes("когтеточка")
-                            <img src="/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__img">
+                            <img src="/img/equipment-kogtetochka.jpg" alt="Когтеточка" class="room-option__img">
                         if room.comforts.includes("клубок")
-                            <img src="/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__img">
+                            <img src="/img/equipment-game-complex.jpg" alt="Игровой комплекс" class="room-option__img">
                         if room.comforts.includes("домик")
-                            <img src="/img/equipment-house.jpg" alt="домик" class="room-option__img">
+                            <img src="/img/equipment-house.jpg" alt="Домик" class="room-option__img">
                         if room.comforts.length == 0
-                            <img src="/img/no-item.jpg" alt="без удобств" class="room-option__img">
+                            <img src="/img/no-item.jpg" alt="Пустой номер" class="room-option__img">
                     </dd>
                 </div>
                 <div class="room-option__price">

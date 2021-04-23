@@ -3,7 +3,7 @@ include ../checkbox/checkbox.pug
 mixin catalog-filter
     <input type="checkbox" class="catalog-filter-activator" id="filter"> 
     <aside class="sidebar">
-        <form class="filter">
+        <form class="filter" name="filter">
             <fieldset class="filter__fieldset filter__price">
                 <legend class="filter__name">Цена за сутки, ₽</legend>
                 <input type="text" name="from" placeholder="от 100" class="filter__price_min">
@@ -11,20 +11,20 @@ mixin catalog-filter
             </fieldset>
             <fieldset class="filter__fieldset filter__area">
                 <legend class="filter__name">Площадь</legend>
-                +checkbox("0,63 м2")
-                +checkbox("0,90 м2")
-                +checkbox("1,13 м2")
-                +checkbox("1,56 м2")
-                +checkbox("2,56 м2")
-                +checkbox("2,88 м2")
+                +checkbox("0,63 м2", "area", "0.63")
+                +checkbox("0,90 м2", "area", "0.90")
+                +checkbox("1,13 м2", "area", "1.13")
+                +checkbox("1,56 м2", "area", "1.56")
+                +checkbox("2,56 м2", "area", "2.56")
+                +checkbox("2,88 м2", "area", "2.88")
             </fieldset>
             <fieldset class="filter__fieldset filter__equipment">
                 <legend class="filter__name">Оснащение номера</legend>
-                +checkbox("Пустой номер")
-                +checkbox("Лежак")
-                +checkbox("Когтеточка")
-                +checkbox("Игровой комплекс")
-                +checkbox("Домик")
+                +checkbox("Пустой номер", "item", "Пустой номер")
+                +checkbox("Лежак", "item", "Лежак")
+                +checkbox("Когтеточка", "item", "Когтеточка")
+                +checkbox("Игровой комплекс", "item", "Игровой комплекс")
+                +checkbox("Домик", "item", "Домик")
             </fieldset>
             <div class="filter__buttons">
                 <button class="filter__apply">Применить</button>

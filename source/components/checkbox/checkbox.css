@@ -5,14 +5,16 @@
     margin-top: 20px;
 }
 
-.checkbox__area:checked + span::before {
+.checkbox input:checked + span::before,
+.checkbox input:checked + span::before {
     background-image: url("./icons/check.svg");
     background-repeat: no-repeat;
     background-position: 4px 5px;
     content: "";
 }
 
-.checkbox__area {
+.checkbox input,
+.checkbox input {
     display: none;
 }
 

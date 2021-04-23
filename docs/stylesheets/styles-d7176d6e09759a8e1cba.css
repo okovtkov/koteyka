@@ -374,7 +374,6 @@ img {
 }
 
 .title__advantages {
-    margin-top: 100px;
     white-space: pre-wrap;
 }
 
@@ -416,7 +415,7 @@ img {
     position: relative;
     width: 100%;
     margin-top: 20px;
-    padding: 121px 2.5641% 30px 20px;
+    padding: 121px 2.5641% 30px 30px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -438,8 +437,8 @@ img {
 }
 
 .advantages__title {
-    margin-bottom: 20px;
-    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .advantages__desc {
@@ -482,7 +481,6 @@ img {
     position: absolute;
     top: -20px;
     left: 0;
-    width: 610px;
     height: 151px;
     transform: scale(0.7);
     transform-origin: left;
@@ -1425,14 +1423,16 @@ img {
     margin-top: 20px;
 }
 
-.checkbox__area:checked + span::before {
+.checkbox input:checked + span::before,
+.checkbox input:checked + span::before {
     background-image: url(/koteyka/images/components/checkbox/icons//check-968fb6e5ea7fc7668476f1adab730255.svg);
     background-repeat: no-repeat;
     background-position: 4px 5px;
     content: "";
 }
 
-.checkbox__area {
+.checkbox input,
+.checkbox input {
     display: none;
 }
 
@@ -1453,6 +1453,12 @@ img {
     width: 110%;
     border: 1px solid #e1e1e1;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+@media screen and (min-width: 1280px) {
+    .room-option {
+        margin-right: 10px;
+    }
 }
 
 .room-option__cat {
@@ -1547,6 +1553,13 @@ img {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 1280px) {
+    .catalog-rooms {
+        justify-content: flex-start;
+    }
 }
 
 .catalog-rooms__item {

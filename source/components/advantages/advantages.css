@@ -44,7 +44,6 @@
 }
 
 .title__advantages {
-    margin-top: 100px;
     white-space: pre-wrap;
 }
 
@@ -86,7 +85,7 @@
     position: relative;
     width: 100%;
     margin-top: 20px;
-    padding: 121px 2.5641% 30px 20px;
+    padding: 121px 2.5641% 30px 30px;
     list-style: none;
     border-radius: 8px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -108,8 +107,8 @@
 }
 
 .advantages__title {
-    margin-bottom: 20px;
-    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .advantages__desc {

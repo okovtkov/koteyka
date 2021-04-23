@@ -7,6 +7,12 @@
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
+@media screen and (min-width: 1280px) {
+    .room-option {
+        margin-right: 10px;
+    }
+}
+
 .room-option__cat {
     display: block;
     margin-left: -1px;

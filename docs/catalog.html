@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="/koteyka/stylesheets/styles-897a9fbe7ecbc103c971.css" rel="stylesheet"></head>
+<link href="/koteyka/stylesheets/styles-d7176d6e09759a8e1cba.css" rel="stylesheet"></head>
 <body><header class="header positioner">
 <a href="/koteyka/index.html" class="header__logo">
 <img src="/koteyka/img/logo.svg" alt="логотип" class="header__img">
@@ -73,47 +73,47 @@
 </div>
 </div><div class="positioner container"><input type="checkbox" class="catalog-filter-activator" id="filter"> 
 <aside class="sidebar">
-<form class="filter">
+<form class="filter" name="filter">
 <fieldset class="filter__fieldset filter__price">
 <legend class="filter__name">Цена за сутки, ₽</legend>
 <input type="text" name="from" placeholder="от 100" class="filter__price_min">
 <input type="text" name="to" placeholder="до 600" class="filter__price_max">
 </fieldset>
 <fieldset class="filter__fieldset filter__area">
-<legend class="filter__name">Площадь</legend><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+<legend class="filter__name">Площадь</legend><label class="checkbox checkbox__main_area">
+<input type=checkbox name=area value=0.63> 
 <span class="checkbox__value">0,63 м2</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_area">
+<input type=checkbox name=area value=0.90> 
 <span class="checkbox__value">0,90 м2</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_area">
+<input type=checkbox name=area value=1.13> 
 <span class="checkbox__value">1,13 м2</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_area">
+<input type=checkbox name=area value=1.56> 
 <span class="checkbox__value">1,56 м2</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_area">
+<input type=checkbox name=area value=2.56> 
 <span class="checkbox__value">2,56 м2</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_area">
+<input type=checkbox name=area value=2.88> 
 <span class="checkbox__value">2,88 м2</span>
 </label></fieldset>
 <fieldset class="filter__fieldset filter__equipment">
-<legend class="filter__name">Оснащение номера</legend><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+<legend class="filter__name">Оснащение номера</legend><label class="checkbox checkbox__main_item">
+<input type=checkbox name=item value=Пустой номер> 
 <span class="checkbox__value">Пустой номер</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_item">
+<input type=checkbox name=item value=Лежак> 
 <span class="checkbox__value">Лежак</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_item">
+<input type=checkbox name=item value=Когтеточка> 
 <span class="checkbox__value">Когтеточка</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_item">
+<input type=checkbox name=item value=Игровой комплекс> 
 <span class="checkbox__value">Игровой комплекс</span>
-</label><label class="checkbox">
-<input type="checkbox" name="area" class="checkbox__area">
+</label><label class="checkbox checkbox__main_item">
+<input type=checkbox name=item value=Домик> 
 <span class="checkbox__value">Домик</span>
 </label></fieldset>
 <div class="filter__buttons">
@@ -137,7 +137,7 @@
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
-<dd class="room-option__value"><img src="/koteyka/img/no-item.jpg" alt="без удобств" class="room-option__img"></dd>
+<dd class="room-option__value"><img src="/koteyka/img/no-item.jpg" alt="Пустой номер" class="room-option__img"></dd>
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
@@ -159,7 +159,7 @@
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
-<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__img"></dd>
+<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="Лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="Когтеточка" class="room-option__img"></dd>
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
@@ -181,7 +181,7 @@
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
-<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__img"></dd>
+<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="Лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="Когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="Игровой комплекс" class="room-option__img"></dd>
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
@@ -203,7 +203,7 @@
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
-<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__img"></dd>
+<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="Лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="Когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="Игровой комплекс" class="room-option__img"></dd>
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
@@ -225,7 +225,7 @@
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
-<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__img"><img src="/koteyka/img/equipment-house.jpg" alt="домик" class="room-option__img"></dd>
+<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="Лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="Когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="Игровой комплекс" class="room-option__img"><img src="/koteyka/img/equipment-house.jpg" alt="Домик" class="room-option__img"></dd>
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
@@ -247,7 +247,7 @@
 </div>
 <div class="room-option__info room-option__equipment">
 <dt class="room-option__key">Оснащение номера</dt>
-<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="игровой комплекс" class="room-option__img"><img src="/koteyka/img/equipment-house.jpg" alt="домик" class="room-option__img"></dd>
+<dd class="room-option__value"><img src="/koteyka/img/equipment-lejak.jpg" alt="Лежак" class="room-option__img"><img src="/koteyka/img/equipment-kogtetochka.jpg" alt="Когтеточка" class="room-option__img"><img src="/koteyka/img/equipment-game-complex.jpg" alt="Игровой комплекс" class="room-option__img"><img src="/koteyka/img/equipment-house.jpg" alt="Домик" class="room-option__img"></dd>
 </div>
 <div class="room-option__price">
 <dt class="room-option__key">Цена за сутки:</dt>
@@ -311,5 +311,5 @@
 <span class="positioner footer__positioner">© 2019 Все права защищены<span>Политика конфиденциальности</span>
 </span>
 </div>
-</footer><script src="/koteyka/scripts/main-e0da48bb6e6efef3f325.js"></script><script src="/koteyka/scripts/styles-3a86dd32436b7dc846f2.js"></script></body>
+</footer><script src="/koteyka/scripts/main-65ffc3a49121571fd0fa.js"></script><script src="/koteyka/scripts/styles-3a86dd32436b7dc846f2.js"></script></body>
 </html>

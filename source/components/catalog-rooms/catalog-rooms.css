@@ -3,6 +3,13 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 1280px) {
+    .catalog-rooms {
+        justify-content: flex-start;
+    }
 }
 
 .catalog-rooms__item {
