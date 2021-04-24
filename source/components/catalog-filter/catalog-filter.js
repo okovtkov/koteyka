@@ -51,6 +51,7 @@ class Filter {
             for (let checkbox of checkboxes) {
                 let itemValue = checkbox.value;
                 let image = card.querySelector(`.room-option__img[alt="${itemValue}"]`);
+                console.log(itemValue, image);
                 if (image) return true;
             }
         });
